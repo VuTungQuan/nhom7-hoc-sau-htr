@@ -1,0 +1,13 @@
+# Dữ liệu UIT-HWDB (tải riêng, không đưa lên repo)
+UIT_HWDB_*/
+*.zip
+# Trọng số, mô hình tải về, tài khoản, token
+runs/
+hf/
+*.pt
+*.safetensors
+tai_khoan.json
+.tunnel_token
+bin/
+__pycache__/
+*.pyc

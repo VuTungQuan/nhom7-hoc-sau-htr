@@ -1,0 +1,42 @@
+== beam 1 line
+a {'CER': 0.031, 'WER': 0.0975, 'CER_khong_dau': 0.0253, 'loi_dau': 0.0057, 'dong_tot_len': 0, 'dong_xau_di': 0, 'n': 64
+b {'CER': 0.0327, 'WER': 0.0828, 'CER_khong_dau': 0.028, 'loi_dau': 0.0048, 'dong_tot_len': 134, 'dong_xau_di': 129, 'n'
+c@0.9 {'CER': 0.0293, 'WER': 0.0834, 'CER_khong_dau': 0.0246, 'loi_dau': 0.0047, 'dong_tot_len': 117, 'dong_xau_di': 54,
+c@1.01 {'CER': 0.0295, 'WER': 0.0819, 'CER_khong_dau': 0.0249, 'loi_dau': 0.0046, 'dong_tot_len': 140, 'dong_xau_di': 85
+t@0.9 {'CER': 0.0293, 'WER': 0.0835, 'CER_khong_dau': 0.0246, 'loi_dau': 0.0047, 'dong_tot_len': 117, 'dong_xau_di': 53,
+t@1.01 {'CER': 0.0294, 'WER': 0.0817, 'CER_khong_dau': 0.0249, 'loi_dau': 0.0045, 'dong_tot_len': 139, 'dong_xau_di': 83
+== beam 1 paragraph
+a {'CER': 0.1187, 'WER': 0.2774, 'CER_khong_dau': 0.0914, 'loi_dau': 0.0273, 'dong_tot_len': 0, 'dong_xau_di': 0, 'n': 1
+b {'CER': 0.1121, 'WER': 0.1985, 'CER_khong_dau': 0.0992, 'loi_dau': 0.0129, 'dong_tot_len': 90, 'dong_xau_di': 12, 'n':
+c@0.9 {'CER': 0.1098, 'WER': 0.2281, 'CER_khong_dau': 0.091, 'loi_dau': 0.0189, 'dong_tot_len': 87, 'dong_xau_di': 9, 'n
+c@1.01 {'CER': 0.1042, 'WER': 0.201, 'CER_khong_dau': 0.0911, 'loi_dau': 0.0132, 'dong_tot_len': 96, 'dong_xau_di': 5, '
+t@0.9 {'CER': 0.1097, 'WER': 0.2286, 'CER_khong_dau': 0.0907, 'loi_dau': 0.019, 'dong_tot_len': 88, 'dong_xau_di': 6, 'n
+t@1.01 {'CER': 0.1039, 'WER': 0.2013, 'CER_khong_dau': 0.0907, 'loi_dau': 0.0132, 'dong_tot_len': 97, 'dong_xau_di': 3, 
+== beam 5 line
+a {'CER': 0.031, 'WER': 0.0975, 'CER_khong_dau': 0.0253, 'loi_dau': 0.0057, 'dong_tot_len': 0, 'dong_xau_di': 0, 'n': 64
+b {'CER': 0.0323, 'WER': 0.0829, 'CER_khong_dau': 0.0276, 'loi_dau': 0.0048, 'dong_tot_len': 132, 'dong_xau_di': 128, 'n
+c@0.9 {'CER': 0.0293, 'WER': 0.0833, 'CER_khong_dau': 0.0246, 'loi_dau': 0.0047, 'dong_tot_len': 117, 'dong_xau_di': 55,
+c@1.01 {'CER': 0.0296, 'WER': 0.0821, 'CER_khong_dau': 0.025, 'loi_dau': 0.0046, 'dong_tot_len': 138, 'dong_xau_di': 86,
+t@0.9 {'CER': 0.0294, 'WER': 0.0835, 'CER_khong_dau': 0.0246, 'loi_dau': 0.0047, 'dong_tot_len': 116, 'dong_xau_di': 53,
+t@1.01 {'CER': 0.0295, 'WER': 0.0819, 'CER_khong_dau': 0.025, 'loi_dau': 0.0045, 'dong_tot_len': 138, 'dong_xau_di': 84,
+== beam 5 paragraph
+a {'CER': 0.1187, 'WER': 0.2774, 'CER_khong_dau': 0.0914, 'loi_dau': 0.0273, 'dong_tot_len': 0, 'dong_xau_di': 0, 'n': 1
+b {'CER': 0.1053, 'WER': 0.1954, 'CER_khong_dau': 0.0927, 'loi_dau': 0.0126, 'dong_tot_len': 90, 'dong_xau_di': 12, 'n':
+c@0.9 {'CER': 0.1098, 'WER': 0.2276, 'CER_khong_dau': 0.091, 'loi_dau': 0.0187, 'dong_tot_len': 88, 'dong_xau_di': 9, 'n
+c@1.01 {'CER': 0.1039, 'WER': 0.1998, 'CER_khong_dau': 0.091, 'loi_dau': 0.0129, 'dong_tot_len': 95, 'dong_xau_di': 6, '
+t@0.9 {'CER': 0.1096, 'WER': 0.2282, 'CER_khong_dau': 0.0907, 'loi_dau': 0.0189, 'dong_tot_len': 89, 'dong_xau_di': 6, '
+t@1.01 {'CER': 0.1036, 'WER': 0.2001, 'CER_khong_dau': 0.0907, 'loi_dau': 0.0129, 'dong_tot_len': 96, 'dong_xau_di': 4, 
+== beam 10 line
+a {'CER': 0.031, 'WER': 0.0975, 'CER_khong_dau': 0.0253, 'loi_dau': 0.0057, 'dong_tot_len': 0, 'dong_xau_di': 0, 'n': 64
+b {'CER': 0.0323, 'WER': 0.0829, 'CER_khong_dau': 0.0276, 'loi_dau': 0.0048, 'dong_tot_len': 132, 'dong_xau_di': 128, 'n
+c@0.9 {'CER': 0.0293, 'WER': 0.0833, 'CER_khong_dau': 0.0246, 'loi_dau': 0.0047, 'dong_tot_len': 117, 'dong_xau_di': 55,
+c@1.01 {'CER': 0.0296, 'WER': 0.0821, 'CER_khong_dau': 0.025, 'loi_dau': 0.0046, 'dong_tot_len': 138, 'dong_xau_di': 86,
+t@0.9 {'CER': 0.0294, 'WER': 0.0835, 'CER_khong_dau': 0.0246, 'loi_dau': 0.0047, 'dong_tot_len': 116, 'dong_xau_di': 53,
+t@1.01 {'CER': 0.0295, 'WER': 0.0819, 'CER_khong_dau': 0.025, 'loi_dau': 0.0045, 'dong_tot_len': 138, 'dong_xau_di': 84,
+== beam 10 paragraph
+a {'CER': 0.1187, 'WER': 0.2774, 'CER_khong_dau': 0.0914, 'loi_dau': 0.0273, 'dong_tot_len': 0, 'dong_xau_di': 0, 'n': 1
+b {'CER': 0.1051, 'WER': 0.195, 'CER_khong_dau': 0.0926, 'loi_dau': 0.0126, 'dong_tot_len': 90, 'dong_xau_di': 12, 'n': 
+c@0.9 {'CER': 0.1097, 'WER': 0.2274, 'CER_khong_dau': 0.091, 'loi_dau': 0.0187, 'dong_tot_len': 88, 'dong_xau_di': 9, 'n
+c@1.01 {'CER': 0.1038, 'WER': 0.1995, 'CER_khong_dau': 0.091, 'loi_dau': 0.0128, 'dong_tot_len': 95, 'dong_xau_di': 6, '
+t@0.9 {'CER': 0.1095, 'WER': 0.228, 'CER_khong_dau': 0.0907, 'loi_dau': 0.0188, 'dong_tot_len': 89, 'dong_xau_di': 6, 'n
+t@1.01 {'CER': 0.1035, 'WER': 0.1998, 'CER_khong_dau': 0.0906, 'loi_dau': 0.0128, 'dong_tot_len': 96, 'dong_xau_di': 4, 

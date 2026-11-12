@@ -1,0 +1,1658 @@
+{
+ "ket_qua": {
+  "a": {
+   "CER": 0.055,
+   "WER": 0.1557,
+   "CER_khong_dau": 0.0467,
+   "loi_dau": 0.0083,
+   "dong_tot_len": 0,
+   "dong_xau_di": 0,
+   "n": 201,
+   "giay_moi_dong": 0.049
+  },
+  "b": {
+   "CER": 0.1401,
+   "WER": 0.2585,
+   "CER_khong_dau": 0.1303,
+   "loi_dau": 0.0098,
+   "dong_tot_len": 12,
+   "dong_xau_di": 149,
+   "n": 201,
+   "giay_moi_dong": 0.493
+  },
+  "c@0.5": {
+   "CER": 0.0563,
+   "WER": 0.1554,
+   "CER_khong_dau": 0.0476,
+   "loi_dau": 0.0087,
+   "dong_tot_len": 7,
+   "dong_xau_di": 19,
+   "n": 201,
+   "tu_gui_llm": 122,
+   "tu_duoc_thay": 46,
+   "giay_moi_dong": 0.186
+  },
+  "t@0.5": {
+   "CER": 0.056,
+   "WER": 0.155,
+   "CER_khong_dau": 0.0474,
+   "loi_dau": 0.0086,
+   "dong_tot_len": 7,
+   "dong_xau_di": 16,
+   "n": 201,
+   "tu_gui_llm": 122,
+   "tu_duoc_thay": 39,
+   "giay_moi_dong": 0.185
+  }
+ },
+ "chi_tiet": [
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/250/1.jpg",
+   "gt": "Thứ trưởng Bộ Tài nguyên & môi trường Đặng Hùng Võ tâm đắc với",
+   "a": "Thứ trưởng Bộ tài nguyên và môi trường Đặng Hùng Võ tâm đắc với",
+   "b": "Thứ trưởng Bộ Tài nguyên và Môi trường Đặng Hùng Võ tâm đắc với",
+   "c@0.5": "Thứ trưởng Bộ tài nguyên và môi trường Đặng Hùng Võ tâm đắc với",
+   "t@0.5": "Thứ trưởng Bộ tài nguyên và môi trường Đặng Hùng Võ tâm đắc với"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/250/2.jpg",
+   "gt": "cơ chế \" khuyến khích nhà đầu tư thỏa thuận với người sử dụng đất để nhận",
+   "a": "cơ chế \" khuyến khích nhà đầu tư thỏa thuận với người sử đất để nhận",
+   "b": "chế độ \"khuyến khích nhà đầu tư thỏa thuận với người sử dụng đất để nhận",
+   "c@0.5": "cơ chế \" khuyến khích nhà đầu tư thỏa thuận với người sử đất để nhận",
+   "t@0.5": "cơ chế \" khuyến khích nhà đầu tư thỏa thuận với người sử đất để nhận"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/250/3.jpg",
+   "gt": "chuyển nhượng hoặc thuê quyền sử dụng đất, nhận góp vốn bằng quyền sử",
+   "a": "chuyển nhượng hoặc thuê quyền sử dụng đất, nhậu góp vốn bằng quyền sử",
+   "b": "Chuyển nhượng hoặc thuê quyền sử dụng đất, góp vốn bằng quyền sử dụng đất",
+   "c@0.5": "chuyển nhượng hoặc thuê quyền sử dùng đất, nhậu góp vốn bằng quyền sử",
+   "t@0.5": "chuyển nhượng hoặc thuê quyền sử dùng đất, nhậu góp vốn bằng quyền sử"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/250/4.jpg",
+   "gt": "dụng đất... \" Nhưng tại hội nghị hôm qua, tiếng nói từ các sở tài nguyên",
+   "a": "dụng đất... \" Nhưng tại hội nghị hôm qua, tiếng nói từ các sở tài nguyên",
+   "b": "Dùng đất... \" Nhưng tại hội nghị hôm qua, tiếng nói từ các sở tài nguyên",
+   "c@0.5": "dụng đất... \" Nhưng tại hội nghị hôm qua, tiếng nói từ các sở tài nguyên",
+   "t@0.5": "dụng đất... \" Nhưng tại hội nghị hôm qua, tiếng nói từ các sở tài nguyên"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/250/5.jpg",
+   "gt": "& môi trường lại đều đồng thanh \" loại bỏ \" điều khoản này ra khỏi dự thảo.",
+   "a": "và môi trường lại điều hành \" loại bỏ \" điều khoản này ra khỏủ dư thảo.",
+   "b": "và môi trường lại điều hành \"loại bỏ\" điều khoản này ra khỏi dư thảo.",
+   "c@0.5": "và môi trường lại điều hành \" loại bỏ \" điều khoản này ra khử dư thảo.",
+   "t@0.5": "và môi trường lại điều hành \" loại bỏ \" điều khoản này ra khỏủ dư thảo."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/250/6.jpg",
+   "gt": "Giám đốc Sở Tài nguyên & môi trường Hải Phòng Chu Minh Tuấn cho",
+   "a": "Giám đốc Sở tài nguyên và môi trường Hải Phòng Chu Minh Tuấn cho",
+   "b": "Giám đốc Sở Tài Nguyên và Môi Trường Hải Phòng Chu Minh Tuấn cho",
+   "c@0.5": "Giám đốc Sở tài nguyên và môi trường Hải Phòng Chu Minh Tuấn cho",
+   "t@0.5": "Giám đốc Sở tài nguyên và môi trường Hải Phòng Chu Minh Tuấn cho"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/250/7.jpg",
+   "gt": "biết thành phố cảng từng áp dụng cơ chế \" thỏa thuận \" trong một số",
+   "a": "biết thành phố cảng từng p dụng cơ chế \" thỏa thuận \" trong một số",
+   "b": "biết thành phố cảng từng áp dụng cơ chế \"thỏa thuận\" trong một số",
+   "c@0.5": "biết thành phố cảng từng p dụng cơ chế \" thỏa thuận \" trong một số",
+   "t@0.5": "biết thành phố cảng từng p dụng cơ chế \" thỏa thuận \" trong một số"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/250/8.jpg",
+   "gt": "rất ít trường hợp, vậy mà đã gây phản ứng theo kiểu dây chuyền khá",
+   "a": "rất ít trường hợp, vậy mà đã gây phản ứu y Theo Kiểu dây chuyền khá",
+   "b": "rất ít trường hợp, vậy mà đã gây phản ứng y tế Theo kiểu dây chuyền khá",
+   "c@0.5": "rất ít trường hợp, vậy mà đã gây phản ứu y Theo Kiểu dây chuyền khá",
+   "t@0.5": "rất ít trường hợp, vậy mà đã gây phản ứu y Theo Kiểu dây chuyền khá"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/250/9.jpg",
+   "gt": "mạnh : anh này nhận tiền rồi quay lại đòi nữa, anh kia thỏa thuận",
+   "a": "mạnh : anh này nhận tiền rồi quay lại đòi nữa, anh kia thỏa thuận",
+   "b": "Mạnh: Anh này nhận tiền rồi quay lại đòi nữa, anh kia thỏa thuận.",
+   "c@0.5": "mạnh : anh này nhận tiền rồi quay lại đòi nữa, anh kia thỏa thuận",
+   "t@0.5": "mạnh : anh này nhận tiền rồi quay lại đòi nữa, anh kia thỏa thuận"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/250/10.jpg",
+   "gt": "xong quay ra đòi thỏa thuận lại...",
+   "a": "xong quay ra đòi thỏa thuận lại...",
+   "b": "xong rồi quay ra đòi thỏa thuận lại...",
+   "c@0.5": "xong quay ra đòi thỏa thuận lại...",
+   "t@0.5": "xong quay ra đòi thỏa thuận lại..."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/250/11.jpg",
+   "gt": "Chưa kể để doanh nghiệp và người dân \" nói chuyện \" với nhau như",
+   "a": "chưa kể để doanh nghiệp và người dân \" nơi chuyện \" với nhau như",
+   "b": "chưa kể để doanh nghiệp và người dân \"cùng giải quyết\" chuyện với nhau như",
+   "c@0.5": "chưa kể để doanh nghiệp và người dân \" nơi chuyện \" với nhau như",
+   "t@0.5": "chưa kể để doanh nghiệp và người dân \" nơi chuyện \" với nhau như"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/250/12.jpg",
+   "gt": "vậy, quyền của cơ quan quản lý nhà nước sẽ mất đi. \" Tôi cũng có suy",
+   "a": "vậy, quyền của cơ quan quản lý nhà nước sẽ mất đi. \". Tôi cũng có ruy",
+   "b": "Vậy, quyền của cơ quan quản lý nhà nước sẽ mất đi. Tôi cũng có ru.",
+   "c@0.5": "vậy, quyền của cơ quan quản lý nhà nước sẽ mất đi. \". Tôi cũng có ruy",
+   "t@0.5": "vậy, quyền của cơ quan quản lý nhà nước sẽ mất đi. \". Tôi cũng có ruy"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/250/13.jpg",
+   "gt": "nghĩ như đồng chí \" Bỏ được qui định này đi thì tốt. Cùng một lúc chúng",
+   "a": "nghĩ như đồng chí \" Bỏ được qui định này đi thì tốt. Cùng một lúc chủng",
+   "b": "Nghĩ như đồng chí: \"Bỏ được quy định này đi thì tốt. Cùng một lúc chủng\"",
+   "c@0.5": "nghĩ như đồng chí \" Bỏ được qui định này đi thì tốt. Cùng một lúc chủng",
+   "t@0.5": "nghĩ như đồng chí \" Bỏ được qui định này đi thì tốt. Cùng một lúc chủng"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/250/14.jpg",
+   "gt": "ta thực hiện hai cơ chế (vừa Nhà nước thực hiện thu hồi đất như cách",
+   "a": "ta thực hiện hai cả chế (vừa Nhà nước thực hiện thu hồi đất như cách",
+   "b": "Ta thực hiện hai cả chế (vừa nhà nước thực hiện thu hồi đất như cách",
+   "c@0.5": "tha thực hiện hai cả chế (vừa Nhà nước thực hiện thu hồi đất như cách",
+   "t@0.5": "tha thực hiện hai cả chế (vừa Nhà nước thực hiện thu hồi đất như cách"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/250/15.jpg",
+   "gt": "làm lâu nay, vừa khuyến khích nhà đầu tư thỏa thuận với người sử dụng",
+   "a": "lâu nay, vừa khuyến khích nhà đầu tư thỏa thuận với người sử dụng",
+   "b": "lâu nay, vừa khuyến khích nhà đầu tư thỏa thuận với người sử dụng",
+   "c@0.5": "lâu nay, vừa khuyến khích nhà đầu tư thỏa thuận với người sử dụng",
+   "t@0.5": "lâu nay, vừa khuyến khích nhà đầu tư thỏa thuận với người sử dụng"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/250/16.jpg",
+   "gt": "đất) thì phức tạp - ông Trịnh Kiên Đĩnh, phó giám đốc Sở Tài",
+   "a": "đất) thì phức tạp - ông Trinh Kiên Đĩnh, phó giám đốc Sở Tào",
+   "b": "đất) thì phức tạp - ông Trinh Kiên Đĩnh, Phó Giám đốc Sở Tài",
+   "c@0.5": "đất) thì phức tạp - ông Trinh Kiên Đĩnh, phó giám đốc Sở Tào",
+   "t@0.5": "đất) thì phức tạp - ông Trinh Kiên Đĩnh, phó giám đốc Sở Tào"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/250/17.jpg",
+   "gt": "nguyên - môi trường và nhà đất Hà Nội, lên tiếng.",
+   "a": "Nguyên - môi trường và nhà đất Hà Nội, lên tiếng.",
+   "b": "Nguyên - Môi trường và Nhà đất Hà Nội, lên tiếng.",
+   "c@0.5": "Nguyên - môi trường và nhà đất Hà Nội, lên tiếng.",
+   "t@0.5": "Nguyên - môi trường và nhà đất Hà Nội, lên tiếng."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/250/18.jpg",
+   "gt": "Bảo vệ lập trường của cơ quan soạn thảo, Thứ trưởng Đặng Hùng Võ khẳng định",
+   "a": "Bảo vệ lập trường của cơ quan soạn thảo, Thứ trưởng Đặng Hùng Võ khẳng định",
+   "b": "Bảo vệ lập trường của cơ quan soạn thảo, Thứ trưởng Đặng Hùng Võ khẳng định",
+   "c@0.5": "Bảo vệ lập trường của cơ quan soạn thảo, Thứ trưởng Đặng Hùng Võ khẳng định",
+   "t@0.5": "Bảo vệ lập trường của cơ quan soạn thảo, Thứ trưởng Đặng Hùng Võ khẳng định"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/250/19.jpg",
+   "gt": "\" trường hợp nhà đầu tư có nhu cầu thỏa thuận với người đang sử dụng đất, chúng",
+   "a": "\"trường hợp nhà đầu tư có nhu cầu thỏa thuận với người đang sử dụng đất, chúng",
+   "b": "\"Trường hợp nhà đầu tư có nhu cầu thỏa thuận với người đang sử dụng đất, chúng\"",
+   "c@0.5": "\"trường hợp nhà đầu tư có nhu cầu thỏa thuận với người đang sử dụng đất, chúng",
+   "t@0.5": "\"trường hợp nhà đầu tư có nhu cầu thỏa thuận với người đang sử dụng đất, chúng"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/250/20.jpg",
+   "gt": "ta cần khuyến khích vì Nhà nước chẳng mất cái gì cả \". Ông Võ \" kêu gọi \" :",
+   "a": "ta cần khuyến khích vì Nhà nước chẳng mất cái gì cả \". Ông Võ \" kêu gọi \" :",
+   "b": "Ta cần khuyến khích vì Nhà nước chẳng mất cái gì cả\". Ông Võ kêu gọi :",
+   "c@0.5": "ta cần khuyến khích vì Nhà nước chẳng mất cái gì cả \". Ông Võ \" kêu gọi \" :",
+   "t@0.5": "ta cần khuyến khích vì Nhà nước chẳng mất cái gì cả \". Ông Võ \" kêu gọi \" :"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/250/21.jpg",
+   "gt": "chúng ta cần thay đổi trong quan điểm, không nên để hệ thống hành chính",
+   "a": "chúng ta cần thay đổi trong quan điểm, không nên để hệ thống hành chính",
+   "b": "Chúng ta cần thay đổi trong quan điểm, không nên để hệ thống hành chính.",
+   "c@0.5": "chúng ta cần thay đổi trong quan điểm, không nên để hệ thống hành chính",
+   "t@0.5": "chúng ta cần thay đổi trong quan điểm, không nên để hệ thống hành chính"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/250/22.jpg",
+   "gt": "ôm về mình nhiều quá, bởi ôm càng nhiều thì sai càng nhiều. Bộ trưởng Mai",
+   "a": "ôm về mình nhiều quá, bởi ôm càng nhiều thì sai càng nhiều. Bộ trưởng Mai",
+   "b": "Ôm về mình nhiều quá, bởi ôm càng nhiều thì sai càng nhiều. Bộ trưởng Mai.",
+   "c@0.5": "ôm về mình nhiều quá, bởi ôm càng nhiều thì sai càng nhiều. Bộ trưởng Mai",
+   "t@0.5": "ôm về mình nhiều quá, bởi ôm càng nhiều thì sai càng nhiều. Bộ trưởng Mai"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/250/23.jpg",
+   "gt": "Ái Trực tiếp lời : Các nước đều áp dụng cơ chế tự thỏa thuận khi thu hồi",
+   "a": "Ai Trực tiếp lời : Các nước đều áp dụng cơ chế tự thỏa thuận khi tha hồi",
+   "b": "Ai trực tiếp lời: Các nước đều áp dụng cơ chế tự thỏa thuận khi tái nhập.",
+   "c@0.5": "Ai Trực tiếp lời : Các nước đều áp dụng cơ chế tự thỏa thuận khi tha hồi",
+   "t@0.5": "Ai Trực tiếp lời : Các nước đều áp dụng cơ chế tự thỏa thuận khi tha hồi"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/250/24.jpg",
+   "gt": "đất.",
+   "a": "đất.",
+   "b": "đất.",
+   "c@0.5": "đất.",
+   "t@0.5": "đất."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/250/25.jpg",
+   "gt": "Ngay cả trường hợp ta không qui định, người dân và doanh nghiệp vẫn thực hiện",
+   "a": "Ngay cả trường hợp ta không qui định, người dân và doanh ngiệp vẫn thực hiện",
+   "b": "Ngay cả trường hợp ta không quy định, người dân và doanh nghiệp vẫn thực hiện",
+   "c@0.5": "Ngay cả trường hợp ta không qui định, người dân và doanh ngiệp vẫn thực hiện",
+   "t@0.5": "Ngay cả trường hợp ta không qui định, người dân và doanh ngiệp vẫn thực hiện"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/250/26.jpg",
+   "gt": "cơ chế này. \" Nếu cứ dùng quyền lực hành chính nhà nước với mô hình khuôn",
+   "a": "cơ chế này. \" Nếu cứ dùng quyền lực hành chính nhà nước với mô hình khuôn",
+   "b": "Cơ chế này. \" Nếu cứ dùng quyền lực hành chính nhà nước với mô hình khung",
+   "c@0.5": "cơ chế này. \" Nếu cứ dùng quyền lực hành chính nhà nước với mô hình khuôn",
+   "t@0.5": "cơ chế này. \" Nếu cứ dùng quyền lực hành chính nhà nước với mô hình khuôn"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/250/27.jpg",
+   "gt": "cứng, người dân sẽ kêu \" - ông Trực nói. Chuyện \" bố \" - \" con \". Phó giám đốc",
+   "a": "cứng, người dân sẽ kêu \" - ông Trực nói. Chuyện \" bố \" - \" con \". Phó Giám đốc",
+   "b": "Cứng, người dân sẽ kêu \"ông Trực\" nói. Chuyện \"bố\" - \"con\". Phó Giám đốc",
+   "c@0.5": "cứng, người dân sẽ kêu \" - ông Trực nói. Chuyện \" bố \" - \" con \". Phó Giám đốc",
+   "t@0.5": "cứng, người dân sẽ kêu \" - ông Trực nói. Chuyện \" bố \" - \" con \". Phó Giám đốc"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/250/28.jpg",
+   "gt": "Sở Tài nguyên - môi trường & nhà đất Hà Nội Trịnh Kiên Đĩnh đề nghị : thẩm",
+   "a": "Sở Tài nguyên - môi trường & nhà đất Hà Nội Trạnh Kiên Đĩnh đề nghị : thẩm",
+   "b": "Sở Tài nguyên và môi trường & nhà đất Hà Nội-Trạnh Kiên Đĩnh đề nghị : thẩm",
+   "c@0.5": "Sở Tài nguyên - môi trường & nhà đất Hà Nội Trạnh Kiên Đĩnh đề nghị : thẩm",
+   "t@0.5": "Sở Tài nguyên - môi trường & nhà đất Hà Nội Trạnh Kiên Đĩnh đề nghị : thẩm"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/250/29.jpg",
+   "gt": "quyền thu hồi đất, giao đất phải được thể hiện theo tinh thần \" ông bố bao trùm",
+   "a": "quyền thu hồi đất, giao đất phải được thể hiện theo tinh thần \" ông bố bao tùm",
+   "b": "Quyền thu hồi đất, giao đất phải được thể hiện theo tinh thần \"ông bố bao tử\".",
+   "c@0.5": "quyền thu hồi đất, giao đất phải được thể hiện theo tinh thần \" ông bố bao tùm",
+   "t@0.5": "quyền thu hồi đất, giao đất phải được thể hiện theo tinh thần \" ông bố bao tùm"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/250/30.jpg",
+   "gt": "ông con \". Theo đó, UBND cấp tỉnh, thành phố được quyền thu hồi, giao đất",
+   "a": "ông ca \". Theo đó, UBND cấp tỉnh, thành phố được quyền thu hồi, giao đất",
+   "b": "Ông cáo \". Theo đó, UBND cấp tỉnh, thành phố được quyền thu hồi, giao đất",
+   "c@0.5": "ông ca \". Theo đó, UBND cấp tỉnh, thành phố được quyền thu hồi, giao đất",
+   "t@0.5": "ông ca \". Theo đó, UBND cấp tỉnh, thành phố được quyền thu hồi, giao đất"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/250/31.jpg",
+   "gt": "thuộc thẩm quyền của UBND cấp quận, huyện (thay vì qui định như hiện nay,",
+   "a": "thuệc thẩm quyền của UBND cấp quận, huyện (thay vì qui định như hiện nay,",
+   "b": "Hãy thẩm quyền của UBND cấp quận, huyện (thay vì quy định như hiện nay,)",
+   "c@0.5": "thuệc thẩm quyền của UBND cấp quận, huyện (thay vì qui định như hiện nay,",
+   "t@0.5": "thuệc thẩm quyền của UBND cấp quận, huyện (thay vì qui định như hiện nay,"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/250/32.jpg",
+   "gt": "\" ông bố \" muốn làm điều này phải thông báo cho \" ông con \" thực hiện, vừa nhiêu",
+   "a": "\" ông bố \" muốn làm điều này phải thông bảo cho \" ông còn thực hiện, vừa nhiêu",
+   "b": "\"Ông bố\" muốn làm điều này phải thông báo cho \"ông\". Còn thực hiện, vừa ráo.",
+   "c@0.5": "\" ông bố \" muốn làm điều này phải thông bảo cho \" ông còn thực hiện, vừa nhiêu",
+   "t@0.5": "\" ông bố \" muốn làm điều này phải thông bảo cho \" ông còn thực hiện, vừa nhiêu"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/250/33.jpg",
+   "gt": "khê vừa không thể hiện hướng đi cải cách thủ tục hành chính).",
+   "a": "khô vừa không thể hiện hướng đi củi cách thủ tục hành chính).",
+   "b": "khô vừa không thể hiện hướng đi của củi trong thủ tục hành chính).",
+   "c@0.5": "khô vừa không thể hiện hướng đi củi cách thủ tục hành chính).",
+   "t@0.5": "khô vừa không thể hiện hướng đi củi cách thủ tục hành chính)."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/250/34.jpg",
+   "gt": "Lập tức Thứ trưởng Đặng Hùng Võ phản ứng : \" ông bố \" có quyền của \" ông bố \",",
+   "a": "Lập tức Thứ trưởng Đặng Hùng Võ phản ứng : \" ông bố \" có quyền của \" ông bố \",",
+   "b": "Lập tức Thứ trưởng Đặng Hùng Võ phản ứng: \"'ông bố' có quyền của 'ông bố'\",",
+   "c@0.5": "Lập tức Thứ trưởng Đặng Hùng Võ phản ứng : \" ông bố \" có quyền của \" ông bố \",",
+   "t@0.5": "Lập tức Thứ trưởng Đặng Hùng Võ phản ứng : \" ông bố \" có quyền của \" ông bố \","
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/250/35.jpg",
+   "gt": "\" ông con \" có quyền của \" ông con \". Luật không cho phép \" ông bố \" làm thay \" ông",
+   "a": "\" Ông con \" có quyền của \" ông con \". Luật không cho phép \" ông bố \" làm thay \" ông",
+   "b": "\"Ông con\" có quyền của \"ông con\". Luật không cho phép \"ông bố\" làm thay \"ông\"",
+   "c@0.5": "\" Ông con \" có quyền của \" ông con \". Luật không cho phép \" ông bố \" làm thay \" ông",
+   "t@0.5": "\" Ông con \" có quyền của \" ông con \". Luật không cho phép \" ông bố \" làm thay \" ông"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/250/36.jpg",
+   "gt": "con \". Trường hợp nào làm thay là phạm luật, chỉ có điều hiện nay các \" ông",
+   "a": "con \". Trường hợp nào làm thay là phạm luật, chỉ có điều hiện nay các \" ông",
+   "b": "Con \". Trường hợp nào làm thay lái là phạm luật, chỉ có điều hiện nay các \" ông",
+   "c@0.5": "con \". Trường hợp nào làm thay là phạm luật, chỉ có điều hiện nay các \" ông",
+   "t@0.5": "con \". Trường hợp nào làm thay là phạm luật, chỉ có điều hiện nay các \" ông"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/250/37.jpg",
+   "gt": "con \" không dám kêu mà thôi!",
+   "a": "con \" không dám kêu mà thôi!",
+   "b": "con \"không dám kêu mà thôi!",
+   "c@0.5": "con \" không dám kêu mà thôi!",
+   "t@0.5": "con \" không dám kêu mà thôi!"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/251/1.jpg",
+   "gt": "Chương trình hành động thực hiện Nghị quyết trung ương 9 - khóa",
+   "a": "Chương trình hành động thực hiện Nghị quyết trung ương 9 - khóa",
+   "b": "Chương trình hành động thực hiện Nghị quyết Trung ương 9 - Khóa",
+   "c@0.5": "Chương trình hành động thực hiện Nghị quyết trung ương 9 - khóa",
+   "t@0.5": "Chương trình hành động thực hiện Nghị quyết trung ương 9 - khóa"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/251/2.jpg",
+   "gt": "IX của Đảng bộ TP.HCM Về xây dựng Đảng : tiếp tục chỉ đạo mạnh",
+   "a": "IX của Đảng Bộ TP.HCM Về xây dựng Đảng : tiếp tục chỉ đạo mạnh",
+   "b": "IX của Đảng bộ TP.HCM về xây dựng Đảng: tiếp tục chỉ đạo mạnh",
+   "c@0.5": "IX của Đảng Bộ TP.HCM Về xây dựng Đảng : tiếp tục chỉ đạo mạnh",
+   "t@0.5": "IX của Đảng Bộ TP.HCM Về xây dựng Đảng : tiếp tục chỉ đạo mạnh"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/251/3.jpg",
+   "gt": "mẽ, có hiệu quả cuộc vận động xây dựng chỉnh đốn Đảng theo tinh",
+   "a": "mẽ, có hiệu quả cuộc vận động xây dựng chính đốn Đảng theo tinh",
+   "b": "mẹ, có hiệu quả cuộc vận động xây dựng chính trị Đảng theo tinh thần",
+   "c@0.5": "mẽ, có hiệu quả cuộc vận động xây dựng chính đốn Đảng theo tinh",
+   "t@0.5": "mẽ, có hiệu quả cuộc vận động xây dựng chính đốn Đảng theo tinh"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/251/4.jpg",
+   "gt": "thần nghị quyết trung ương 6 (lần 2). Theo đó, tiếp tục thực hiện việc",
+   "a": "thần nghị quyết trung ương 6 (lần 2). Theo đó, tiếp tục thực hiện việc",
+   "b": "Thành nghị quyết Trung ương 6 (lần 2). Theo đó, tiếp tục thực hiện việc",
+   "c@0.5": "thần nghị quyết trung ương 6 (lần 2). Theo đó, tiếp tục thực hiện việc",
+   "t@0.5": "thần nghị quyết trung ương 6 (lần 2). Theo đó, tiếp tục thực hiện việc"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/251/5.jpg",
+   "gt": "kê khai nhà đất và cơ sở sản xuất kinh doanh của cán bộ - công chức;",
+   "a": "kẻ khai nhà đất và cơ sở xản xuất kinh doanh của cán bộ - công chức",
+   "b": "Kẻ khai nhà đất và cơ sở sản xuất kinh doanh của cán bộ - công chức",
+   "c@0.5": "ke khai nhà đất và cơ sở xản xuất kinh doanh của cán bộ - công chức",
+   "t@0.5": "kẻ khai nhà đất và cơ sở xản xuất kinh doanh của cán bộ - công chức"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/251/6.jpg",
+   "gt": "tăng cường thanh kiểm tra những nơi có dấu hiệu vi phạm, đặc biệt",
+   "a": "tăng cường thanh kiểm tra những nơi có dấu hiệu vi phạm, đặc biận",
+   "b": "Tăng cường thanh kiểm tra những nơi có dấu hiệu vi phạm, đặc biệt",
+   "c@0.5": "tăng cường thanh kiểm tra những nơi có dấu hiệu vi phạm, đặc biên",
+   "t@0.5": "tăng cường thanh kiểm tra những nơi có dấu hiệu vi phạm, đặc biên"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/251/7.jpg",
+   "gt": "trong lĩnh vực đất đai và các công trình trọng điểm.",
+   "a": "trong lĩnh vực đất đai và các công trình trọng điểm.",
+   "b": "Trong lĩnh vực đất đai và các công trình trọng điểm.",
+   "c@0.5": "trong lĩnh vực đất đai và các công trình trọng điểm.",
+   "t@0.5": "trong lĩnh vực đất đai và các công trình trọng điểm."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/251/8.jpg",
+   "gt": "Xử lý nghiêm minh theo pháp luật và kỷ luật của Đảng những người",
+   "a": "Xử lý nghiêm minh theo pháp luật và kỷ luật của Đảng những người",
+   "b": "Xử lý nghiêm minh theo pháp luật và kỷ luật của Đảng những người",
+   "c@0.5": "Xử lý nghiêm minh theo pháp luật và kỷ luật của Đảng những người",
+   "t@0.5": "Xử lý nghiêm minh theo pháp luật và kỷ luật của Đảng những người"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/251/9.jpg",
+   "gt": "có hành vi sai trái và những người bao che. Thực hiện tốt các quy định",
+   "a": "có hành vi sai trác và những người bao che. Thực hiện tốt các qui định",
+   "b": "Có hành vi sai trật và những người bao che. Thực hiện tốt các quy định",
+   "c@0.5": "có hành vi sai trác và những người bao che. Thực hiện tốt các qui định",
+   "t@0.5": "có hành vi sai trác và những người bao che. Thực hiện tốt các qui định"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/251/10.jpg",
+   "gt": "đối với cán bộ lãnh đạo, quản lý để xảy ra tham nhũng, tiêu cực ở cơ",
+   "a": "tối với ván bộ lãnh đạo, quản lý để xảy ra tham nhũng, tiêu cực ở có",
+   "b": "Tối với vấn đề lãnh đạo, quản lý để xảy ra tham nhũng, tiêu cực ở các địa phương.",
+   "c@0.5": "tối với ván bộ lãnh đạo, quản lý để xảy ra tham nhũng, tiêu cực ở có",
+   "t@0.5": "tối với ván bộ lãnh đạo, quản lý để xảy ra tham nhũng, tiêu cực ở có"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/251/11.jpg",
+   "gt": "quan, đơn vị. Kiện toàn và tăng cường sức chiến đấu của tổ chức",
+   "a": "quan, đơn vị. Hiện toàn và tăng cường sức chiến đấu của tổ chức",
+   "b": "quan điểm, đơn vị. Hiện toàn và tăng cường sức chiến đấu của tổ chức",
+   "c@0.5": "quan, đơn vị. Hiện toàn và tăng cường sức chiến đấu của tổ chức",
+   "t@0.5": "quan, đơn vị. Hiện toàn và tăng cường sức chiến đấu của tổ chức"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/251/12.jpg",
+   "gt": "cơ sở Đảng. Tiếp tục đổi mới và nâng cao công tác cán bộ. Tiếp tục",
+   "a": "cơ sở Đảng. Tiếp tục đổi mới và nâng cao công tác cán bộ. Tiếp tục",
+   "b": "Cơ sở Đảng. Tiếp tục đổi mới và nâng cao công tác cán bộ. Tiếp tục",
+   "c@0.5": "cơ sở Đảng. Tiếp tục đổi mới và nâng cao công tác cán bộ. Tiếp tục",
+   "t@0.5": "cơ sở Đảng. Tiếp tục đổi mới và nâng cao công tác cán bộ. Tiếp tục"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/251/13.jpg",
+   "gt": "đổi mới phương thức lãnh đạo của cấp ủy Đảng theo phương châm",
+   "a": "đổi mới phương thức lãnh đạo của cấp ủy Đảng theo nhương châm",
+   "b": "Hãy đổi mới phương thức lãnh đạo của cấp ủy Đảng theo nguyên tắc",
+   "c@0.5": "đổi mới phương thức lãnh đạo của cấp ủy Đảng theo nhương châm",
+   "t@0.5": "đổi mới phương thức lãnh đạo của cấp ủy Đảng theo nhương châm"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/251/14.jpg",
+   "gt": "hướng mạnh về cơ sở.",
+   "a": "hướng mạnh về cơ sở.",
+   "b": "hướng mạnh về cơ sở.",
+   "c@0.5": "hướng mạnh về cơ sở.",
+   "t@0.5": "hướng mạnh về cơ sở."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/251/15.jpg",
+   "gt": "Về cải cách hành chính : Tập trung chấn chỉnh mạnh hơn nữa kỷ cương,",
+   "a": "Về cải cách hành chính : Tập trung chấn chinh mạnh hơn nữa kỷ cương,",
+   "b": "Về cải cách hành chính: Tập trung chỉnh đốn mạnh mẽ hơn nữa紀律,",
+   "c@0.5": "Về cải cách hành chính : Tập trung chấn chinh mạnh hơn nữa kỷ cương,",
+   "t@0.5": "Về cải cách hành chính : Tập trung chấn chinh mạnh hơn nữa kỷ cương,"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/251/16.jpg",
+   "gt": "kỷ luật trong bộ máy hành chính, nâng cao tinh thần trách nhiệm và",
+   "a": "k luật trong bộ máy hành chính, nâng cao tinh thần trách nhiệm và",
+   "b": "kiên luật trong bộ máy hành chính, nâng cao tinh thần trách nhiệm và",
+   "c@0.5": "k luật trong bộ máy hành chính, nâng cao tinh thần trách nhiệm và",
+   "t@0.5": "k luật trong bộ máy hành chính, nâng cao tinh thần trách nhiệm và"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/251/17.jpg",
+   "gt": "ý thức kỷ luật của CB - CC, nhất là trên lĩnh vực nhà đất, đầu tư,",
+   "a": "ý thức kỷ luật của C0 - CC, nhất là trên lĩnh vực nhà đất, đầu ti",
+   "b": "ý thức kỷ luật của C0 - CC, nhất là trên lĩnh vực nhà đất, đầu tư",
+   "c@0.5": "ý thức kỷ luật của C0 - CC, nhất là trên lĩnh vực nhà đất, đầu ti",
+   "t@0.5": "ý thức kỷ luật của C0 - CC, nhất là trên lĩnh vực nhà đất, đầu ti"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/251/18.jpg",
+   "gt": "kinh doanh, trật tự xây dựng và giải quyết khiếu nại, tố cáo.",
+   "a": "kinh doanh, trật tự xây dựng và giải quyết khiếu nại, tế cáo.",
+   "b": "kinh doanh, trật tự xây dựng và giải quyết khiếu nại, tố cáo.",
+   "c@0.5": "kinh doanh, trật tự xây dựng và giải quyết khiếu nại, tế cáo.",
+   "t@0.5": "kinh doanh, trật tự xây dựng và giải quyết khiếu nại, tế cáo."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/251/19.jpg",
+   "gt": "Xây dựng hoàn thiện hệ thống các qui trình thủ tục hành chính.",
+   "a": "Xây dựng hoàn thiện hệ thống các quy trình thủ tục hành chính.",
+   "b": "Xây dựng hoàn thiện hệ thống các quy trình và thủ tục hành chính.",
+   "c@0.5": "Xây dựng hoàn thiện hệ thống các quy trình thủ tục hành chính.",
+   "t@0.5": "Xây dựng hoàn thiện hệ thống các quy trình thủ tục hành chính."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/251/20.jpg",
+   "gt": "Kiên quyết chấn chỉnh bộ máy hành chính các cấp, nhanh chóng",
+   "a": "Kiên quyết chấn chính bộ máy hành chính các cấp, nhanh chóng",
+   "b": "Kiên quyết chỉnh đốn bộ máy hành chính các cấp, nhanh chóng",
+   "c@0.5": "Kiên quyết chấn chính bộ máy hành chính các cấp, nhanh chóng",
+   "t@0.5": "Kiên quyết chấn chính bộ máy hành chính các cấp, nhanh chóng"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/251/21.jpg",
+   "gt": "khắc phục tình trạng quan liêu, cửa quyền, hách dịch.",
+   "a": "khắc phục tình trạng quan lêu, cửa quyền, hách dịch.",
+   "b": "Hãy khắc phục tình trạng quan liêu, cửa quyền, hách dịch.",
+   "c@0.5": "khắc phục tình trạng quan lêu, cửa quyền, hách dịch.",
+   "t@0.5": "khắc phục tình trạng quan lêu, cửa quyền, hách dịch."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/251/22.jpg",
+   "gt": "Xây dựng và phát triển đội ngũ CB - CC có chất lượng chuyên môn",
+   "a": "Xây dựng và phát triển đội ngũ CB - CC có chất lượng chuyên môn",
+   "b": "Xây dựng và phát triển đội ngũ CBCNV có chất lượng chuyên môn",
+   "c@0.5": "Xây dựng và phát triển đội ngũ CB - CC có chất lượng chuyên môn",
+   "t@0.5": "Xây dựng và phát triển đội ngũ CB - CC có chất lượng chuyên môn"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/251/23.jpg",
+   "gt": "cao, có phẩm chất, đạo đức. Kiểm tra, xử lý kiên quyết các vụ",
+   "a": "cao, có phẩm chất, đạo đức. Kiểm tra, xử lý hiện quyết các vụ",
+   "b": "Cao có phẩm chất, đạo đức. Kiểm tra, xử lý nghiêm các vụ",
+   "c@0.5": "cao, có phẩm chất, đạo đức. Kiểm tra, xử lý hiện quyết các vụ",
+   "t@0.5": "cao, có phẩm chất, đạo đức. Kiểm tra, xử lý hiện quyết các vụ"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/251/24.jpg",
+   "gt": "tham nhũng, lãng phí, làm thất thoát tài sản nhà nước... Về kinh",
+   "a": "tham những, lãng phí, làm thất thoát tài sản nhà nước... Về hinh",
+   "b": "Tham nhũng, lãng phí, làm thất thoát tài sản nhà nước... Về hình",
+   "c@0.5": "tham những, lãng phí, làm thất thoát tài sản nhà nước... Về hinh",
+   "t@0.5": "tham những, lãng phí, làm thất thoát tài sản nhà nước... Về hinh"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/251/25.jpg",
+   "gt": "tế : Tập trung mọi nỗ lực nhằm tháo gỡ sản xuất kinh doanh,",
+   "a": "tế : Táp trung mọi nỗ lực nhằm tháo gỡ sản xuất kinh doanh,",
+   "b": "Tế : Tập trung mọi nỗ lực nhằm tháo gỡ khó khăn trong sản xuất kinh doanh,",
+   "c@0.5": "tế : Tập trung mọi nỗ lực nhằm tháo gỡ sản xuất kinh doanh,",
+   "t@0.5": "tế : Tập trung mọi nỗ lực nhằm tháo gỡ sản xuất kinh doanh,"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/251/26.jpg",
+   "gt": "đưa tốc độ tăng trưởng GDP trên địa bàn TP đạt 12% năm",
+   "a": "đưa tốc độ tăng trưởng 20P trên địa bàn TP đạt 12% năm",
+   "b": "Đưa tốc độ tăng trưởng 20%/năm trên địa bàn TP đạt 12%.",
+   "c@0.5": "đưa tốc độ tăng trưởng 20 trên địa bàn TP đạt 12% năm",
+   "t@0.5": "đưa tốc độ tăng trưởng 20 trên địa bàn TP đạt 12% năm"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/251/27.jpg",
+   "gt": "2004 và trên 12% năm 2005. Phát triển nhanh các ngành dịch vụ,",
+   "a": "2004 và trên 12% năm 2005. Phát triển nhanh các ngành dịch vạn",
+   "b": "2004 và trên 12% năm 2005. Phát triển nhanh các ngành dịch vụ",
+   "c@0.5": "2004 và trên 12% năm 2005. Phát triển nhanh các ngành dịch vạn",
+   "t@0.5": "2004 và trên 12% năm 2005. Phát triển nhanh các ngành dịch vạn"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/251/28.jpg",
+   "gt": "tái cấu trúc các ngành công nghiệp.",
+   "a": "tái cấu trúc các ngành công nghiệp.",
+   "b": "tái cấu trúc các ngành công nghiệp.",
+   "c@0.5": "tái cấu trúc các ngành công nghiệp.",
+   "t@0.5": "tái cấu trúc các ngành công nghiệp."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/251/29.jpg",
+   "gt": "Tiếp tục nhân rộng các mô hình huy động vốn đầu tư. Tập trung khai",
+   "a": "Tiếp tục nhân rộng các mô hình huy động vốn đầu tôi. Tạp trung khai",
+   "b": "Tiếp tục nhân rộng các mô hình huy động vốn đầu tư. Tập trung khai",
+   "c@0.5": "Tiếp tục nhân rộng các mô hình huy động vốn đầu tài. Tạp trung khai",
+   "t@0.5": "Tiếp tục nhân rộng các mô hình huy động vốn đầu tài. Tạp trung khai"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/251/30.jpg",
+   "gt": "thác các nguồn vốn cho ngân sách. Tổng kết quá trình cổ phần hóa",
+   "a": "tháo các nguồn vốn cho ngân sách. Tổng kết quả trình cổ phần ha",
+   "b": "Tháo các nguồn vốn cho ngân sách. Tổng kết quả trình cổ phần ra.",
+   "c@0.5": "tháo các nguồn vốn cho ngân sách. Tổng kết quả trình cổ phần ha",
+   "t@0.5": "tháo các nguồn vốn cho ngân sách. Tổng kết quả trình cổ phần ha"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/251/31.jpg",
+   "gt": "doanh nghiệp nhà nước và việc tổ chức sắp xếp lại doanh nghiệp nhà",
+   "a": "doanh nghiệp nhà nước và việc tổ chức sắp xếp lại doanh nghiệp nhà",
+   "b": "doanh nghiệp nhà nước và việc tổ chức sắp xếp lại doanh nghiệp nhà nước",
+   "c@0.5": "doanh nghiệp nhà nước và việc tổ chức sắp xếp lại doanh nghiệp nhà",
+   "t@0.5": "doanh nghiệp nhà nước và việc tổ chức sắp xếp lại doanh nghiệp nhà"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/251/32.jpg",
+   "gt": "nước. Triển khai quyết định của TP về một số chính sách ưu đãi",
+   "a": "nước. Triển khai quyết định của TP về một số chính sách ưu đặc",
+   "b": "Nước. Triển khai quyết định của TP về một số chính sách ưu đãi.",
+   "c@0.5": "nước. Triển khai quyết định của TP về một số chính sách ưu đặc",
+   "t@0.5": "nước. Triển khai quyết định của TP về một số chính sách ưu đặc"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/251/33.jpg",
+   "gt": "đối với các dự án có vốn đầu tư nước ngoài. Rà soát lại chương",
+   "a": "tối với các dự án có vốn đầu tưi nước ngoài. Mà sát lại chương",
+   "b": "tối với các dự án có vốn đầu tư nước ngoài. Mà sát lại chương trình.",
+   "c@0.5": "tối với các dự án có vốn đầu tưi nước ngoài. Mà sát lại chương",
+   "t@0.5": "tối với các dự án có vốn đầu tưi nước ngoài. Mà sát lại chương"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/251/34.jpg",
+   "gt": "trình hội nhập kinh tế của TP. Về văn hóa - xã hội : đẩy mạnh",
+   "a": "trình hội nhập kinh tế của TP. Về văn hóa - xã hội : đẩy mạnh",
+   "b": "Trình độ hội nhập kinh tế của TP. Về văn hóa - xã hội : đẩy mạnh",
+   "c@0.5": "trình hội nhập kinh tế của TP. Về văn hóa - xã hội : đẩy mạnh",
+   "t@0.5": "trình hội nhập kinh tế của TP. Về văn hóa - xã hội : đẩy mạnh"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/251/35.jpg",
+   "gt": "xã hội hóa, phát triển xã hội học tập, ưu tiên đầu tư ngân",
+   "a": "xã hội hóa, phát triển xã hội học tập, ưu trên đầu tí ngân",
+   "b": "xã hội hóa, phát triển xã hội học tập, ưu tiên đầu tư ngân sách",
+   "c@0.5": "xã hội hóa, phát triển xã hội học tập, ưu trên đầu ti ngân",
+   "t@0.5": "xã hội hóa, phát triển xã hội học tập, ưu trên đầu ti ngân"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/251/36.jpg",
+   "gt": "sách cho giáo dục - đào tạo.",
+   "a": "sách cho giáo dục - đào tạo.",
+   "b": "sách cho giáo dục - đào tạo.",
+   "c@0.5": "sách cho giáo dục - đào tạo.",
+   "t@0.5": "sách cho giáo dục - đào tạo."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/251/37.jpg",
+   "gt": "Nâng cao năng lực quản lý nhà nước trên các lĩnh vực kinh doanh",
+   "a": "Nâng cao năng lực quản lý nhà nước trên các lĩnh vực kinh doanh",
+   "b": "Nâng cao năng lực quản lý nhà nước trên các lĩnh vực kinh tế",
+   "c@0.5": "Nâng cao năng lực quản lý nhà nước trên các lĩnh vực kinh doanh",
+   "t@0.5": "Nâng cao năng lực quản lý nhà nước trên các lĩnh vực kinh doanh"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/251/38.jpg",
+   "gt": "dịch vụ văn hóa; khắc phục những sơ hở, tiêu cực trong quản lý",
+   "a": "dịch vụ văn hóa; khắc phục những sơ hổ, tiêu cực trong quản lý",
+   "b": "dịch vụ văn hóa; khắc phục những sơ suất, tiêu cực trong quản lý",
+   "c@0.5": "dịch vụ văn hóa; khắc phục những sơ hổ, tiêu cực trong quản lý",
+   "t@0.5": "dịch vụ văn hóa; khắc phục những sơ hổ, tiêu cực trong quản lý"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/251/39.jpg",
+   "gt": "và hoạt động văn hóa. Tiếp tục tập trung nguồn lực cho chương",
+   "a": "và hoạt động văn hóa. Tiếp tục tập trung nguồn lực cho chương",
+   "b": "và hoạt động văn hóa. Tiếp tục tập trung nguồn lực cho chương trình.",
+   "c@0.5": "và hoạt động văn hóa. Tiếp tục tập trung nguồn lực cho chương",
+   "t@0.5": "và hoạt động văn hóa. Tiếp tục tập trung nguồn lực cho chương"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/251/40.jpg",
+   "gt": "trình 3 giảm...",
+   "a": "trình 9 giảm...",
+   "b": "trình 9 giảm...",
+   "c@0.5": "trình 9 giảm...",
+   "t@0.5": "trình 9 giảm..."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/252/1.jpg",
+   "gt": "Chương trình hành động thực hiện Nghị quyết trung ương 9 - khóa IX của Đảng bộ",
+   "a": "Chương trình hành động thực hiện Nghị quyết trung ương 9 - khóa IX của Đảng sộ",
+   "b": "Chương trình hành động thực hiện Nghị quyết Trung ương 9 - Khóa IX của Đảng",
+   "c@0.5": "Chương trình hành động thực hiện Nghị quyết trung ương 9 - khóa IX của Đảng sộ",
+   "t@0.5": "Chương trình hành động thực hiện Nghị quyết trung ương 9 - khóa IX của Đảng sộ"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/252/2.jpg",
+   "gt": "TP.HCM Về xây dựng Đảng : tiếp tục chỉ đạo mạnh mẽ, có hiệu quả cuộc vận động xây",
+   "a": "TP.HCM Về xây dựng Đảng : tiếp tục chỉ đạo mạnh mẽ, có hiệu quả cuộc vận đọng rây",
+   "b": "TP.HCM Về xây dựng Đảng : tiếp tục chỉ đạo mạnh mẽ, có hiệu quả cuộc vận động rèn luyện",
+   "c@0.5": "TP.HCM Về xây dựng Đảng : tiếp tục chỉ đạo mạnh mẽ, có hiệu quả cuộc vận đọng rây",
+   "t@0.5": "TP.HCM Về xây dựng Đảng : tiếp tục chỉ đạo mạnh mẽ, có hiệu quả cuộc vận đọng rây"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/252/3.jpg",
+   "gt": "dựng chỉnh đốn Đảng theo tinh thần nghị quyết trung ương 6 (lần 2). Theo đó, tiếp tục",
+   "a": "dựng chỉnh đón Đảng theo tinh thần nghị quyết trung ương 6 (iần 2). Theo đó, táp tụo",
+   "b": "dựng chỉnh đón Đảng theo tinh thần nghị quyết Trung ương 6 (ii). Theo đó, tập hợp",
+   "c@0.5": "dựng chỉnh đón đồng theo tinh thần nghị quyết trung ương 6 (iần 2). Theo đó, táp tụo",
+   "t@0.5": "dựng chỉnh đón đồng theo tinh thần nghị quyết trung ương 6 (iần 2). Theo đó, táp tụo"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/252/4.jpg",
+   "gt": "thực hiện việc kê khai nhà đất và cơ sở sản xuất kinh doanh của cán bộ - công",
+   "a": "cặc hiện việc vê khai nhà đất và cơ sở sản xuất kinh danh của cán lộ - công",
+   "b": "Cấp hiện việc kê khai nhà đất và cơ sở sản xuất kinh doanh của cá nhân - công ty",
+   "c@0.5": "cặc hiện việc vê khai nhà đất và cơ sở sản xuất kinh danh của cán lộ - công",
+   "t@0.5": "cặc hiện việc vê khai nhà đất và cơ sở sản xuất kinh danh của cán lộ - công"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/252/5.jpg",
+   "gt": "chức; tăng cường thanh kiểm tra những nơi có dấu hiệu vi phạm, đặc biệt",
+   "a": "chắc; tăng cường thanh kiểm tra những nơi có dấu hiệu vi phạm, đặc biệt",
+   "b": "Chắc chắn; tăng cường thanh kiểm tra những nơi có dấu hiệu vi phạm, đặc biệt",
+   "c@0.5": "chắc; tăng cường thanh kiểm tra những nơi có dấu hiệu vi phạm, đặc biệt",
+   "t@0.5": "chắc; tăng cường thanh kiểm tra những nơi có dấu hiệu vi phạm, đặc biệt"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/252/6.jpg",
+   "gt": "trong lĩnh vực đất đai và các công trình trọng điểm.",
+   "a": "trong lĩnh vực đất đai và các công trình trọng điểm.",
+   "b": "Trong lĩnh vực đất đai và các công trình trọng điểm.",
+   "c@0.5": "trong lĩnh vực đất đai và các công trình trọng điểm.",
+   "t@0.5": "trong lĩnh vực đất đai và các công trình trọng điểm."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/252/7.jpg",
+   "gt": "Xử lý nghiêm minh theo pháp luật và kỷ luật của Đảng những người có hành",
+   "a": "Xử lý nghiêm minh theo pháp luật và kỷ luật của Đảng những người có hành",
+   "b": "Xử lý nghiêm minh theo pháp luật và kỷ luật của Đảng những người có hành vi vi phạm.",
+   "c@0.5": "Xử lý nghiêm minh theo pháp luật và kỷ luật của Đảng những người có hành",
+   "t@0.5": "Xử lý nghiêm minh theo pháp luật và kỷ luật của Đảng những người có hành"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/252/8.jpg",
+   "gt": "vi sai trái và những người bao che. Thực hiện tốt các quy định đối với cán bộ lãnh",
+   "a": "vị sai trái và những người bao che. Thực hiện tốt các quy định đối với cán bộ lãnh",
+   "b": "Vị trí sai trái và những người bao che. Thực hiện tốt các quy định đối với cán bộ lãnh đạo.",
+   "c@0.5": "vị sai trái và những người bao che. Thực hiện tốt các qui định đối với cán bộ lãnh",
+   "t@0.5": "vị sai trái và những người bao che. Thực hiện tốt các qui định đối với cán bộ lãnh"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/252/9.jpg",
+   "gt": "đạo, quản lý để xảy ra tham nhũng, tiêu cực ở cơ quan, đơn vị. Kiện toàn và",
+   "a": "đạo, quản lý để xảy ra tham những, tiêu cực ở cơ quan, đơn vị. Kiện toàn và",
+   "b": "Đạo đức, quản lý để xảy ra tham nhũng, tiêu cực ở cơ quan, đơn vị. Kiên toàn và",
+   "c@0.5": "đạo, quản lý để xảy ra tham những, tiêu cực ở cơ quan, đơn vị. Kiện toàn và",
+   "t@0.5": "đạo, quản lý để xảy ra tham những, tiêu cực ở cơ quan, đơn vị. Kiện toàn và"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/252/10.jpg",
+   "gt": "tăng cường sức chiến đấu của tổ chức cơ sở Đảng. Tiếp tục đổi mới và nâng",
+   "a": "tăng cường sức chiến đấu của tổ chức cơ sở Đảng. Tiếp tục đổi mái và nâng",
+   "b": "Tăng cường sức chiến đấu của tổ chức cơ sở Đảng. Tiếp tục đổi mới và nâng",
+   "c@0.5": "tăng cường sức chiến đấu của tổ chức cơ sở Đảng. Tiếp tục đổi mái và nâng",
+   "t@0.5": "tăng cường sức chiến đấu của tổ chức cơ sở Đảng. Tiếp tục đổi mái và nâng"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/252/11.jpg",
+   "gt": "cao công tác cán bộ. Tiếp tục đổi mới phương thức lãnh đạo của cấp ủy",
+   "a": "cao công tác cán bộ. Tiếp tục đổi mới phương thức lãnh đạo của cấp ủy",
+   "b": "cao công tác cán bộ. Tiếp tục đổi mới phương thức lãnh đạo của cấp ủy.",
+   "c@0.5": "cao công tác cán bộ. Tiếp tục đổi mới phương thức lãnh đạo của cấp ủy",
+   "t@0.5": "cao công tác cán bộ. Tiếp tục đổi mới phương thức lãnh đạo của cấp ủy"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/252/12.jpg",
+   "gt": "Đảng theo phương châm hướng mạnh về cơ sở.",
+   "a": "Đảng theo phương châm hướng mạnh về cơ sở.",
+   "b": "Đảng theo phương châm hướng mạnh về cơ sở.",
+   "c@0.5": "Đảng theo phương châm hướng mạnh về cơ sở.",
+   "t@0.5": "Đảng theo phương châm hướng mạnh về cơ sở."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/252/13.jpg",
+   "gt": "Về cải cách hành chính : Tập trung chấn chỉnh mạnh hơn nữa kỷ cương, kỷ luật trong",
+   "a": "Về cải cách hành chính : Tập trung chấn chỉnh mạnh hơn nữa kỷ cương, kỷ luật trong",
+   "b": "Về cải cách hành chính: Tập trung chấn chỉnh mạnh mẽ hơn nữa kỷ cương, kỷ luật trong",
+   "c@0.5": "Về cải cách hành chính : Tập trung chấn chỉnh mạnh hơn nữa kỷ cương, kỷ luật trong",
+   "t@0.5": "Về cải cách hành chính : Tập trung chấn chỉnh mạnh hơn nữa kỷ cương, kỷ luật trong"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/252/14.jpg",
+   "gt": "bộ máy hành chính, nâng cao tinh thần trách nhiệm và ý thức kỷ luật của CB - CC,",
+   "a": "bộ máy hành chính, nâng cao tinh thần trách nhậm và ý thức kỷ luật của Cơá",
+   "b": "bộ máy hành chính, nâng cao tinh thần trách nhiệm và ý thức kỷ luật của cơ quan",
+   "c@0.5": "bộ máy hành chính, nâng cao tinh thần trách nhậm và ý thức kỷ luật của Cơá",
+   "t@0.5": "bộ máy hành chính, nâng cao tinh thần trách nhậm và ý thức kỷ luật của Cơá"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/252/15.jpg",
+   "gt": "nhất là trên lĩnh vực nhà đất, đầu tư, kinh doanh, trật tự xây dựng và",
+   "a": "nhất là trên lĩnh vực nhà đất, đầu tư, kinh soanh, trật tự xây dựng và",
+   "b": "Hãy sửa lỗi nhận dạng. Giữ nguyên nội dung, thứ tự từ, số và dấu câu; không thêm, không bớt, không diễn đạt lại.",
+   "c@0.5": "nhất là trên lĩnh vực nhà đất, đầu tư, kinh soanh, trật tự xây dựng và",
+   "t@0.5": "nhất là trên lĩnh vực nhà đất, đầu tư, kinh soanh, trật tự xây dựng và"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/252/16.jpg",
+   "gt": "giải quyết khiếu nại, tố cáo. Xây dựng hoàn thiện hệ thống các qui trình",
+   "a": "giải quyết khiếu nại, tố cáo. Xây dựng hoàn thiện hệ thống các quy tình",
+   "b": "Giải quyết khiếu nại, tố cáo. Xây dựng hoàn thiện hệ thống các quy định",
+   "c@0.5": "giải quyết khiếu nại, tố cáo. Xây dựng hoàn thiện hệ thống các quy tình",
+   "t@0.5": "giải quyết khiếu nại, tố cáo. Xây dựng hoàn thiện hệ thống các quy tình"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/252/17.jpg",
+   "gt": "thủ tục hành chính. Kiên quyết chấn chỉnh bộ máy hành chính các cấp,",
+   "a": "thủ tục hành chính. Kiên quyết thấn chỉnh bộ máy hành chính các cấp",
+   "b": "thủ tục hành chính. Kiên quyết cải chỉnh bộ máy hành chính các cấp",
+   "c@0.5": "thủ tục hành chính. Kiên quyết thấn chỉnh bộ máy hành chính các cấp",
+   "t@0.5": "thủ tục hành chính. Kiên quyết thấn chỉnh bộ máy hành chính các cấp"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/252/18.jpg",
+   "gt": "nhanh chóng khắc phục tình trạng quan liêu, cửa quyền, hách dịch.",
+   "a": "nhanh chóng khắc phục tình trạng quan liêu, cửa quyền, hách dịch.",
+   "b": "nhanh chóng khắc phục tình trạng quan liệt, cửa quyền, hách dịch.",
+   "c@0.5": "nhanh chóng khắc phục tình trạng quan liêu, cửa quyền, hách dịch.",
+   "t@0.5": "nhanh chóng khắc phục tình trạng quan liêu, cửa quyền, hách dịch."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/252/19.jpg",
+   "gt": "Xây dựng và phát triển đội ngũ CB - CC có chất lượng chuyên môn cao, có phẩm",
+   "a": "Xây dựng và phát triển đội ngũ (B - C có chất lượng chuyên môn cao, có phẩm",
+   "b": "Xây dựng và phát triển đội ngũ (B - C có chất lượng chuyên môn cao, có phẩm chất tốt)",
+   "c@0.5": "Xây dựng và phát triển đội ngũ (B - C có chất lượng chuyên môn cao, có phẩm",
+   "t@0.5": "Xây dựng và phát triển đội ngũ (B - C có chất lượng chuyên môn cao, có phẩm"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/252/20.jpg",
+   "gt": "chất, đạo đức. Kiểm tra, xử lý kiên quyết các vụ tham nhũng, lãng phí,",
+   "a": "chất, đạo đức. Kiểm tra, xử lý kiên quyết các vụ tham nhũng, lãng phí,",
+   "b": "chất lượng, đạo đức. Kiểm tra, xử lý kiên quyết các vụ tham nhũng, lãng phí,",
+   "c@0.5": "chất, đạo đức. Kiểm tra, xử lý kiên quyết các vụ tham nhũng, lãng phí,",
+   "t@0.5": "chất, đạo đức. Kiểm tra, xử lý kiên quyết các vụ tham nhũng, lãng phí,"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/252/21.jpg",
+   "gt": "làm thất thoát tài sản nhà nước... Về kinh tế : Tập trung mọi nỗ lực",
+   "a": "làm thất thoát tài sản nhà nước..... Về kinh tế : tập trung mọi nỗ lực",
+   "b": "Làm thất thoát tài sản nhà nước.... Về kinh tế: Tập trung mọi nỗ lực",
+   "c@0.5": "làm thất thoát tài sản nhà nước..... Về kinh tế : tập trung mọi nỗ lực",
+   "t@0.5": "làm thất thoát tài sản nhà nước..... Về kinh tế : tập trung mọi nỗ lực"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/252/22.jpg",
+   "gt": "nhằm tháo gỡ sản xuất kinh doanh, đưa tốc độ tăng trưởng GDP trên địa",
+   "a": "nhằm tháo gỡ sản xuất kinh doanh, đưa tốc độ tăng trường 60P trên địa",
+   "b": "Hãy tháo gỡ khó khăn cho sản xuất kinh doanh, đưa tốc độ tăng trưởng 60% trên địa",
+   "c@0.5": "nhằm tháo gỡ sản xuất kinh doanh, đưa tốc độ tăng trường 60 trên địa",
+   "t@0.5": "nhằm tháo gỡ sản xuất kinh doanh, đưa tốc độ tăng trường 60P trên địa"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/252/23.jpg",
+   "gt": "bàn TP đạt 12% năm 2004 và trên 12% năm 2005. Phát triển nhanh",
+   "a": "bàn TP đạt 12 % năm 2004 và trên 12% năm 20Đ5. Phát triển nhanh",
+   "b": "bàn TP đạt 12% năm 2004 và trên 12% năm 2005. Phát triển nhanh",
+   "c@0.5": "bàn TP đạt 12 % năm 2004 và trên 12% năm 20Đ5. Phát triển nhanh",
+   "t@0.5": "bàn TP đạt 12 % năm 2004 và trên 12% năm 20Đ5. Phát triển nhanh"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/252/24.jpg",
+   "gt": "các ngành dịch vụ, tái cấu trúc các ngành công nghiệp.",
+   "a": "các ngành dịch vụ, tái cấu trúc các ngành công nghiệp.",
+   "b": "các ngành dịch vụ, tái cấu trúc các ngành công nghiệp.",
+   "c@0.5": "các ngành dịch vụ, tái cấu trúc các ngành công nghiệp.",
+   "t@0.5": "các ngành dịch vụ, tái cấu trúc các ngành công nghiệp."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/252/25.jpg",
+   "gt": "Tiếp tục nhân rộng các mô hình huy động vốn đầu tư. Tập trung khai thác",
+   "a": "Tiếp tục nhân rộng các mô hình. huy động vốn đầu tư. Tập trung khai thác",
+   "b": "Tiếp tục nhân rộng các mô hình. Huy động vốn đầu tư. Tập trung khai thác",
+   "c@0.5": "Tiếp tục nhân rộng các mô hình. huy động vốn đầu tư. Tập trung khai thác",
+   "t@0.5": "Tiếp tục nhân rộng các mô hình. huy động vốn đầu tư. Tập trung khai thác"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/252/26.jpg",
+   "gt": "các nguồn vốn cho ngân sách. Tổng kết quá trình cổ phần hóa doanh",
+   "a": "các nguồn vốn cho ngân sách. Tổng kết quá trình cổ phần hóa doanh",
+   "b": "Các nguồn vốn cho ngân sách. Tổng kết quá trình cổ phần hóa doanh nghiệp.",
+   "c@0.5": "các nguồn vốn cho ngân sách. Tổng kết quá trình cổ phần hóa doanh",
+   "t@0.5": "các nguồn vốn cho ngân sách. Tổng kết quá trình cổ phần hóa doanh"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/252/27.jpg",
+   "gt": "nghiệp nhà nước và việc tổ chức sắp xếp lại doanh nghiệp nhà nước.",
+   "a": "nghiệp nhà nước và việc tổ chức, sắp xếp lại doanh nghiệp nhà nước.",
+   "b": "Nghiệp nhà nước và việc tổ chức, sắp xếp lại doanh nghiệp nhà nước.",
+   "c@0.5": "nghiệp nhà nước và việc tổ chức, sắp xếp lại doanh nghiệp nhà nước.",
+   "t@0.5": "nghiệp nhà nước và việc tổ chức, sắp xếp lại doanh nghiệp nhà nước."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/252/28.jpg",
+   "gt": "Triển khai quyết định của TP về một số chính sách ưu đãi đối với",
+   "a": "Triển khai quyết định của TP về một số chính sách ưu đãi đối với.",
+   "b": "Triển khai quyết định của TP về một số chính sách ưu đãi đối với.",
+   "c@0.5": "Triển khai quyết định của TP về một số chính sắc ưu đãi dối với.",
+   "t@0.5": "Triển khai quyết định của TP về một số chính sắc ưu đãi đối với."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/252/29.jpg",
+   "gt": "các dự án có vốn đầu tư nước ngoài. Rà soát lại chương",
+   "a": "các dự án có vốn đầu tư nước ngoài. Rà soát lại các chương",
+   "b": "Các dự án có vốn đầu tư nước ngoài. Rà soát lại các chương trình.",
+   "c@0.5": "các dự án có vốn đầu tư nước ngoài. Rà soát lại các chương",
+   "t@0.5": "các dự án có vốn đầu tư nước ngoài. Rà soát lại các chương"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/252/30.jpg",
+   "gt": "trình hội nhập kinh tế của TP. Về văn hóa - xã hội : đẩy mạnh xã",
+   "a": "trình hội nhập kinh tế của TP. Về văn hóa - xã hội đẩy mạnh xã",
+   "b": "Trình bày hội nhập kinh tế của TP. Về văn hóa - xã hội đẩy mạnh xã hội hóa.",
+   "c@0.5": "trình hội nhập kinh tế của TP. Về văn hóa - xã hội đẩy mạnh xã",
+   "t@0.5": "trình hội nhập kinh tế của TP. Về văn hóa - xã hội đẩy mạnh xã"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/252/31.jpg",
+   "gt": "hội hóa, phát triển xã hội học tập, ưu tiên đầu tư ngân sách",
+   "a": "hội hóa, phát triển xã hội học tập, ưu tiên đầu tư ngân sách",
+   "b": "hội hóa, phát triển xã hội học tập, ưu tiên đầu tư ngân sách",
+   "c@0.5": "hội hóa, phát triển xã hội học tập, ưu tiên đầu tư ngân sách",
+   "t@0.5": "hội hóa, phát triển xã hội học tập, ưu tiên đầu tư ngân sách"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/252/32.jpg",
+   "gt": "cho giáo dục - đào tạo.",
+   "a": "cho giáo dục - đào tạo.",
+   "b": "cho giáo dục - đào tạo.",
+   "c@0.5": "cho giáo dục - đào tạo.",
+   "t@0.5": "cho giáo dục - đào tạo."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/252/33.jpg",
+   "gt": "Nâng cao năng lực quản lý nhà nước trên các lĩnh vực kinh doanh dịch vụ",
+   "a": "Nàng cao năng lực quản lý nhà nước trên các lĩnh vực kinh danh dịch vụ",
+   "b": "Nàng có năng lực quản lý nhà nước trên các lĩnh vực kinh tế dịch vụ",
+   "c@0.5": "năng cao năng lực quản lý nhà nước trên các lĩnh vực kinh danh dịch vụ",
+   "t@0.5": "năng cao năng lực quản lý nhà nước trên các lĩnh vực kinh danh dịch vụ"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/252/34.jpg",
+   "gt": "văn hóa; khắc phục những sơ hở, tiêu cực trong quản lý và hoạt động",
+   "a": "văn hóa;, khắc phục những sơ hở, têu cực trong quản lý và hoạt động",
+   "b": "văn hóa; khắc phục những sơ hở, tiêu cực trong quản lý và hoạt động",
+   "c@0.5": "văn hóa;, khắc phục những sơ hở, têu cực trong quản lý và hoạt động",
+   "t@0.5": "văn hóa;, khắc phục những sơ hở, têu cực trong quản lý và hoạt động"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/252/35.jpg",
+   "gt": "văn hóa. Tiếp tục tập trung nguồn lực cho chương trình 3 giảm...",
+   "a": "văn hóa. Tiếp tục tập trung nguồn lực cho đương trình 3 giảm....",
+   "b": "văn hóa. Tiếp tục tập trung nguồn lực vào quá trình 3 giảm....",
+   "c@0.5": "văn hóa. Tiếp tục tập trung nguồn lực cho đương trình 3 giảm....",
+   "t@0.5": "văn hóa. Tiếp tục tập trung nguồn lực cho đương trình 3 giảm...."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/253/1.jpg",
+   "gt": "Viết tiếp về vụ anh Trương Xuân Đại. Ngay từ khi tờ báo có bài \" Số phận của",
+   "a": "Viết tiệp về vụ anh Trương Xuân Đại. Ngay từ khi t báo \" Số phân của",
+   "b": "Viết tiếp về vụ anh Trương Xuân Đại. Ngay từ khi tai nạn xảy ra,",
+   "c@0.5": "Viết tiệp về vụ anh Trương Xuân Đại. Ngay từ khi t báo \" Số phân của",
+   "t@0.5": "Viết tiệp về vụ anh Trương Xuân Đại. Ngay từ khi t báo \" Số phân của"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/253/2.jpg",
+   "gt": "những người nói lên sự thật \" phát hành, nhiều bạn đọc đã bày tỏ sự chia sẻ,",
+   "a": "những người nói lên sự thật \" phát hành, nhiều lạn đạc đã bàng đỏ sự chia sẽ,",
+   "b": "Những người nói lên sự thật \"phát hành, nhiều lament đã bang đỏ sự chia sẻ,\"",
+   "c@0.5": "những người nói lên sự thật \" phát hành, nhiều lạn đạc đã bàng đỏ sự chia sẽ,",
+   "t@0.5": "những người nói lên sự thật \" phát hành, nhiều lạn đạc đã bàng đỏ sự chia sẽ,"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/253/3.jpg",
+   "gt": "ủng hộ anh Trương Xuân Đại. Một bạn đọc 67 tuổi ở Q.11 đến gửi tặng anh Trương",
+   "a": "ủng hộ anh Trương Xuân Đại. Một lạn đọc 67 tuổi ở Q. 11 đến qửi tặng anh Truang",
+   "b": "ủng hộ anh Trương Xuân Đại. Một độc giả 67 tuổi ở Q. 11 gửi tặng anh Trương Xuân Đại.",
+   "c@0.5": "ủng hộ anh Trương Xuân Đại. Một lạn đọc 67 tuổi ở Q. 11 đến qửi tặng anh Truang",
+   "t@0.5": "ủng hộ anh Trương Xuân Đại. Một lạn đọc 67 tuổi ở Q. 11 đến qửi tặng anh Truang"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/253/4.jpg",
+   "gt": "Xuân Đại 150.000 đồng, một cô gái tên Nhung ở Tân Bình gửi tặng 100.000 đ,",
+   "a": "Xuân Đại 150.000 đồng, một cô giái ên Nhungở Tân Bình quủi lặng 100.000l,",
+   "b": "Xuân Đại 150.000 đồng, một cô gái ên Nhung ở Tân Bình quietly 100.000,",
+   "c@0.5": "Xuân Đại 150.000 đồng, một cô giái ên Nhungở Tân Bình quủi lặng 100.000l,",
+   "t@0.5": "Xuân Đại 150.000 đồng, một cô giái ên Nhungở Tân Bình quủi lặng 100.000l,"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/253/5.jpg",
+   "gt": "một thanh niên tên Hà đến gửi 200.000 đ. Sau đó nữa là rất",
+   "a": "mặt thanh niên đên Hà đến gửi 200.000d. Sau đố mữa là lắt,",
+   "b": "Mặt thanh niên đến Hà Nội gửi 200.000đ. Sau đó mưa là lạnh,",
+   "c@0.5": "mặt thanh niên đên Hà đến gửi 200.000d. Sau đố mữa là lắt,",
+   "t@0.5": "mặt thanh niên đên Hà đến gửi 200.000d. Sau đố mữa là lắt,"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/253/6.jpg",
+   "gt": "nhiều bạn đọc gọi đến bày tỏ sự chia sẻ, ủng hộ.",
+   "a": "nhiều hạm đạc gọc đến bày lỏ sụ chia sê, củng hộ",
+   "b": "nhiều hạm december đến bày lỏ sụ chia sẻ, củng cố",
+   "c@0.5": "nhiều hạm đạc gọc đến bày lỏ sụ chia sê, củng hộ",
+   "t@0.5": "nhiều hạm đạc gọc đến bày lỏ sụ chia sê, củng hộ"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/253/7.jpg",
+   "gt": "Ban biên tập báo Tuổi Trẻ cũng quyết định gửi tặng nhóm công nhân",
+   "a": "Ban liên tập, báo Tuổi Tủ cùng quyết địanh qiả tặng nhám công nhân",
+   "b": "Ban liên hiệp, báo Tuổi Trẻ cùng quyết định quà tặng Nam công nhân",
+   "c@0.5": "Ban liên tập, báo Tuổi Tủ cùng quyết định qiả tặng nhám công nhân",
+   "t@0.5": "Ban liên tập, báo Tuổi Tủ cùng quyết định qiả tặng nhám công nhân"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/253/8.jpg",
+   "gt": "đã tố cáo tiêu cực ở đường liên cảng A5 10 triệu đồng. Đừng để người dân",
+   "a": "đã tố có triên cức ở đường liên cảng A5 10 tuận đồng. Đùng để người dân",
+   "b": "Đã tố có tuyến cấp ở đường Liên cảng A5, 10 tüế đồng. Đừng để người dân",
+   "c@0.5": "đã tố có triên cực ở đường liên cảng A5 10 tuận đồng. Đùng để người dân",
+   "t@0.5": "đã tố có triên cực ở đường liên cảng A5 10 tuận đồng. Đùng để người dân"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/253/9.jpg",
+   "gt": "đặt cược cho niềm tin! Qua báo chí, bản thân tôi đã được biết về việc tố cáo những",
+   "a": "đặc cược cho miền lin! Qua báo chí, bản thân bân đã biết về vệc tô iao những",
+   "b": "đặc biệt cho miền lyên! Qua báo chí, bản thân đã biết về việc tổ chức那些不符合要求的内容已省略。正确的文本应为：",
+   "c@0.5": "đặc cược cho miền lin! Qua báo chí, bản thân bân đã biết về vệc tô iao những",
+   "t@0.5": "đặc cược cho miền lin! Qua báo chí, bản thân bân đã biết về vệc tô iao những"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/253/10.jpg",
+   "gt": "sai phạm của công rình đường liên cảng A5 mấy năm trước đây, nhưng nay",
+   "a": "sai phạm của cổng sình đường liên cảng A5 mấy năm tước đây, nhưng vay",
+   "b": "sai phạm của cổng sinh hoạt đường liên cảng A5 mấy năm trước đây, nhưng vẫn",
+   "c@0.5": "sai phạm của cổng sình đường liên cảng A5 mấy năm tước đây, nhưng vay",
+   "t@0.5": "sai phạm của cổng sình đường liên cảng A5 mấy năm tước đây, nhưng vay"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/253/11.jpg",
+   "gt": "mới biết việc làm dũng cảm và tốt đẹp đó đã mang đến bao hệ lụy phiền phức",
+   "a": "mái bicết việc làm chũng cản và tất đẹp đã mang đến bao dỷ lụng phền phác",
+   "b": "Mái bí kết việc làm chánh cản và tất cả đã mang đến bao nhiêu niềm phong phú",
+   "c@0.5": "mái biết việc làm chũng cản và tất đẹp đã mang đến bao dỷ lụng pháp phác",
+   "t@0.5": "mái biết việc làm chũng cản và tất đẹp đã mang đến bao dỷ lụng pháp phác"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/253/12.jpg",
+   "gt": "cho những người trong cuộc, những người mà theo tôi vô cùng xứng đáng với danh",
+   "a": "cho ngoài trang cuột, những ngoời mà \" kheo bơn và cùng xuáng dang vái danh",
+   "b": "cho ngoài trangcket, những người mà khéo bon và cùng xuồng dàng vái danh",
+   "c@0.5": "cho ngoài trang cuột, những ngoời mà \" keh bôn và cùng xuáng dang vái danh",
+   "t@0.5": "cho ngoài trang cuột, những ngoời mà \" kheo bơn và cùng xuáng dang vái danh"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/253/13.jpg",
+   "gt": "hiệu hiệp sĩ.",
+   "a": "kiện hiệp sử",
+   "b": "khiệp hiệp sử",
+   "c@0.5": "kiện hiệp su",
+   "t@0.5": "kiện hiệp su"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/253/14.jpg",
+   "gt": "Thế nhưng những hiệp sĩ ấy giờ ra sao? Người thì lang thang, phiêu bạt, kẻ thì",
+   "a": "Thế nhung những kiệp rà ây già ra sao\". Nguan thì long thang, phiảa bạt, kẻ thì",
+   "b": "Thế nhưng những片段已经老化如何”。有的长满斑点，有的破裂，有的",
+   "c@0.5": "Thế nhung những kiệp rà ây già ra sao\". Nguan thì long thang, phải bạt, kẻ thì",
+   "t@0.5": "Thế nhung những kiệp rà ây già ra sao\". Nguan thì long thang, phải bạt, kẻ thì"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/253/15.jpg",
+   "gt": "vợ bỏ, kẻ thì cày ải trên những con đường đô thị để lượm ve chai, phải tá túc trong",
+   "a": "vộ bỏ, hè thì càn ủ trên con đờng đô chị để luán ve cha, phải tá túc trong",
+   "b": "vội bỏ, hè thì canh ủ trên con đường đô thị để luồn ve chái, phải tá túc trong",
+   "c@0.5": "vội bỏ, hè thì cần ủ trên con đờng đô chị để luán ve cha, phải tá túc trong",
+   "t@0.5": "vội bỏ, hè thì cần ủ trên con đờng đô chị để luán ve cha, phải tá túc trong"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/253/16.jpg",
+   "gt": "những căn chòi tạm bợ sống qua ngày. Ngẫm sao mà thương thế! Đáng lẽ phải được",
+   "a": "những căn hặt toạm bộ sống qua ngày. Ngồn 1a0 mà thuung thế! đóng lẽ phải địạc",
+   "b": "những căn bệnh toả bộ sống qua ngày.-ngọn 1a0 mà thuột thế!đóng lẽ phải đặt",
+   "c@0.5": "những căn hặt toạm bộ sống qua ngày. Ngồn 1a0 mà thuung thế! đóng lẽ phải địạc",
+   "t@0.5": "những căn hặt toạm bộ sống qua ngày. Ngồn 1a0 mà thuung thế! đóng lẽ phải địạc"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/253/17.jpg",
+   "gt": "tôn vinh thì trái lại những con người ấy đã bị đẩy xuống đáy cùng của cuộc",
+   "a": "tinh thì trải bị những con ngưài ấy đã bị đẩng xuống đny cùng của cai ,",
+   "b": "tinh thì trải bị những con ngưoi ấy đã bị đẩy xuống đáy cùng của cá .",
+   "c@0.5": "tin thì tra bị những con ngưài ấy đã bị đẩng xuống đny cùng của cai ,",
+   "t@0.5": "tin thì tra bị những con ngưài ấy đã bị đẩng xuống đny cùng của cai ,"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/253/18.jpg",
+   "gt": "sống! Cũng may mà anh Đại đã thắng kiện, đó chắc là một niềm an ủi và",
+   "a": "sáng! cũng may mà anh Đại đã thăng hiện, đó chắc là niềm an cả và",
+   "b": "sáng! Cũng may mà anh Đại đã thăng chức, đó chắc là niềm an ủi và",
+   "c@0.5": "sáng! cũng may mà anh Đại đã thăng hiện, đó chắc là niềm an cả và",
+   "t@0.5": "sáng! cũng may mà anh Đại đã thăng hiện, đó chắc là niềm an cả và"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/253/19.jpg",
+   "gt": "là một khẳng định để anh và các đồng nghiệp, người thân tin rằng các",
+   "a": "là khẳng định để anh à các đồng nghiệp, người thân lin rằng cé",
+   "b": "là khẳng định để anh à các đồng nghiệp, người thân linen rằng-ce",
+   "c@0.5": "là khẳng định để anh à các đồng nghiệp, người thân lin rằng cé",
+   "t@0.5": "là khẳng định để anh à các đồng nghiệp, người thân lin rằng cé"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/253/20.jpg",
+   "gt": "anh không đơn độc trong việc theo đuổi niềm tin về lẽ phải của mình.",
+   "a": "anh không đón đặc trong việc khu diườn niềm tin cứ lê phải ca mình.",
+   "b": "anh không đồng ý trong việc khu vực duy trì niềm tin cứ để che mắt mình.",
+   "c@0.5": "anh không đón đặc trong việc khu diườn niềm tin cứ lê phải cả mình.",
+   "t@0.5": "anh không đón đặc trong việc khu diườn niềm tin cứ lê phải cả mình."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/253/21.jpg",
+   "gt": "Lại nữa, khi thanh tra đã xác định sai phạm sao không xử lý mà để \" ngâm \"",
+   "a": "Lai nừa, khi thanh tra đã xác định sai phạm sao không xử lý mà để ngâm",
+   "b": "Lại vừa, khi thanh tra đã xác định sai phạm sao không xử lý mà để ngâm]?",
+   "c@0.5": "Lai nữa, khi thanh tra đã xác định sai phạm sao không xử lý mà để ngâm",
+   "t@0.5": "Lai nữa, khi thanh tra đã xác định sai phạm sao không xử lý mà để ngâm"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/253/22.jpg",
+   "gt": "lâu ngày đến vậy? Tôi không phải là người trong lĩnh vực chuyên môn nhưng",
+   "a": "lên ngày đến công, cư không phả là ngàn trong lình vực chuyên mân nhưng ",
+   "b": "Lên ngày đến công, cư không phải là ngàn trong lĩnh vực chuyên môn nhưng",
+   "c@0.5": "lên ngày đến công, cư không phả là ngàn trong lình vực chuyên mân nhưng",
+   "t@0.5": "lên ngày đến công, cư không phả là ngàn trong lình vực chuyên mân nhưng"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/253/23.jpg",
+   "gt": "có thể hình dung công trình đường liên cảng A5 chắc là nhằm phục vụ hoạt động của",
+   "a": "có thể hình Qung công tính điên viên cảng A5 chắc nhằn phục vuụ hoại động an",
+   "b": "có thể hình dung công tính điên viên cảng A5 chắc chắn phục vụ hoạt động an toàn",
+   "c@0.5": "có thể hình Qung công tính điểm vận cảng A5 chắc nhằn phục vụ hoại động an",
+   "t@0.5": "có thể hình Qung công tính điểm vận cảng A5 chắc nhằn phục vụ hoại động an"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/253/24.jpg",
+   "gt": "các nhà đầu tư trong Khu chế xuất Tân Thuận. Vậy thì khi không khắc phục ngay",
+   "a": "các nhà đầu cư trong khu chí xuối Tôn Thuận. Vậy thì không khếc phục ngay",
+   "b": "Các nhà đầu tư trong khu vực thị xã Tôn Sơn. Vậy thì không khả năng phục ngay",
+   "c@0.5": "các nhà đầu cư trong khu chỉ xuối Tôn Thuận. Vậy thì không khếc phục ngay",
+   "t@0.5": "các nhà đầu cư trong khu chỉ xuối Tôn Thuận. Vậy thì không khếc phục ngay"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/253/25.jpg",
+   "gt": "mà còn để con đường xuống cấp thê thảm, có phải là góp thêm phần",
+   "a": "mà còn đề con đrờng xuống cấp thư than, có phải là góp kkim phân",
+   "b": "Mà còn đề con đường xuống cấp hư hỏng, có phải là góp phần cải thiện?",
+   "c@0.5": "mà còn đề con đrờng xuống cấp thư than, có phải là góp kkim phân",
+   "t@0.5": "mà còn đề con đrờng xuống cấp thư than, có phải là góp kkim phân"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/253/26.jpg",
+   "gt": "làm xấu đi môi trường đầu tư của thành phố hay không, và cũng",
+   "a": "làm xứn đi mãi cường đầu từ của Chành phố hay không, và cũng",
+   "b": "Làm xuýt đi mãi cường độ từ của Thành phố hay không, và cũng",
+   "c@0.5": "làm xứn đi mai cường đầu từ của Chành phố hay không, và cũng",
+   "t@0.5": "làm xứn đi mai cường đầu từ của Chành phố hay không, và cũng"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/253/27.jpg",
+   "gt": "đồng nghĩa với việc mất đi bao nhiêu cơ hội làm việc và cải thiện cuộc sống",
+   "a": "đầy nghĩa với việc mất đi bao nhiêu có hội làm việc và cải 1hiên cuộc sáng",
+   "b": "满义与事情失去多少机会去做工作和改善生活的关系",
+   "c@0.5": "đầy nghĩa với việc mất đi bao nhiêu có hội làm việc và cải 1hiên cuộc sáng",
+   "t@0.5": "đầy nghĩa với việc mất đi bao nhiêu có hội làm việc và cải 1hiên cuộc sáng"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/253/28.jpg",
+   "gt": "của người lao động - đồng bào - hay không?",
+   "a": "của người lao đhông - đồng bào - hay không?",
+   "b": "Của người lao động - đồng bào - hay không?",
+   "c@0.5": "của người lao đhông - đồng bào - hay không?",
+   "t@0.5": "của người lao đhông - đồng bào - hay không?"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/253/29.jpg",
+   "gt": "Chúng ta \" hoan nghênh và biểu dương những việc làm tốt của công nhân",
+   "a": "chúng la \" hoan nghênh và tiển \" cung những việc làm dất của công nhân",
+   "b": "Chúng là \"hoan nghênh và tiến\" cổng những việc làm đật của công nhân",
+   "c@0.5": "chúng là \" hoan nghênh và tiển \" cung những việc làm đất của công nhân",
+   "t@0.5": "chúng là \" hoan nghênh và tiển \" cung những việc làm đất của công nhân"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/253/30.jpg",
+   "gt": "xây dựng trong việc thông tin, phản ánh sai phạm của công trình đường",
+   "a": "xây dựng trong việc thông in, phải ánh Hai pham của công bình đường",
+   "b": "xây dựng trong việc in ấn, phải ánh hai Phạm của Công Bình Đường",
+   "c@0.5": "xây dựng trong việc thống in, phải ánh Hai Phạm của công bình đường",
+   "t@0.5": "xây dựng trong việc thống in, phải ánh Hai Phạm của công bình đường"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/253/31.jpg",
+   "gt": "liên cảng A5 \", nhưng chắc là không có hình thức hoan nghênh và biểu",
+   "a": "liên cảng A5 \", nhưng chặc bà không có hình Thi han nghênh và buốn",
+   "b": "liên quan A5\", nhưng cả bà không có hình thi hành và bổn",
+   "c@0.5": "liên cảng A5 \", nhưng chặc bà không có hình Thi han nghênh và buốn",
+   "t@0.5": "liên cảng A5 \", nhưng chặc bà không có hình Thi han nghênh và buốn"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/253/32.jpg",
+   "gt": "dương nào thiết thực hơn đối với anh Đại và những đồng nghiệp là xử lý ngay",
+   "a": "đoàng chiết thực han vấn anh Đại và những đồy nghiệp là xử lý ngay",
+   "b": "đương chiết thực hành vấn anh Đại và những đồ án là xử lý ngay",
+   "c@0.5": "đương chiết thực han vấn anh Đại và những đồy nghiệp là xử lý ngay",
+   "t@0.5": "đương chiết thực han vấn anh Đại và những đồy nghiệp là xử lý ngay"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/253/33.jpg",
+   "gt": "những sai phạm (đã rõ mười mươi) và có biện pháp hữu hiệu khắc phục",
+   "a": "những sai phan (đã có mừa nươn) và có kiện pháp kiêu biên khắc phục",
+   "b": "những sai phạm (đã có xảy ra) và có kiên pháp kiến nghị biên chế khắc phục",
+   "c@0.5": "những sai phan (đã có mừa nươn) và có kiện pháp kiêu biên khắc phục",
+   "t@0.5": "những sai phan (đã có mừa nươn) và có kiện pháp kiêu biên khắc phục"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/253/34.jpg",
+   "gt": "những sai phạm đó. Có như vậy niềm tin vào lẽ phải mới được khôi phục",
+   "a": "những rai làm đó. có như vậy mồn lin vào lẽ phả mái đc khôp phụ",
+   "b": "những việc làm đó. có như vậy mới linh vào lý phải được công phê",
+   "c@0.5": "những rai làm đó. có như vậy mồn lin vào lẽ phả mái đc khôp phụ",
+   "t@0.5": "những rai làm đó. có như vậy mồn lin vào lẽ phả mái đc khôp phụ"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/253/35.jpg",
+   "gt": "và người dân sẽ không còn phải đặt cược cho niềm tin của mình.",
+   "a": "và người diân sê không còn phả đặt cưac cho vẫn kim của mình",
+   "b": "Và người dân sé không còn phải đặt cược cho vần kim của mình",
+   "c@0.5": "và người diân sê không còn phả đặt cưac cho vẫn kim của mình",
+   "t@0.5": "và người diân sê không còn phả đặt cưac cho vẫn kim của mình"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/253/36.jpg",
+   "gt": "Phải là một câu chuyện đàng hoàng! Nhóm công nhân dũng cảm ấy gồm",
+   "a": "Phải là một cân Chuyện bàng hoàng \" khan công nhân dũng bảm ấy gồn",
+   "b": "Phải là một can Chuyện bàng hoàng \" Khan công nhân dũng cảm ấy gồn",
+   "c@0.5": "Phải là một cân Chuyện bàng hoàng \" khan công nhân dũng bảm ấy gồn",
+   "t@0.5": "Phải là một cân Chuyện bàng hoàng \" khan công nhân dũng bảm ấy gồn"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/253/37.jpg",
+   "gt": "20 người vậy mà hầu như nay đã lang bạt hết. Chỉ còn anh Đại và bốn",
+   "a": "20 ngài vậy mà hầu như aay vã long hạt hết. Chỉ Can anh Đại và bấn",
+   "b": "20 ngày vậy mà hầu như đã hết. Chỉ còn Anh Đại và bàn",
+   "c@0.5": "20 ngài vậy mà hầu như aay vã long hạt hết. Chỉ Can anh Đại và bấn",
+   "t@0.5": "20 ngài vậy mà hầu như aay vã long hạt hết. Chỉ Can anh Đại và bấn"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/253/38.jpg",
+   "gt": "người khác. Thân phận, cuộc sống của họ là bi đát, và điều mỉa mai cũng",
+   "a": "người khát. Thân phận, cuộc gáng của họ hi đất, và điều \" mia mai cùng",
+   "b": "Người khát. Thân phận, cuộc galgăng của họ हि भूमि, và điều \"mờ mịt\" cùng",
+   "c@0.5": "người khan. Thân phận, cuộc gáng của họ hi đất, và điều \" mia mai cùng",
+   "t@0.5": "người khát. Thân phận, cuộc gáng của họ hi đất, và điều \" mia mai cùng"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/253/39.jpg",
+   "gt": "như làm chạnh lòng tôi là có phải họ đã xả thân vì đại nghĩa để rồi gia đình,",
+   "a": "như lòm chanh lòng lân là phả họ đã xả khâi và đa nghĩa đi rồi gua th",
+   "b": "như lòm chanh lòng linh là phả họ đã xả khai và đa nghĩa đi rồigua th",
+   "c@0.5": "như lòm chanh lòng lân là phả họ đã xả khâi và đa nghĩa đi rồi gua tha",
+   "t@0.5": "như lòm chanh lòng lân là phả họ đã xả khâi và đa nghĩa đi rồi gua tha"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/253/40.jpg",
+   "gt": "vợ con ly tán, thất nghiệp, lâm vào cảnh đời tan nát như thế sao! Vì sao họ",
+   "a": "vợ conli lớn hrất nghiệp, lần vào cảnh đời can hat nhu thê nọ! vì 1o bị",
+   "b": "Vợ con lớn ह्रất nghiệp, lần vào cảnh đời-can-hạt-như-thế-nọ! Vì 1o bị",
+   "c@0.5": "vợ conli lớn hrất nghiệp, lần vào cảnh đời can hat nhu thê nọ! vì 1o bị",
+   "t@0.5": "vợ conli lớn hrất nghiệp, lần vào cảnh đời can hat nhu thê nọ! vì 1o bị"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/253/41.jpg",
+   "gt": "đã làm điều đó? Ba năm trôi qua, chắc hẳn đã hàng trăm, ngàn lần",
+   "a": "để bàn điều được Ba năm bên qua, chắc hẳn đã hàng tăm, ngoàni hả",
+   "b": "để bàn điều được ba năm bên qua, chắc hẳn đã hàng nghìn, ngoài ra hả",
+   "c@0.5": "để bàn điều được Ba năm bên qua, chắc hẳn đã hàng tăm, ngoàni hả",
+   "t@0.5": "để bàn điều được Ba năm bên qua, chắc hẳn đã hàng tăm, ngoàni hả"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/253/42.jpg",
+   "gt": "câu hỏi đó tự đến với họ hoặc đến từ người thân, bạn bè đi kèm sự chua",
+   "a": "cân hải đo bạị đến với hộ hặc đèn ti nguài thàng bạn bè đi kàm sụ chong",
+   "b": "cân hải đo bộ phận đến với hộ hoạc đèn tienguơi thành bạn bè đi kam sự chông",
+   "c@0.5": "cân hải đo bạị đến với hộ hặc đèn ti nguài tháng bạn bè đi kàm sụ chong",
+   "t@0.5": "cân hải đo bạị đến với hộ hặc đèn ti nguài tháng bạn bè đi kàm sụ chong"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/253/43.jpg",
+   "gt": "chát, ngậm ngùi.",
+   "a": "chái, ngận nga.",
+   "b": "cháy, ngọn nga.",
+   "c@0.5": "chái, ngận nga.",
+   "t@0.5": "chái, ngận nga."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/253/44.jpg",
+   "gt": "Và hôm nay, chúng ta cũng cần hỏi câu hỏi này với chính mình.",
+   "a": "và hảm nay, chúng tráng cồn hải cân hả này vấi chính mình.",
+   "b": "Và hôm nay, chúng tranh cồn hải cân hà này vấn chính mình.",
+   "c@0.5": "và hôm nay, chúng tráng cồn hải cân hả này vấi chính mình.",
+   "t@0.5": "và hôm nay, chúng tráng cồn hải cân hả này vấi chính mình."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/254/1.jpg",
+   "gt": "KHÁI QUÁT VỀ BIỂN ĐẢO VIỆT NAM",
+   "a": "KHÁI QUÁT VỀ BIỂN ĐẢO VIỆT NAM",
+   "b": "KHÁI QUÁT VỀ BIỂN ĐẢO VIỆT NAM",
+   "c@0.5": "KHÁI QUÁT VỀ BIỂN ĐẢO VIỆT NAM",
+   "t@0.5": "KHÁI QUÁT VỀ BIỂN ĐẢO VIỆT NAM"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/254/2.jpg",
+   "gt": "Nước ta giáp với biển Đông ở hai phía Đông và Nam. Vùng biển Việt Nam",
+   "a": "Nước ta giáp với biển Đông ở hai phía Đông và Nam. Vùng biển V Nam",
+   "b": "Nước ta giáp với biển Đông ở hai phía Đông và Nam. Vùng biển Nam",
+   "c@0.5": "Nước ta giáp với biển Đông ở hai phía Đông và Nam. Vùng biển V Nam",
+   "t@0.5": "Nước ta giáp với biển Đông ở hai phía Đông và Nam. Vùng biển V Nam"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/254/3.jpg",
+   "gt": "là một phần biển Đông.",
+   "a": "là một phần biển Đông.",
+   "b": "là một phần của biển Đông.",
+   "c@0.5": "là một phần biển Đông.",
+   "t@0.5": "là một phần biển Đông."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/254/4.jpg",
+   "gt": "Bờ biển dài 3.260 km, từ Quảng Ninh đến Kiên Giang. Như vậy cứ 100 km2",
+   "a": "Bờ biển dài 3.260 km, từ Quảng Ninh đến Kiên Giang. Như vậy cứ 100 km2",
+   "b": "Bờ biển dài 3.260 km, từ Quảng Ninh đến Kiên Giang. Như vậy cứ 100 km²",
+   "c@0.5": "Bờ biển dài 3.260 km, từ Quảng Ninh đến Kiên Giang. Như vậy cứ 100 km2",
+   "t@0.5": "Bờ biển dài 3.260 km, từ Quảng Ninh đến Kiên Giang. Như vậy cứ 100 km2"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/254/5.jpg",
+   "gt": "thì có 1 km bờ biển (trung bình của thế giới là 600 km2 đất liền / 1 km bờ biển).",
+   "a": "thì có 1 km bờ biển (trung bình của thể giới là 600 km2 đất liền / 1 km bờ biển).",
+   "b": "Thì có 1 km bờ biển (trung bình thế giới là 600 km² đất liền / 1 km bờ biển).",
+   "c@0.5": "thì có 1 km bờ biển (trung bình của thể giới là 600 km2 đất liền / 1 km bờ biển).",
+   "t@0.5": "thì có 1 km bờ biển (trung bình của thể giới là 600 km2 đất liền / 1 km bờ biển)."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/254/6.jpg",
+   "gt": "Biển có vùng nội thủy, lãnh hải, vùng đặc quyền kinh tế và thềm lục địa với",
+   "a": "Biển có vùng nội thủy, lãnh hải, vùng đặc quyền kinh tế và thềm lục địa với",
+   "b": "Biển có vùng nội thủy, lãnh hải, vùng đặc quyền kinh tế và thềm lục địa với",
+   "c@0.5": "Biển có vùng nội thủy, lãnh hải, vùng đặc quyền kinh tế và thềm lục địa với",
+   "t@0.5": "Biển có vùng nội thủy, lãnh hải, vùng đặc quyền kinh tế và thềm lục địa với"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/254/7.jpg",
+   "gt": "diện tích trên 1 triệu km2 (gấp 3 diện tích đất liền : 1 triệu km2 /",
+   "a": "diện tích trên 1 triệu km2 (gấp 3 diện tích đất liền : triệu km2 /",
+   "b": "Diện tích trên 1 triệu km² (gấp 3 lần diện tích đất liền : triệu km² /",
+   "c@0.5": "diện tích trên 1 triệu km2 (gấp 3 diện tích đất liền : triệu km2 /",
+   "t@0.5": "diện tích trên 1 triệu km2 (gấp 3 diện tích đất liền : triệu km2 /"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/254/8.jpg",
+   "gt": "330.000 km2)",
+   "a": "330.000 km2)",
+   "b": "330.000 km²)",
+   "c@0.5": "330.000 km2)",
+   "t@0.5": "330.000 km2)"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/254/9.jpg",
+   "gt": "Trong đó có 2 quần đảo Hoàng Sa, Trường Sa và 2.577 đảo lớn, nhỏ,",
+   "a": "Trong đó có 2 quần đảo Hoàng Sa, Trường Sa và 2.577 đảo lớn, nhỏ,",
+   "b": "Trong đó có 2 quần đảo Hoàng Sa, Trường Sa và 2.577 đảo lớn, nhỏ.",
+   "c@0.5": "Trong đó có 2 quần đảo Hoàng Sa, Trường Sa và 2.577 đảo lớn, nhỏ,",
+   "t@0.5": "Trong đó có 2 quần đảo Hoàng Sa, Trường Sa và 2.577 đảo lớn, nhỏ,"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/254/10.jpg",
+   "gt": "gần và xa bờ, hợp thành phòng tuyến bảo vệ, kiểm soát và làm chủ",
+   "a": "gần và xa bờ, hợp thành phòng tuyến bảo vệ, kiểm soát và làm chủ",
+   "b": "gần và xa bờ, hợp thành phòng tuyến bảo vệ, kiểm soát và làm chủ",
+   "c@0.5": "gần và xa bờ, hợp thành phòng tuyến bảo vệ, kiểm soát và làm chủ",
+   "t@0.5": "gần và xa bờ, hợp thành phòng tuyến bảo vệ, kiểm soát và làm chủ"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/254/11.jpg",
+   "gt": "vùng biển.",
+   "a": "vùng biển.",
+   "b": "vùng biển.",
+   "c@0.5": "vùng biển.",
+   "t@0.5": "vùng biển."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/254/12.jpg",
+   "gt": "Có vị trí chiến lược quan trọng : nối liền Thái Bình Dương với Ấn Độ Dương,",
+   "a": "Có vị trí chiến lược quan trọng : nối liền Thái Bình Dương với Ấn Độ Dương,",
+   "b": "Có vị trí chiến lược quan trọng: nối liền Thái Bình Dương với Ấn Độ Dương,",
+   "c@0.5": "Có vị trí chiến lược quan trọng : nối liền Thái Bình Dương với Ấn Độ Dương,",
+   "t@0.5": "Có vị trí chiến lược quan trọng : nối liền Thái Bình Dương với Ấn Độ Dương,"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/254/13.jpg",
+   "gt": "châu Á với châu Âu, châu Úc với Trung Đông. Giao lưu quốc tế thuận",
+   "a": "châu Á với châu Âu, châu Úc với Trong Đông. Giao lưu quốc tế thuận",
+   "b": "Châu Á với châu Âu, châu Úc với Đông Nam Á. Giao流国际交流顺",
+   "c@0.5": "châu Á với châu Âu, châu Úc với Trong Đông. Giao lưu quốc tế thuận",
+   "t@0.5": "châu Á với châu Âu, châu Úc với Trong Đông. Giao lưu quốc tế thuận"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/254/14.jpg",
+   "gt": "lợi, phát triển ngành biển.",
+   "a": "lợi, phát triển ngành biển.",
+   "b": "lợi ích, phát triển ngành biển.",
+   "c@0.5": "lợi, phát triển ngành biển.",
+   "t@0.5": "lợi, phát triển ngành biển."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/254/15.jpg",
+   "gt": "Có khí hậu biển là vùng nhiệt đới tạo điều kiện cho sinh vật biển phát",
+   "a": "Có khí hậu biển là vùng nhiệt đới tạo điều kiện cho sinh vật biển phát",
+   "b": "Có khí hậu biển là vùng nhiệt đới tạo điều kiện cho sinh vật biển phát triển.",
+   "c@0.5": "Có khí hậu biển là vùng nhiệt đới tạo điều kiện cho sinh vật biển phát",
+   "t@0.5": "Có khí hậu biển là vùng nhiệt đới tạo điều kiện cho sinh vật biển phát"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/254/16.jpg",
+   "gt": "triển, tồn tại tốt.",
+   "a": "triển, tồn tại tốt.",
+   "b": "triển, tồn tại tốt.",
+   "c@0.5": "triển, tồn tại tốt.",
+   "t@0.5": "triển, tồn tại tốt."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/254/17.jpg",
+   "gt": "Có tài nguyên sinh vật và khoáng sản phong phú, đa dạng, quý hiếm.",
+   "a": "Có tài nguyên sinh vật và khoáng sản phong phú, đa dạng, quý hiếm.",
+   "b": "Có tài nguyên sinh vật và khoáng sản phong phú, đa dạng, quý hiếm.",
+   "c@0.5": "Có tài nguyên sinh vật và khoáng sản phong phú, đa dạng, quý hiếm.",
+   "t@0.5": "Có tài nguyên sinh vật và khoáng sản phong phú, đa dạng, quý hiếm."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/254/18.jpg",
+   "gt": "Vùng biển và hải đảo nước ta có vị trí chiến lược hết sức to lớn, có ảnh hưởng",
+   "a": "Vùng biển và hải đảo nước ta có vị trí chiến lược hết sức to lớn, có ảnh hưởng",
+   "b": "Vùng biển và hải đảo nước ta có vị trí chiến lược hết sức quan trọng, có ảnh hưởng",
+   "c@0.5": "Vùng biển và hải đảo nước ta có vị trí chiến lược hết sức to lớn, có ảnh hưởng",
+   "t@0.5": "Vùng biển và hải đảo nước ta có vị trí chiến lược hết sức to lớn, có ảnh hưởng"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/254/19.jpg",
+   "gt": "trực tiếp đến sự nghiệp bảo vệ nền độc lập dân tộc và xây dựng chủ nghĩa",
+   "a": "trực tiếp đến sự nghiệp bảo vệ nền độc lập dân tộc và xây dựng chủ nghĩa",
+   "b": "trực tiếp đến sự nghiệp bảo vệ nền độc lập dân tộc và xây dựng chủ nghĩa",
+   "c@0.5": "trực tiếp đến sự nghiệp bảo vệ nền độc lập dân tộc và xây dựng chủ nghĩa",
+   "t@0.5": "trực tiếp đến sự nghiệp bảo vệ nền độc lập dân tộc và xây dựng chủ nghĩa"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/254/20.jpg",
+   "gt": "xã hội, có liên quan trực tiếp đến sự phồn vinh của đất nước, đến văn",
+   "a": "xã hội, có liên quan trực tiếp đến sự phồn vinh của đất nước, đến văn",
+   "b": "Xã hội, có liên quan trực tiếp đến sự phồn vinh của đất nước, đến văn",
+   "c@0.5": "xã hội, có liên quan trực tiếp đến sự phồn vinh của đất nước, đến văn",
+   "t@0.5": "xã hội, có liên quan trực tiếp đến sự phồn vinh của đất nước, đến văn"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/254/21.jpg",
+   "gt": "minh và hạnh phúc của nhân dân.",
+   "a": "minh và hạnh phúc của nhân dân.",
+   "b": "minh và hạnh phúc của nhân dân.",
+   "c@0.5": "minh và hạnh phúc của nhân dân.",
+   "t@0.5": "minh và hạnh phúc của nhân dân."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/255/1.jpg",
+   "gt": "BẢN CHẤT CỦA THÀNH CÔNG",
+   "a": "BẢN CHẤT CỦA THÀNH CÔNG",
+   "b": "BẢN CHẤT CỦA THÀNH CÔNG",
+   "c@0.5": "BẢN CHẤT CỦA THÀNH CÔNG",
+   "t@0.5": "BẢN CHẤT CỦA THÀNH CÔNG"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/255/2.jpg",
+   "gt": "Đã bao giờ bạn tự hỏi thành công là gì mà bao kẻ bỏ cả cuộc đời mình theo đuổi? Phải chăng",
+   "a": "Hã bao giờ bạn tự hỏi thành công là gì mà bao kẻ bỏ cả cuộc đời mình theo đuổi? Phải chẳng",
+   "b": "Hãy bao giờ bạn tự hỏi thành công là gì mà bao kẻ bỏ cả cuộc đời mình theo đuổi? Phải chăng",
+   "c@0.5": "Hã bao giờ bạn tự hỏi thành công là gì mà bao kẻ bỏ cả cuộc đời mình theo đuổi? Phải chẳng",
+   "t@0.5": "Hã bao giờ bạn tự hỏi thành công là gì mà bao kẻ bỏ cả cuộc đời mình theo đuổi? Phải chẳng"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/255/3.jpg",
+   "gt": "đó là kết quả hoàn hảo trong công việc, sự chính xác đến từng chi tiết? Hay đó là cách nói",
+   "a": "đó là kết quả hoàn hảo trong công việc, sự chính xác đến từng chi tiết? Hay đó là cách nói",
+   "b": "Đó là kết quả hoàn hảo trong công việc, sự chính xác đến từng chi tiết? Hay đó là cách nói",
+   "c@0.5": "đó là kết quả hoàn hảo trong công việc, sự chính xác đến từng chi tiết? Hay đó là cách nói",
+   "t@0.5": "đó là kết quả hoàn hảo trong công việc, sự chính xác đến từng chi tiết? Hay đó là cách nói"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/255/4.jpg",
+   "gt": "khác của từ thành đạt, nghĩa là có được một cuộc sống giàu sang, được mọi người nể phục?",
+   "a": "khác của từ thành đạt, nghĩa là có được cuộc sống giàu sang, đợc mọi người nể phục?",
+   "b": "Khác của từ \"thành đạt\", nghĩa là có được cuộc sống giàu sang, được mọi người nể phục?",
+   "c@0.5": "khác của từ thành đạt, nghĩa là có được cuộc sống giàu sang, đợc mọi người nể phục?",
+   "t@0.5": "khác của từ thành đạt, nghĩa là có được cuộc sống giàu sang, đợc mọi người nể phục?"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/255/5.jpg",
+   "gt": "Vậy thì bạn hãy dành chút thời gian để lặng mình suy ngẫm.",
+   "a": "Vậy thì bạn hãy dành chút thời gian để lặng mình suy ngẫm.",
+   "b": "Vậy thì bạn hãy dành chút thời gian để lặng tĩnh suy ngẫm.",
+   "c@0.5": "Vậy thì bạn hãy dành chút thời gian để lặng mình suy ngẫm.",
+   "t@0.5": "Vậy thì bạn hãy dành chút thời gian để lặng mình suy ngẫm."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/255/6.jpg",
+   "gt": "Cuộc sống sẽ chỉ cho bạn có những người thành đạt được thành công theo một cách giản dị đến bất",
+   "a": "việc sống sẽ chỉ cho bạn có những người thành đạt được thành ông theo một cách giản dị đón tát",
+   "b": "việc sống sẽ chỉ cho bạn có những người thành đạt được thành công theo một cách giản dị đón nhận",
+   "c@0.5": "việc sống sẽ chỉ cho bạn có những người thành đạt được thành ông theo một cách giản dị đón tát",
+   "t@0.5": "việc sống sẽ chỉ cho bạn có những người thành đạt được thành ông theo một cách giản dị đón tát"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/255/7.jpg",
+   "gt": "ngờ",
+   "a": "ngờ",
+   "b": "Dự đoán",
+   "c@0.5": "ngờ",
+   "t@0.5": "ngờ"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/255/8.jpg",
+   "gt": "Thành công là khi bố và con trai có dũng khí bước vào bếp, nấu những món ăn mẹ thích nhân",
+   "a": "Thành công là khi bố và con trai có dũng khí bước vào bếp, nấu những món ăn mẹ thích nhân",
+   "b": "Thành công là khi bố và con trai có dũng khí bước vào bếp, nấu những món ăn mẹ thích nhân",
+   "c@0.5": "Thành công là khi bố và con trai có dũng khí bước vào bếp, nấu những món ăn mẹ thích nhân",
+   "t@0.5": "Thành công là khi bố và con trai có dũng khí bước vào bếp, nấu những món ăn mẹ thích nhân"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/255/9.jpg",
+   "gt": "ngày 8 - 3. Món canh có thể hơi mặn, món cá sốt đáng lẽ phải có màu đỏ sậm thì lại ngả sang",
+   "a": "ngày 8 - 3. Món canh có thể hơi mặn, món cá sốt đáng là phải có mào đỏ vậ thì lại ngả sang",
+   "b": "Ngày 8-3. Món canh có thể hơi mặn, món cá sốt đáng là phải có mào đỏ,và thì lại ngả sang",
+   "c@0.5": "ngày 8 - 3. Món canh có thể hơi mặn, món cá sốt đáng là phải có mào đỏ vậ thì lại ngả sang",
+   "t@0.5": "ngày 8 - 3. Món canh có thể hơi mặn, món cá sốt đáng là phải có mào đỏ vậ thì lại ngả sang"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/255/10.jpg",
+   "gt": "màu... đen cháy. Nhưng nhìn mâm cơm, mẹ vẫn cười. Bởi vì hai bố con không thể thành",
+   "a": "nàu... đen cháy. Nhưng nhìn mâm cơm, mẹ vẫn cười. Bởi vì hai bố con không thể thành",
+   "b": "Nào... đen cháy. Nhưng nhìn mâm cơm, mẹ vẫn cười. Bởi vì hai bố con không thể thành",
+   "c@0.5": "nàu... đen cháy. Nhưng nhìn mâm cơm, mẹ vẫn cười. Bởi vì hai bố con không thể thành",
+   "t@0.5": "nàu... đen cháy. Nhưng nhìn mâm cơm, mẹ vẫn cười. Bởi vì hai bố con không thể thành"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/255/11.jpg",
+   "gt": "công trên \" chiến trường \" bếp núc, nhưng lại thành công khi tặng mẹ \" đoá hồng \" của tình yêu.",
+   "a": "ông trên \" chiến trường \" bếp núc, nhưng lại thành công khi tặng mẹ \" đón đồng \" của tình yêu.",
+   "b": "Ông trên \"chiến trường\" bếp núc, nhưng lại thành công khi tặng mẹ \"đón đầu\" của tình yêu.",
+   "c@0.5": "ông trên \" chiến trường \" bếp núc, nhưng lại thành công khi tặng mẹ \" đón đồng \" của tình yêu.",
+   "t@0.5": "ông trên \" chiến trường \" bếp núc, nhưng lại thành công khi tặng mẹ \" đón đồng \" của tình yêu."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/255/12.jpg",
+   "gt": "Một món quà ý nghĩa hơn cả những món quà quý giá, hạnh phúc ấy long lanh in trong mắt",
+   "a": "một món quà ý nghĩa hơn cả thủng món quà quý giá, hạnh phúc ấy lang banh ài tong mất",
+   "b": "Một món quà ý nghĩa hơn cả những món quà quý giá, hạnh phúc ấy lan bàn tay ài tong mất",
+   "c@0.5": "một món quà ý nghĩa hơn cả thủng món quà quý giá, hạnh phúc ấy lang bàn ai trong mất",
+   "t@0.5": "một món quà ý nghĩa hơn cả thủng món quà quý giá, hạnh phúc ấy lang bàn ai trong mất"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/255/13.jpg",
+   "gt": "mẹ.",
+   "a": "mẹ.",
+   "b": "mẹ.",
+   "c@0.5": "mẹ.",
+   "t@0.5": "mẹ."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/255/14.jpg",
+   "gt": "Thành công còn là hình ảnh một cậu bé bị dị tật ở chân, không bao giờ đi lại bình thường",
+   "a": "Thành công còn là hình ảnh một cậu bé bị dị tật ở chân, không bao giờ đi lại bình trường",
+   "b": "Thành công còn là hình ảnh một cậu bé bị dị tật ở chân, không bao giờ đi học bình thường",
+   "c@0.5": "Thành công còn là hình ảnh một cậu bé bị dị tật ở chân, không bao giờ đi lại bình trường",
+   "t@0.5": "Thành công còn là hình ảnh một cậu bé bị dị tật ở chân, không bao giờ đi lại bình trường"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/255/15.jpg",
+   "gt": "được. Từ nhỏ cậu đã nuôi ước mơ trở thành cầu thủ bóng đá. Sau bao nỗ lực khổ luyện, cậu",
+   "a": "được. Từ nhỏ cậu đã nuôi ước mô trở thành cầu thủ bóng đá. Sau bao nỗ lực khổ luyện, cậu",
+   "b": "H得了。从小时候他就梦想成为足球运动员。经过无数的努力训练，他",
+   "c@0.5": "được. Từ nhỏ cậu đã nuôi ước mô trở thành cầu thủ bóng đá. Sau bao nỗ lực khổ luyện, cậu",
+   "t@0.5": "được. Từ nhỏ cậu đã nuôi ước mô trở thành cầu thủ bóng đá. Sau bao nỗ lực khổ luyện, cậu"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/255/16.jpg",
+   "gt": "bé trở thành cầu thủ dự bị trong một đội bóng nhỏ, và chưa bao giờ được chính thức ra sân.",
+   "a": "bé trở thành cầu thủ dự bị trong một đội bóng nhỏ, và chưa bao giờ được chính thức ra sân.",
+   "b": "bé trở thành cầu thủ dự bị trong một đội bóng nhỏ, và chưa bao giờ được chính thức ra sân.",
+   "c@0.5": "bé trở thành cầu thủ dự bị trong một đội bóng nhỏ, và chưa bao giờ được chính thức ra sân.",
+   "t@0.5": "bé trở thành cầu thủ dự bị trong một đội bóng nhỏ, và chưa bao giờ được chính thức ra sân."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/255/17.jpg",
+   "gt": "Nhưng đó không phải là thất bại. Trái lại, thành công đã nở hoa khi cậu bé năm xưa, với bao",
+   "a": "Nhưng đó không phải là thất bại. Trái lại, thành công đã nở hoa khi cậu bé năm xưa, với bao",
+   "b": "Nhưng đó không phải là thất bại. Trái lại, thành công đã nở hoa khi cậu bé năm xưa, với bao",
+   "c@0.5": "Nhưng đó không phải là thất bại. Trái lại, thành công đã nở hoa khi cậu bé năm xưa, với bao",
+   "t@0.5": "Nhưng đó không phải là thất bại. Trái lại, thành công đã nở hoa khi cậu bé năm xưa, với bao"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/255/18.jpg",
+   "gt": "nghị lực và quyết tâm, đã chiến thắng hoàn cảnh để theo đuổi ước mơ từ ngày thơ bé.",
+   "a": "nghị lực và quyết tâm, đã chiến thắng hoàn cảnh để theo đuổi ước mơ từ ngày thờ bé.",
+   "b": "Nghị lực và quyết tâm, đã chiến thắng hoàn cảnh để theo đuổi ước mơ từ ngày nhỏ bé.",
+   "c@0.5": "nghị lực và quyết tâm, đã chiến thắng hoàn cảnh để theo đuổi ước mơ từ ngày thờ bé.",
+   "t@0.5": "nghị lực và quyết tâm, đã chiến thắng hoàn cảnh để theo đuổi ước mơ từ ngày thờ bé."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/255/19.jpg",
+   "gt": "Thành công ấy, liệu có mấy người đạt được?",
+   "a": "Thành công ấy, liệu có mấy người đạt được?",
+   "b": "Thành công ấy, liệu có几人能达到?",
+   "c@0.5": "Thành công ấy, liệu có mấy người đạt được?",
+   "t@0.5": "Thành công ấy, liệu có mấy người đạt được?"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/255/20.jpg",
+   "gt": "Sau mỗi mùa thi đại học, có bao \" sĩ tử \" buồn rầu khi biết mình trở thành \" sĩ tử \". Hai bảy điểm,",
+   "a": "Sau mỗi mùa thi đại học, có bao \" ĩ tử \" buồn rầu khi biết mình trở thành \" sĩ tử \". Hai bảy điểm,",
+   "b": "Sau mỗi mùa thi đại học, có bao \"ĩ tử\" buồn rầu khi biết mình trở thành \"sĩ tử\". Hai ba điểm,",
+   "c@0.5": "Sau mỗi mùa thi đại học, có bao \" ĩ tử \" buồn rầu khi biết mình trở thành \" sĩ tử \". Hai bảy điểm,",
+   "t@0.5": "Sau mỗi mùa thi đại học, có bao \" ĩ tử \" buồn rầu khi biết mình trở thành \" sĩ tử \". Hai bảy điểm,"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/255/21.jpg",
+   "gt": "cao thật đấy. Nhưng cao mà làm gì khi NV1 lấy tới hai bảy phẩy năm? Đó thật ra không phải",
+   "a": "cao thật đấy. Nhưng cao mà làm gì khi N01 lấy tới hai bảy phẩy năm? Đó thật ra không phải",
+   "b": "Cao thật đấy. Nhưng cao mà làm gì khi 27 phẩy năm? Đó thật ra không phải",
+   "c@0.5": "cao thật đấy. Nhưng cao mà làm gì khi N01 lấy tới hai bảy phẩy năm? Đó thật ra không phải",
+   "t@0.5": "cao thật đấy. Nhưng cao mà làm gì khi N01 lấy tới hai bảy phẩy năm? Đó thật ra không phải"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/255/22.jpg",
+   "gt": "là thất bại, chỉ là khi thành công - bị - trì - hoãn mà thôi. Cuộc sống vẫn chào đón họ với",
+   "a": "là thất bại, chỉ là khi thành công - bị - trì - hoãn mà thôi. Cuộc sống vẫn chào đán họ với",
+   "b": "là thất bại, chỉ là khi thành công - bị trì hoãn mà thôi. Cuộc sống vẫn chào đón họ với",
+   "c@0.5": "là thất bại, chỉ là khi thành công - bị - trì - hoãn mà thôi. Cuộc sống vẫn chào đán họ với",
+   "t@0.5": "là thất bại, chỉ là khi thành công - bị - trì - hoãn mà thôi. Cuộc sống vẫn chào đán họ với"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/255/23.jpg",
+   "gt": "NV2, NV3. Quan trọng là họ đã nỗ lực hết sức để khẳng định mình. Đó là ý nghĩa vẹn nguyên",
+   "a": "NV2, NV3. Quan trọng là họ đã nỗ lực hết sức để khẳng định mình. Đó là ý nghĩa vạn nguyên",
+   "b": "NV2, NV3. Quan trọng là họ đã nỗ lực hết sức để khẳng định mình. Đó là ý nghĩa vô cùng.",
+   "c@0.5": "NV2, NV3. Quan trọng là họ đã nỗ lực hết sức để khẳng định mình. Đó là ý nghĩa vạn nguyên",
+   "t@0.5": "NV2, NV3. Quan trọng là họ đã nỗ lực hết sức để khẳng định mình. Đó là ý nghĩa vạn nguyên"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/test_data/255/24.jpg",
+   "gt": "của các kỳ thi, và cũng là bản chất của thành công.",
+   "a": "của các kỳ thi, và cũng là bản chất của thành công.",
+   "b": "Của các kỳ thi, và cũng là bản chất của thành công.",
+   "c@0.5": "của các kỳ thi, và cũng là bản chất của thành công.",
+   "t@0.5": "của các kỳ thi, và cũng là bản chất của thành công."
+  }
+ ]
+}

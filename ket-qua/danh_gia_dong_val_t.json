@@ -1,0 +1,1642 @@
+{
+ "ket_qua": {
+  "t@0.5": {
+   "CER": 0.0257,
+   "WER": 0.0939,
+   "CER_khong_dau": 0.0191,
+   "loi_dau": 0.0066,
+   "dong_tot_len": 2,
+   "dong_xau_di": 6,
+   "n": 200,
+   "tu_gui_llm": 60,
+   "tu_duoc_thay": 13,
+   "giay_moi_dong": 0.127
+  },
+  "t@0.7": {
+   "CER": 0.0282,
+   "WER": 0.0982,
+   "CER_khong_dau": 0.0207,
+   "loi_dau": 0.0075,
+   "dong_tot_len": 10,
+   "dong_xau_di": 35,
+   "n": 200,
+   "tu_gui_llm": 394,
+   "tu_duoc_thay": 65,
+   "giay_moi_dong": 0.391
+  },
+  "t@0.9": {
+   "CER": 0.0307,
+   "WER": 0.1045,
+   "CER_khong_dau": 0.0228,
+   "loi_dau": 0.0078,
+   "dong_tot_len": 13,
+   "dong_xau_di": 54,
+   "n": 200,
+   "tu_gui_llm": 806,
+   "tu_duoc_thay": 108,
+   "giay_moi_dong": 0.558
+  }
+ },
+ "chi_tiet": [
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/111/1.jpg",
+   "gt": "Cả sới gà náo động. Lượng tiền \" cốp \" tăng chóng mặt, tỉ lệ cá cược thay đổi liên tục. Chỉ trong",
+   "a": "Cả sới gà náo động. Lượng tiền \" cấp \" tăng chóng mặt, tỉ lệ cá cược thay đổi liên tục. Chỉ trong",
+   "t@0.5": "Cả sới gà náo động. Lượng tiền \" cấp \" tăng chóng mặt, tỉ lệ cá cược thay đổi liên tục. Chỉ trong",
+   "t@0.7": "Cả sới gà náo động. Lượng tiền \" cấp \" tăng chóng mặt, tỉ lệ cá cược thay đổi liên tục. Chỉ trong",
+   "t@0.9": "Cả sới gà náo động. Lượng tiền \" cấp \" tăng chóng mặt, tỉ lệ cá cược thay đổi liên tục. Chỉ trong"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/111/2.jpg",
+   "gt": "ít phút, lượng tiền cược trên sàn đã lên tới vài chục triệu đồng. Đã hết hồ thứ sáu (mỗi",
+   "a": "ít phút, lượng tiền cược trên sàn đã lên tới vài chạc triệu đồng. Đã hết hồ thứ sáu (mỗi",
+   "t@0.5": "ít phút, lượng tiền cược trên sàn đã lên tới vài chạc triệu đồng. Đã hết hồ thứ sáu (mỗi",
+   "t@0.7": "ít phút, lượng tiền cược trên sàn đã lên tới vài chạc triệu đồng. Đã hết hồ thứ sáu (mỗi",
+   "t@0.9": "ít phút, lượng tiền cược trên sàn đã lên tới vài chạc triệu đồng. Đã hết hồ thứ sáu (mỗi"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/111/3.jpg",
+   "gt": "trận được tính làm 10 hồ - hiệp đấu, mỗi hồ 15 phút), cặp gà vẫn chưa phân thắng",
+   "a": "trận được tính làm 10 hồ - hiệp đấu, mỗi hồ 15 phút), cặp gà vẫn chưa phân thắng",
+   "t@0.5": "trận được tính làm 10 hồ - hiệp đấu, mỗi hồ 15 phút), cặp gà vẫn chưa phân thắng",
+   "t@0.7": "trận được tính làm 10 hồ - hiệp đấu, mỗi hồ 15 phút), cặp gà vẫn chưa phân thắng",
+   "t@0.9": "trận được tính làm 10 hồ - hiệp đấu, mỗi hồ 15 phút), cặp gà vẫn chưa phân thắng"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/111/4.jpg",
+   "gt": "bại. Sới tạm nghỉ cho hai đấu thủ hồi sức, dân đá gà tản ra ngồi uống nước. Tuấn",
+   "a": "bại. Sới tạm nghỉ cho hai đấu thủ hồi sức, dân đá gà tản ra ngồi cống nước. Tuấn",
+   "t@0.5": "bại. Sới tạm nghỉ cho hai đấu thủ hồi sức, dân đá gà tản ra ngồi cống nước. Tuấn",
+   "t@0.7": "bại. Sới tạm nghỉ cho hai đấu thủ hồi sức, dân đá gà tản ra ngồi cống nước. Tuấn",
+   "t@0.9": "bại. Sới tạm nghỉ cho hai đấu thủ hồi sức, dân đá gà tản ra ngồi cố nước. Tuấn"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/111/5.jpg",
+   "gt": "\" cụt \" tỏ ra rất vui vì đã dốc gần 5 triệu cho trận đá này.",
+   "a": "\" cụt \" tỏ ra rất vui vì đã dốc gần 5 triệu cho trận đá này.",
+   "t@0.5": "\" cụt \" tỏ ra rất vui vì đã dốc gần 5 triệu cho trận đá này.",
+   "t@0.7": "\" cụt \" tỏ ra rất vui vì đã dốc gần 5 triệu cho trận đá này.",
+   "t@0.9": "\" cụt \" tỏ ra rất vui vì đã dốc gần 5 triệu cho trận đá này."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/111/6.jpg",
+   "gt": "Chân dung những kẻ \" bạc gà \". Có lẽ cuộc đời của Tuấn \" cụt \" đã là một minh",
+   "a": "Chân dung những kẻ \" bạc gà \". Có lẽ cuộc đời của Tuấn \" cụt \" đã là một minh",
+   "t@0.5": "Chân dung những kẻ \" bạc gà \". Có lẽ cuộc đời của Tuấn \" cụt \" đã là một minh",
+   "t@0.7": "Chân dung những kẻ \" bạc gà \". Có lẽ cuộc đời của Tuấn \" cụt \" đã là một minh",
+   "t@0.9": "Chân dung những kẻ \" bạc gà \". Có lẽ cuộc đời của Tuấn \" cụt \" đã là một minh"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/111/7.jpg",
+   "gt": "chứng tiêu biểu cho triết lý \" chơi gà chọi là cái nợ đời \". Hắn biết chơi",
+   "a": "chứng tiêu biển cho triết lý \" chơi gà chọi là cái nợ đời \". Hắn biết chơi",
+   "t@0.5": "chứng tiêu biển cho triết lý \" chơi gà chọi là cái nợ đời \". Hắn biết chơi",
+   "t@0.7": "chứng tiêu biểu cho triết lý \" chơi gà chọi là cái nợ đời \". Hắn biết chơi",
+   "t@0.9": "chứng tiêu biểu cho triết lý \" chơi gà chọi là cái nợ đời \". Hắn biết chơi"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/111/8.jpg",
+   "gt": "gà và ham gà chọi từ ngày còn \" thò lò mũi xanh \", đến nay hắn đã 41",
+   "a": "gà và ham gà chọi từ ngày còn \" thờ lờ mãi xanh \", đến nay hần đã 44",
+   "t@0.5": "gà và ham gà chọi từ ngày còn \" thờ lờ mãi xanh \", đến nay hần đã 44",
+   "t@0.7": "gà và ham gà chọi từ ngày còn \" thờ lờ mãi xanh \", đến nay hần đã 44",
+   "t@0.9": "gà và ham gà chọi từ ngày còn \" thờ lờ mãi xanh \", đến nay hần đã 44"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/111/9.jpg",
+   "gt": "tuổi. Gần 30 năm lăn lộn trong nghề đã khiến hắn trở thành một tay",
+   "a": "tuổi. Gần 30 năm lăn lộn trong nghề đã khiến hần trở thành một tay",
+   "t@0.5": "tuổi. Gần 30 năm lăn lộn trong nghề đã khiến hần trở thành một tay",
+   "t@0.7": "tuổi. Gần 30 năm lăn lộn trong nghề đã khiến hần trở thành một tay",
+   "t@0.9": "tuổi. Gần 30 năm lăn lộn trong nghề đã khiến hẳn trở thành một tay"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/111/10.jpg",
+   "gt": "bạc gà lão luyện của vùng Bắc bộ. Chưa trận nào hắn chơi dưới 2 triệu, trận nào",
+   "a": "bạc gà lão luyện của vùng Bắc bộ. Chưa trận nào hắn chơi dưới 2 triệu, trận nào",
+   "t@0.5": "bạc gà lão luyện của vùng Bắc bộ. Chưa trận nào hắn chơi dưới 2 triệu, trận nào",
+   "t@0.7": "bạc gà lão luyện của vùng Bắc bộ. Chưa trận nào hắn chơi dưới 2 triệu, trận nào",
+   "t@0.9": "bạc gà lão luyện của vùng Bắc bộ. Chưa trận nào hắn chơi dưới 2 triệu, trận nào"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/111/11.jpg",
+   "gt": "\" kết \" hắn chơi hơn chục triệu là chuyện thường.",
+   "a": "\" kết \" hắn chơi hơn chục triệu là chuyện thường.",
+   "t@0.5": "\" kết \" hắn chơi hơn chục triệu là chuyện thường.",
+   "t@0.7": "\" kết \" hắn chơi hơn chục triệu là chuyện thường.",
+   "t@0.9": "\" kết \" hắn chơi hơn chục triệu là chuyện thường."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/111/12.jpg",
+   "gt": "Hắn đã lập gia đình, nhưng cái gia đình ấy đã tan vỡ. Thế nhưng mức độ",
+   "a": "Mắn đã lập gia đình, nhưng cái gia đình ấy đã tan vớ. Thế nhưng mức độ",
+   "t@0.5": "Mắn đã lập gia đình, nhưng cái gia đình ấy đã tan vớ. Thế nhưng mức độ",
+   "t@0.7": "Mắn đã lập gia đình, nhưng cái gia đình ấy đã tan vớ. Thế nhưng mức độ",
+   "t@0.9": "Mắn đã lập gia đình, nhưng cái gia đình ấy đã tan vớ. Thế nhưng mức độ"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/111/13.jpg",
+   "gt": "chơi bạc gà của Tuấn \" cụt \" chưa ăn thua gì so với Hậu \" trọc \". Dân",
+   "a": "chơi bạc gà của Tuấn \" cụt \", chưa ăn thua gì so với Hậu \" trọc \". Dân",
+   "t@0.5": "chơi bạc gà của Tuấn \" cụt \", chưa ăn thua gì so với Hậu \" trọc \". Dân",
+   "t@0.7": "chơi bạc gà của Tuấn \" cụt \", chưa ăn thua gì so với Hậu \" trọc \". Dân",
+   "t@0.9": "chơi bạc gà của Tuấn \" cụt \", chưa ăn thua gì so với Hậu \" trọc \". Dân"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/111/14.jpg",
+   "gt": "đá gà miền Bắc chỉ biết hắn có hộ khẩu thường trú tại Hà Nội chứ",
+   "a": "đá gà miền Bắc chỉ biết hắn có hộ khẩu thường trú tại Hà Nội chức",
+   "t@0.5": "đá gà miền Bắc chỉ biết hắn có hộ khẩu thường trú tại Hà Nội chức",
+   "t@0.7": "đá gà miền Bắc chỉ biết hắn có hộ khẩu thường trú tại Hà Nội chức",
+   "t@0.9": "đá gà miền Bắc chỉ biết hẳn có hộ khẩu thường trú tại Hà Nội chức"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/111/15.jpg",
+   "gt": "không ai biết chính xác hắn làm nghề gì. Hắn thường hay bê gà đi khắp",
+   "a": "không ai biết chính xác hẳn làm nghề gì. Hắn thường hay bê gà đi khắp",
+   "t@0.5": "không ai biết chính xác hẳn làm nghề gì. Hắn thường hay bê gà đi khắp",
+   "t@0.7": "không ai biết chính xác hẳn làm nghề gì. Hắn thường hay bê gà đi khắp",
+   "t@0.9": "không ai biết chính xác hẳn làm nghề gì. Hắn thường hay bê gà đi khắp"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/111/16.jpg",
+   "gt": "các sới bằng chiếc ôtô hiệu Camry trị giá vài chục ngàn USD của mình.",
+   "a": "các sới bằng chiếc ôtô hiệu Camn tr giá vài chục ngàn USD của mình.",
+   "t@0.5": "các sới bằng chiếc ôtô hiệu Camn tr giá vài chục ngàn USD của mình.",
+   "t@0.7": "các sới bằng chiếc ôtô hiệu Camn tr giá vài chục ngàn USD của mình.",
+   "t@0.9": "các sới bằng chiếc ôtô hiệu Camn tr giá vài chục ngàn USD của mình."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/111/17.jpg",
+   "gt": "Hắn đã từng chơi những trận cá cược gà hơn 50 triệu đồng... Nói đến",
+   "a": "Hắn đã từng chơi những trận cá cược gà hơn 50 triệu đồng... Nói đến",
+   "t@0.5": "Hắn đã từng chơi những trận cá cược gà hơn 50 triệu đồng... Nói đến",
+   "t@0.7": "Hắn đã từng chơi những trận cá cược gà hơn 50 triệu đồng... Nói đến",
+   "t@0.9": "Hắn đã từng chơi những trận cá cược gà hơn 50 triệu đồng... Nói đến"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/111/18.jpg",
+   "gt": "chân dung những kẻ bạc gà không thể quên những tay chủ sới.",
+   "a": "chân dung những kẻ bạc gà không thể quên những tay chủ sới.",
+   "t@0.5": "chân dung những kẻ bạc gà không thể quên những tay chủ sới.",
+   "t@0.7": "chân dung những kẻ bạc gà không thể quên những tay chủ sới.",
+   "t@0.9": "chân dung những kẻ bạc gà không thể quên những tay chủ sới."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/111/19.jpg",
+   "gt": "Phần nhiều họ là những thành phần có \" máu mặt \" ở địa phương, nếu chỉ",
+   "a": "Phần nhiều họ là những thành phần có \" máu mặt \", ở địa phương, nếu chỉ",
+   "t@0.5": "Phần nhiều họ là những thành phần có \" máu mặt \", ở địa phương, nếu chỉ",
+   "t@0.7": "Phần nhiều họ là những thành phần có \" máu mặt \", ở địa phương, nếu chỉ",
+   "t@0.9": "Phần nhiều họ là những thành phần có \" máu mặt \", ở địa phương, nếu chỉ"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/111/20.jpg",
+   "gt": "là người bình thường chắc chẳng đủ gan để mở một sới ngay giữa ban ngày",
+   "a": "là người bình thường chắc chẳng đủu gan để mở một sới ngay giữa ban ngày",
+   "t@0.5": "là người bình thường chắc chẳng đủu gan để mở một sới ngay giữa ban ngày",
+   "t@0.7": "là người bình thường chắc chẳng đủ gan để mở một sới ngay gian ban ngày",
+   "t@0.9": "là người bình thường chắc chẳng đủ gan để mở một sới ngay gian ban ngày"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/111/21.jpg",
+   "gt": "ban mặt. Họ đồng thời cũng là những \" tín đồ \" của \" đạo bạc gà \". Họ",
+   "a": "ban mặt. Họ đồng thời cũng là những c tín đồ v của \" đạo bạc gả \". Họ",
+   "t@0.5": "ban mặt. Họ đồng thời cũng là những c tín đồ v của \" đạo bạc gả \". Họ",
+   "t@0.7": "ban mặt. Họ đồng thời cũng là những c tín đồ v của \" đạo bạc gả \". Họ",
+   "t@0.9": "ban mặt. Họ đồng thời cũng là những c tín đồ và của \" đạo bạc gả \". Họ"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/111/22.jpg",
+   "gt": "mở sới không phải chỉ là tạo sân chơi \" lành mạnh \" cho dân mê gà mà cốt",
+   "a": "mở sới không phải chỉ là tạo sân chơi \" lành mạnh \" cho dân mô gà mà cốt",
+   "t@0.5": "mở sới không phải chỉ là tạo sân chơi \" lành mạnh \" cho dân mô gà mà cốt",
+   "t@0.7": "mở sới không phải chỉ là tạo sân chơi \" lành mạnh \" cho dân mô gà mà cốt",
+   "t@0.9": "mở sới không phải chỉ là tạo sân chơi \" lành mạnh \" cho dân mô gà mà cốt"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/111/23.jpg",
+   "gt": "để kinh doanh, thu tiền sới sau mỗi trận đấu, trong đó bao gồm cả",
+   "a": "để kinh doanh, thu tiền sới sau mỗi trận đấu, trong đó bao gồm cả",
+   "t@0.5": "để kinh doanh, thu tiền sới sau mỗi trận đấu, trong đó bao gồm cả",
+   "t@0.7": "để kinh doanh, thu tiền sới sau mỗi trận đấu, trong đó bao gồm cả",
+   "t@0.9": "để kinh doanh, thu tiền sới sau mỗi trận đấu, trong đó bao gồm cả"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/111/24.jpg",
+   "gt": "\" phí an ninh \", \" phí liên lạc \". Đó là chưa kể hàng trăm thứ dịch vụ",
+   "a": "26phí an minh s, c phí liên lạc \". Đó là chưa kể hàng trăm thứ dịch vụ",
+   "t@0.5": "26phí an minh s, c phí liên lạc \". Đó là chưa kể hàng trăm thứ dịch vụ",
+   "t@0.7": "26phí an minh s, c phí liên lạc \". Đó là chưa kể hàng trăm thứ dịch vụ",
+   "t@0.9": "26phí an minh s, c phí liên lạc \". Đó là chưa kể hàng trăm thứ dịch vụ"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/111/25.jpg",
+   "gt": "kèm theo như ăn uống, giữ xe... với mức giá cắt cổ.",
+   "a": "kèm theo như ăn uống, giữ xe... với mức giá cắt cổ.",
+   "t@0.5": "kèm theo như ăn uống, giữ xe... với mức giá cắt cổ.",
+   "t@0.7": "kèm theo như ăn uống, giữ xe... với mức giá cắt cổ.",
+   "t@0.9": "kèm theo như ăn uống, giữ xe... với mức giá cắt cổ."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/111/26.jpg",
+   "gt": "Tính nhẩm ra nếu ngày nào đông khách mỗi phường gà thu nhập",
+   "a": "Tính nhẩm ra nếu ngày nào đông khách mỗi phường gà thu nhập",
+   "t@0.5": "Tính nhẩm ra nếu ngày nào đông khách mỗi phường gà thu nhập",
+   "t@0.7": "Tính nhẩm ra nếu ngày nào đông khách mỗi phương gà thu nhập",
+   "t@0.9": "Tính nhẩm ra nếu ngày nào đông khách mỗi phương gà thu nhập"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/111/27.jpg",
+   "gt": "không dưới tiền triệu.",
+   "a": "không dưới tiền triệp.",
+   "t@0.5": "không dưới tiền triệp.",
+   "t@0.7": "không dưới tiền triệp.",
+   "t@0.9": "không dưới tiền triệp."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/113/1.jpg",
+   "gt": "Hà Nội : 98% - 100% người nghiện tái nghiện. Phát biểu tại hội nghị sơ kết",
+   "a": "Hà Nội : 98% - 200 % người nghiện túi nghiện. Phát biểu tại hột nghị sơ kết",
+   "t@0.5": "Hà Nội : 98% - 200 % người nghiện túi nghiện. Phát biểu tại hột nghị sơ kết",
+   "t@0.7": "Hà Nội : 98% - 200 % người nghiện túi nghiện. Phát biểu tại hột nghị sơ kết",
+   "t@0.9": "Hà Nội : 98% - 200 % người nghiện túi nghiện. Phát biểu tại hột nghị sơ kết"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/113/2.jpg",
+   "gt": "ba năm công tác phòng chống ma túy, AIDS và mại dâm, tổ chức trong hai ngày 22 và 23 - 3",
+   "a": "ba năm công tác phòng chỗng mư tuy, HDS và mại dâm, tổ chức trong hai ngày22 và 23)",
+   "t@0.5": "ba năm công tác phòng chỗng mư tuy, HDS và mại dâm, tổ chức trong hai ngày22 và 23)",
+   "t@0.7": "ba năm công tác phòng chỗng mư tuy, HDS và mại dâm, tổ chức trong hai ngày22 và 23)",
+   "t@0.9": "ba năm công tác phòng chỗng mư tuy, HDS và mại dâm, tổ chức trong hai ngày22 và 23)"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/113/3.jpg",
+   "gt": "tại Hà Nội, Bộ trưởng Bộ Lao động - thương binh & xã hội Nguyễn Thị Hằng cho biết hiện",
+   "a": "sại Hà Nội, Bộ trương Bộ Lao động - thương binh & xã tệi Nguyễn Thị Hằng cho biết hiện",
+   "t@0.5": "sại Hà Nội, Bộ trương Bộ Lao động - thương binh & xã tệi Nguyễn Thị Hằng cho biết hiện",
+   "t@0.7": "sài Hà Nội, Bộ trưởng Bộ Lao động - thương binh & xã tệi Nguyễn Thị Hằng cho biết hiện",
+   "t@0.9": "sài Hà Nội, Bộ trưởng Bộ Lao động - thương binh & xã tệi Nguyễn Thị Hằng cho biết hiện"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/113/4.jpg",
+   "gt": "cả nước có 36.000 người mại dâm, cùng gần 3.200 đối tượng chủ chứa, gần 1.100 môi",
+   "a": "cả nước có 36.000 người mại dâm, cùng 3.200 đối tượng chủ chứa, gần 1.100 môi",
+   "t@0.5": "cả nước có 36.000 người mại dâm, cùng 3.200 đối tượng chủ chứa, gần 1.100 môi",
+   "t@0.7": "cả nước có 36.000 người mại dâm, cùng 3.200 đối tượng chủ chứa, gần 1.100 môi",
+   "t@0.9": "cả nước có 36.000 người mại dâm, cùng 3.200 đối tượng chủ chủ, gần 1.100 môi"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/113/5.jpg",
+   "gt": "giới mại dâm và 7.000 tiếp viên trong các cơ sở kinh doanh dịch vụ, khách sạn nhà",
+   "a": "giới mại dâm và 7000 tiếp viên trong các cơ sở kinh doanh dịch vụ, khách sạn nhà",
+   "t@0.5": "giới mại dâm và 7000 tiếp viên trong các cơ sở kinh doanh dịch vụ, khách sạn nhà",
+   "t@0.7": "giới mại dâm và 7000 tiếp viên trong các cơ sở kinh doanh dịch vụ, khách sạn nhà",
+   "t@0.9": "giới mại dâm và 7000 tiếp viên trong các cơ sở kinh doanh dịch vụ, khách sạn nhà"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/113/6.jpg",
+   "gt": "hàng có biểu hiện nghi vấn hoạt động mại dâm.",
+   "a": "hàng có biểu niện nghi vấn hoạt động mại dâm.",
+   "t@0.5": "hàng có biểu niện nghi vấn hoạt động mại dâm.",
+   "t@0.7": "hàng có biểu nhiệt nghi vấn hoạt đồng mại dâm.",
+   "t@0.9": "hang có biểu niện nghi vấn hoa động mại dâm."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/113/7.jpg",
+   "gt": "Gái bán dâm chủ yếu trong lứa tuổi 18 - 30, phần lớn là ít học, nghèo khó, còn lại",
+   "a": "Gái bán dâm chủ yữu trong lứa tuổi 18 - 30, phần lớn là ít hục, nghèo khó, còn lại",
+   "t@0.5": "Gái bán dâm chủ yữu trong lứa tuổi 18 - 30, phần lớn là ít hục, nghèo khó, còn lại",
+   "t@0.7": "Gái bán dâm chủ yữu trong lứa tuổi 18 - 30, phần lớn là ít hục, nghèo khó, còn lại",
+   "t@0.9": "Gái bán dâm chủ yữu trong lứa tuổi 18 - 30, phần lớn là ít hục, nghèo khó, còn lại"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/113/8.jpg",
+   "gt": "khoảng 15% lười lao động, đua đòi ăn diện và tự nguyện đi vào con đường bán dâm.",
+   "a": "khoảng 15% dưỡi lao động, đuc đòi ăn diện và tự nguyện đi vào còn đường bén dám.",
+   "t@0.5": "khoảng 15% dưỡi lao động, đuc đòi ăn diện và tự nguyện đi vào còn đường bén dám.",
+   "t@0.7": "khoảng 15% dưỡi lao động, đuc đòi ăn diện và tự nguyện đi vào còn đường bén dám.",
+   "t@0.9": "khoảng 15% dưỡi lao động, đuc đòi ăn diện và tự nguyện đi vào còn đường bén dám."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/113/9.jpg",
+   "gt": "\" Tệ nạn mại dâm vẫn đang diễn biến phức tạp, riêng TP.HCM có tới 10.000 gái bán dâm,",
+   "a": "\" Tộ nạn mại dâm vẫn đang diễn biến phức tạp, riêng TP.HCM có tối 10.00 gái bán dâm,",
+   "t@0.5": "\" Tộ nạn mại dâm vẫn đang diễn biến phức tạp, riêng TP.HCM có tối 10.00 gái bán dâm,",
+   "t@0.7": "\" Tội nạn mại dâm vẫn đang diễn biến phức tạp, riêng TP.HCM có tối 10.00 gái bán dâm,",
+   "t@0.9": "\" Tội nạn mại dâm vẫn đang diễn biến phức tạp, riêng TP.HCM có tối 10.00 gái bán dâm,"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/113/10.jpg",
+   "gt": "đối tượng mua dâm vẫn tăng, nhiều người mua dâm là cán bộ công chức \" - bà",
+   "a": "đối tượng mua dâm vẫn tăng, nhiều người mua dâm là cán bộ công chức \" - bà",
+   "t@0.5": "đối tượng mua dâm vẫn tăng, nhiều người mua dâm là cán bộ công chức \" - bà",
+   "t@0.7": "đối tượng mua dâm vẫn tăng, nhiều người mua dâm là cán bộ công chức \" - bà",
+   "t@0.9": "đối tượng mua dâm vẫn tăng, nhiều người mua dâm là cán bộ công chức \" - bà"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/113/11.jpg",
+   "gt": "Hằng nhấn mạnh. Về phòng chống tội phạm ma túy, trong ba năm qua số người",
+   "a": "giằng nhấn mạnh. Về phòng chỗng tội phạm ma túy, trong ba năm qua số người",
+   "t@0.5": "giằng nhấn mạnh. Về phòng chỗng tội phạm ma túy, trong ba năm qua số người",
+   "t@0.7": "giằng nhấn mạnh. Về phòng phòng tội phạm ma túy, trong ba năm qua số người",
+   "t@0.9": "giằng nhấn mạnh. Về phòng chỗng tội phạm ma túy, trong ba năm qua số người"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/113/12.jpg",
+   "gt": "nghiện tăng ở 53 / 64 tỉnh thành, chỉ 40% người nghiện được đưa đi cai nghiện",
+   "a": "nghiện tăng ở 53 (64 tỉnh thành, chỉ 40% người nghiện được đưa đi cai nghiện",
+   "t@0.5": "nghiện tăng ở 53 (64 tỉnh thành, chỉ 40% người nghiện được đưa đi cai nghiện",
+   "t@0.7": "nghiện tăng ở 53 (64 tỉnh thành, chỉ 40% người nghiện được đưa đi cai nghiện",
+   "t@0.9": "nghiện tăng ở 53 (64 tỉnh thành, chỉ 40% người nghiện được đưa đi cai nghiện"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/113/13.jpg",
+   "gt": "tập trung.",
+   "a": "tặp trung.",
+   "t@0.5": "tặp trung.",
+   "t@0.7": "tặp trong.",
+   "t@0.9": "tặp trong."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/113/14.jpg",
+   "gt": "Trong các trường học đã phát hiện 652 học sinh và 229 giáo viên nghiện ma túy.",
+   "a": "Trong các trương hợp đã phát hiện 62 học sinh và 229 giáo viên nghiện ma túy.",
+   "t@0.5": "Trong các trương hợp đã phát hiện 62 học sinh và 229 giáo viên nghiện ma túy.",
+   "t@0.7": "Trong các trường hợp đã phát hiện 62 học sinh và 229 giáo viên nghiện ma túy.",
+   "t@0.9": "Trong các trường hợp đã phát hiện 62 học sinh và 229 giáo viên nguyên ma túy."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/113/15.jpg",
+   "gt": "\" Đáng buồn là tỉ lệ tái nghiện còn cao ở hầu hết các địa phương, điều tra tại Hà",
+   "a": "\" Đáng buồn là tỉ lộ tái nghiện còn cao ở hầu hết các địa phương, điều tra tại Hài",
+   "t@0.5": "\" Đáng buồn là tỉ lộ tái nghiện còn cao ở hầu hết các địa phương, điều tra tại Hải",
+   "t@0.7": "\" Đáng buồn là tỉ lộ tái nghiện còn cao ở hầu hết các địa phương, điều tra tại Hài",
+   "t@0.9": "\" Đáng buồn là tỉ lộ tái nguyễn còn cao ở hầu hết các địa phương, điều tra tại Hài"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/113/16.jpg",
+   "gt": "Nội năm 2003 tỉ lệ tái nghiện sau một năm cai là 90%, sau hai năm cai là 95%,",
+   "a": "Nội năm 2003 tỉ lệ tái nghiện sau một năm cái là 90%, sau hai năm cai là 952,",
+   "t@0.5": "Nội năm 2003 tỉ lệ tái nghiện sau một năm cái là 90%, sau hai năm cai là 952,",
+   "t@0.7": "Nội năm 2003 tỉ lệ tái nghiện sau một năm cái là 90%, sau hai năm cai là 952,",
+   "t@0.9": "Nội năm 2003 tỉ lệ tái nghiện sau một năm cái là 90%, sau hai năm cai là 952,"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/113/17.jpg",
+   "gt": "sau ba năm là... 98 -100% \" - Thứ trưởng Bộ Công an Lê Thế Tiệm cho biết.",
+   "a": "sau ba năm là... 98 - 1002 \" - Thứ trưởng Bộ Công an Lê thá Tiệm cho biết.",
+   "t@0.5": "sau ba năm là... 98 - 1002 \" - Thứ trưởng Bộ Công an Lê tha Tiệm cho biết.",
+   "t@0.7": "sau ba năm là... 98 - 1002 \" - Thứ trưởng Bộ Công an Lê thá Tiệm cho biết.",
+   "t@0.9": "sau ba năm là... 98 - 1002 \" - Thứ trưởng Bộ Công an Lê thá Tiệm cho biết."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/113/18.jpg",
+   "gt": "Trong khi đó số người nhiễm HIV tại VN vẫn tiếp tục gia tăng. Riêng năm 2003 cả",
+   "a": "Trong khi đó số người nhiễm HIV tại VN vắn tiếp tục gia tăng. Riêng năm 2003 cải",
+   "t@0.5": "Trong khi đó số người nhiễm HIV tại VN vắn tiếp tục gia tăng. Riêng năm 2003 cải",
+   "t@0.7": "Trong khi đó số người nhiễm HIV tại VN vắn tiếp tục gia tăng. Riêng năm 2003 cải",
+   "t@0.9": "Trong khi đó số người nhiễm HIV tại VN vắn tiếp tục gia tăng. Riêng năm 2003 cải"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/113/19.jpg",
+   "gt": "nước có trên 16.000 người nhiễm HIV mới được phát hiện, nâng tổng số người nhiễm đã",
+   "a": "nước có trên 16.000 người nhiễm HIV mới được phát tiện, nâng tổng số người nhiềm đã",
+   "t@0.5": "nước có trên 16.000 người nhiễm HIV mới được phát tiện, nâng tổng số người nhiềm đã",
+   "t@0.7": "nước có trên 16.000 người nhiễm HIV mới được phát tiễn, nâng tổng số người nhiềm đã",
+   "t@0.9": "nước có trên 16.000 người nhiễm HIV mới được phát tiện, nâng tổng số người nhiềm đã"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/113/20.jpg",
+   "gt": "được phát hiện trên toàn quốc lên gần 80.000 người, phần lớn trong số này là thanh",
+   "a": "được phát hiện trên toàn quất lên gần 80.000 người, phần lớn trong số này là thanh",
+   "t@0.5": "được phát hiện trên toàn quất lên gần 80.000 người, phần lớn trong số này là thanh",
+   "t@0.7": "được phát hiện trên toàn quất lên gần 80.000 người, phần lớn trong số này là thanh",
+   "t@0.9": "được phát hiện trên toàn quốc lên gần 80.000 người, phần lớn trong số này là thanh"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/113/21.jpg",
+   "gt": "niên 20 - 29 tuổi.",
+   "a": "niên 20 - 29 tuổi.",
+   "t@0.5": "niên 20 - 29 tuổi.",
+   "t@0.7": "niên 20 - 29 tuổi.",
+   "t@0.9": "niên 20 - 29 tuổi."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/117/1.jpg",
+   "gt": "Ngày thứ ba phúc thẩm vụ án Lã Thị Kim Oanh : Bộ trưởng ra tòa làm nhân chứng.",
+   "a": "Ngày thứ ba phúc thẩm vụ án Lã Thị Kim Oanh : Bộ trưởng ra tòa làm nhân chúng.",
+   "t@0.5": "Ngày thứ ba phúc thẩm vụ án Lã Thị Kim Oanh : Bộ trưởng ra tòa làm nhân chúng.",
+   "t@0.7": "Ngày thứ ba phúc thẩm vụ án Lã Thị Kim Oanh : Bộ trưởng ra tòa làm nhân chúng.",
+   "t@0.9": "Ngày thứ ba phúc thẩm vụ án Lã Thị Kim Oanh : Bộ trưởng ra tòa làm nhân chúng."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/117/2.jpg",
+   "gt": "Chiều 24 - 3, bộ trưởng Bộ Nông nghiệp và phát triển nông thôn (NN & PTNT) Lê Huy",
+   "a": "Chiếu 24 - 3, bộ trưởng Bộ Nông Nghiệp v& phát triển nông thôn (NN& PTN T) Lê Huy",
+   "t@0.5": "Chiếu 24 - 3, bộ trưởng Bộ Nông Nghiệp v& phát triển nông thôn (NN& PTN T) Lê Huy",
+   "t@0.7": "Chiếu 24 - 3, bộ trưởng Bộ Nông Nghiệp v& phát triển nông thôn (NN& PTN T) Lê Huy",
+   "t@0.9": "Chiếu 24 - 3, bộ trưởng Bộ Nông Nghiệp v& phát triển nông thôn (NN& PTN T) Lê Huy"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/117/3.jpg",
+   "gt": "Ngọ đã xuất hiện tại trụ sở Tòa án Nhân dân Tối cao để làm chứng trong phiên",
+   "a": "Ngọ đã xuất hiện tại trụ sở Tòa án Nhân dân Tối cao để làm chứng trong phiên",
+   "t@0.5": "Ngọ đã xuất hiện tại trụ sở Tòa án Nhân dân Tối cao để làm chứng trong phiên",
+   "t@0.7": "Ngọ đã xuất hiện tại trụ sở Tòa án Nhân dân Tối cao để làm chứng trong phiên",
+   "t@0.9": "Ngọ đã xuất hiện tại trụ sở Tòa án Nhân dân Tối cao để làm chứng trong phiên"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/117/4.jpg",
+   "gt": "phúc thẩm xét xử bị cáo Lã Thị Kim Oanh và đồng phạm. \" Tháp tùng \" bộ",
+   "a": "phúc thẩm xét xử bị cáo Lã Thị Kim Oanh và đồng phạm. \" Tháp tùng \" bộ",
+   "t@0.5": "phúc thẩm xét xử bị cáo Lã Thị Kim Oanh và đồng phạm. \" Tháp tùng \" bộ",
+   "t@0.7": "phúc thẩm xét xử bị cáo Lã Thị Kim Oanh và đồng phạm. \" Tháp tùng \" bộ",
+   "t@0.9": "phúc thẩm xét xử bị cáo Lã Thị Kim Oanh và đồng phạm. \" Tháp tùng \" bộ"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/117/5.jpg",
+   "gt": "trưởng Ngọ là một số cán bộ cấp vụ của Bộ NN & PTNT, cũng là nhân chứng",
+   "a": "trưởng Ngọ là một số cán bộ cấp vụ của Bộ NN & PTNT, cũng là nhân chứng",
+   "t@0.5": "trưởng Ngọ là một số cán bộ cấp vụ của Bộ NN & PTNT, cũng là nhân chứng",
+   "t@0.7": "trường Ngọ là một số cán bộ cấp vụ của Bộ NN & PTNT, cũng là nhân chứng",
+   "t@0.9": "trường Ngọ là một số cán bộ cấp vụ của Bộ NN & PTNT, cũng là nhân chứng"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/117/6.jpg",
+   "gt": "của vụ án. Vị nhân chứng đặc biệt này vội vã lên cầu thang và đi vào",
+   "a": "của vụ án. Vụ nhân chứng đặc biệt này vội vã lên cấu thang và đi vào",
+   "t@0.5": "của vụ án. Vụ nhân chứng đặc biệt này vội vã lên cấu thang và đi vào",
+   "t@0.7": "của vụ án. Vụ nhân chứng đặc biệt này vội vã lên cấu thang và đi vào",
+   "t@0.9": "của vụ án. vụ nhân chứng đặc biệt này vội vã lên cầu thang và đi vào"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/117/7.jpg",
+   "gt": "bên trong phòng xử rất nhanh để tránh ống kính máy ảnh của các phóng",
+   "a": "bên trong phòng xử rất nhanh để tránh ống kính máy ảnh của các phóng",
+   "t@0.5": "bên trong phòng xử rất nhanh để tránh ống kính máy ảnh của các phóng",
+   "t@0.7": "bên trong phòng xử rất nhanh để tránh ống kinh máy ảnh cua các phóng",
+   "t@0.9": "bên trong phòng xử rất nhân để tránh ống kính máy ảnh của các phóng"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/117/8.jpg",
+   "gt": "viên.",
+   "a": "viên.",
+   "t@0.5": "viên.",
+   "t@0.7": "viên.",
+   "t@0.9": "viên."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/117/9.jpg",
+   "gt": "Muốn biết đúng hay sai, tòa phải nhờ... hội đồng thẩm định Hội đồng xét xử (HĐXX)",
+   "a": ". Muốn biết đúng hay sai, tòa phải nhờ... hội đồng thấm định Hội đồng xét xử (HĐXX,",
+   "t@0.5": ". Muốn biết đúng hay sai, tòa phải nhờ... hội đồng thấm định Hội đồng xét xử (HĐXX,",
+   "t@0.7": ". Muốn biết đúng hay sai, tòa phải nhờ... hội đồng thấm định Hội đồng xét xử (HĐXX,",
+   "t@0.9": ". Muốn biết đúng hay sai, tòa phải nhờ... hội đồng thẩm định Hội đồng xét xử (HĐXX,"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/117/10.jpg",
+   "gt": "hỏi bị cáo Nguyễn Quang Hà (nguyên thứ trưởng Bộ NN & PTNT) : \" Muốn đối",
+   "a": "hải bị cáo Nguyễn Quang Hà (nguyên thứ brưởng Bộ NN &PTN : \" Muốn đối",
+   "t@0.5": "hải bị cáo Nguyễn Quang Hà (nguyên thứ brưởng Bộ NN &PTN : \" Muốn đối",
+   "t@0.7": "hải bi cáo Nguyễn Quang Hà (nguyên thứ brưởng Bộ NN &PTN : \" Muốn đối",
+   "t@0.9": "hải bi cáo Nguyễn Quang Hà (nguyên thứ trưởng Bộ NN &PTN : \" Muốn đối"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/117/11.jpg",
+   "gt": "chất với bộ trưởng Lê Huy Ngọ về những vấn đề gì? \". \" Tôi muốn anh Ngọ",
+   "a": "chất với bộ trưởng Lê Huy Ngọ về những vấn đã gì? \". \" Tôi muốn anh Ngọ",
+   "t@0.5": "chất với bộ trưởng Lê Huy Ngọ về những vấn đã gì? \". \" Tôi muốn anh Ngọ",
+   "t@0.7": "chất với bộ trưởng Lê Huy Ngọ về những vấn đã gì? \". \" Tôi muốn anh Ngọ",
+   "t@0.9": "chất với bộ trưởng Lê Huy Ngọ về những vấn đã gì? \". \" Tôi muốn anh Ngọ"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/117/12.jpg",
+   "gt": "đánh giá về công việc và trách nhiệm của tôi ở Bộ NN & PTNT, cũng như",
+   "a": "đánh giá về công việc và trách nhiệm của tôi ở Bộ NN & PTNT, cũng như",
+   "t@0.5": "đánh giá về công việc và trách nhiệm của tôi ở Bộ NN & PTNT, cũng như",
+   "t@0.7": "đánh giá về công việc và trách nhiệm của tôi ở Bộ NN & PTNT, cũng như",
+   "t@0.9": "đánh giá về công việc và trách nhiệm của tôi ở Bộ NN & PTNT, cũng như"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/117/13.jpg",
+   "gt": "trong sự việc này \", bị cáo Hà trình bày. Nhân chứng Lê Huy Ngọ xác nhận :",
+   "a": "trong 8t việc này \" bị cáo Hà trình bày. Nhân chứng Lê Huy Ngọ xác nhận :",
+   "t@0.5": "trong 8 việc này \" bị cáo Hà trình bày. Nhân chứng Lê Huy Ngọ xác nhận :",
+   "t@0.7": "trong 8 việc này \" bị cáo Hà trình bày. Nhân chứng Lê Huy Ngọ xác nhận :",
+   "t@0.9": "trong 8 việc này \" bị cáo Hà trình bày. Nhân chứng Lê Huy Ngọ xác nhận :"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/117/14.jpg",
+   "gt": "\" Anh Hà là người làm việc có trách nhiệm \", nhưng cụ thể trong sự việc này",
+   "a": "\" Anh Hà là người làm việc có trách nhiệm \", nhưng cụ thể trong sự vuệc này",
+   "t@0.5": "\" Anh Hà là người làm việc có trách nhiệm \", nhưng cụ thể trong sự vuệc này",
+   "t@0.7": "\" Anh Hà là người làm việc có trách nhiệm \", nhưng cụ thể trong sự vuệc này",
+   "t@0.9": "\" Anh Hà là người làm việc có trách nhiệm \", nhưng cụ thể trong sự vuệc này"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/117/15.jpg",
+   "gt": "(vụ Lã Thị Kim Oanh) thì \" thời gian 5 - 6 năm rồi, với khối lượng công việc của",
+   "a": "(vụ Lã Thị Kim) thì \" thời gian 5 - 6 năm rồi, với khối lượng công việc của",
+   "t@0.5": "(vụ Lã Thị Kim) thì \" thời gian 5 - 6 năm rồi, với khối lượng công việc của",
+   "t@0.7": "(vụ Lã Thị Kim) thì \" thời gian 5 - 6 năm rồi, với khối lượng công việc của",
+   "t@0.9": "(vụ Lã Thị Kim) thì \" thời gian 5 - 6 năm rồi, với khối lượng công việc của"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/117/16.jpg",
+   "gt": "bộ trưởng, tôi không thể nào nhớ hết được \".",
+   "a": "bộ trưởng, tôi không thế nào nhớ hết được \".",
+   "t@0.5": "bộ trưởng, tôi không thế nào nhớ hết được \".",
+   "t@0.7": "bộ trưởng, tôi không thế nào nhớ hết được \".",
+   "t@0.9": "bộ trưởng, tôi không thể nào nhớ hết được \"."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/117/17.jpg",
+   "gt": "\" Ông nhận thức như thế nào về công văn 327 của Chính phủ \", đại diện Viện",
+   "a": ",Ông nhận thức nhú thế nào về công văn 327 của Chính phủ \", đại diện Viện",
+   "t@0.5": ",Ông nhận thức nhú thế nào về công văn 327 của Chính phủ \", đại diện Viện",
+   "t@0.7": ",Ông nhận thức nhú thế nào về công văn 327 của Chính phủ \", đại diện Viện",
+   "t@0.9": ",ông nhận thức nhu thế nào về công văn 327 của chính phủ \", đại diện Viện"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/117/18.jpg",
+   "gt": "Kiểm sát đặt câu hỏi cho nhân chứng - bộ trưởng Lê Huy Ngọ. Ông Ngọ giải",
+   "a": "Kiếm soát đặt câu hỏi cho nhân chứng - bộ trưởng Lê Huy Ngọ. Ông Ngọ giải",
+   "t@0.5": "Kiếm soát đặt câu hỏi cho nhân chứng - bộ trưởng Lê Huy Ngọ. Ông Ngọ giải",
+   "t@0.7": "Kiếm soát đặt câu hỏi cho nhân chứng - bộ trưởng Lê Huy Ngọ. Ông Ngọ giải",
+   "t@0.9": "Kiểm soát đặt câu hỏi cho nhân chứng - bộ trưởng Lê Huy Ngọ. Ông Ngọ giải"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/117/19.jpg",
+   "gt": "trình : Đây là sự trả lời của Chính phủ, trong đó chủ trương đồng ý cho",
+   "a": "trình : Đây là sự trả lới của Chính phú, trong đó chú trương đồng ý cho",
+   "t@0.5": "trình : Đây là sự trả lới của Chính phú, trong đó chú trương đồng ý cho",
+   "t@0.7": "trình : Đây là sự trả lời của Chính phú, trong đó chu trương đồng ý cho",
+   "t@0.9": "trình : Đây là sự trả lời của Chính phụ, trong đó chú trương đồng ý cho"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/117/20.jpg",
+   "gt": "tăng vốn trong 6 tháng đầu năm 1998 để Công ty Tiếp thị có thể hoàn",
+   "a": "tăng vốn trong 6 tháng đầu năm 1998 đổ Công ty Tiếp thị có thể hoán",
+   "t@0.5": "tăng vốn trong 6 tháng đầu năm 1998 đổ Công ty Tiếp thị có thể hoán",
+   "t@0.7": "tăng vốn trong 6 tháng đầu năm 1998 đổ Công ty Tiếp thị có thể hoán",
+   "t@0.9": "tăng vốn trong 6 tháng đầu năm 1998 đổ Công ty Tiếp thị có thể hoàn"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/117/21.jpg",
+   "gt": "thành nhiệm vụ. Đó vừa là một quyết định \" đúng thẩm quyền \", vừa là",
+   "a": "thành nhiệm vụ. Đó vừa là một quyết định đúng thẩm quyến \", vừa là",
+   "t@0.5": "thành nhiệm vụ. Đó vừa là một quyết định đúng thẩm quyến \", vừa là",
+   "t@0.7": "thành nhiệm vụ. Đó vừa là một quyết định đúng thẩm quyến \", vừa là",
+   "t@0.9": "thành nhiệm vụ. Đó vừa là một quyết định đúng thẩm quyền \", vừa là"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/117/22.jpg",
+   "gt": "chủ trương \" tháo gỡ khó khăn của công trình nhóm A \".",
+   "a": "chủ trương \" thảo gỡ khó khăn của công trình nhóm A \".",
+   "t@0.5": "chủ trương \" thảo gỡ khó khăn của công trình nhóm A \".",
+   "t@0.7": "chủ trương \" thảo gỡ khó khăn của công trình nhóm A \".",
+   "t@0.9": "chủ trương \" thảo gỡ khó khăn của công trình nhóm A \"."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/117/23.jpg",
+   "gt": "Công văn 327 có ghi đồng ý như đề nghị của Bộ KHĐT cho phép Công ty Tiếp thị",
+   "a": "Công văn 327 có ghi đồng ý như đề nghị của Bộ KHDT cho phép Công ty Tiếp thị",
+   "t@0.5": "Công văn 327 có ghi đồng ý như đề nghị của Bộ KHDT cho phép Công ty Tiếp thị",
+   "t@0.7": "Công văn 327 có ghi đồng ý như đề nghị của Bộ KHDT cho phép Công ty Tiếp thị",
+   "t@0.9": "Công văn 327 có ghi đồng ý như đề nghị của Bộ KHDT cho phép Công ty Tiếp thị"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/117/24.jpg",
+   "gt": "vay vốn tín dụng theo kế hoạch Nhà nước năm 1998. \" Ông hiểu vốn tín",
+   "a": "nay vốn tín dụng theo kế hoạch Nhà nước năm 1998, \" Ông hiển vốn tín",
+   "t@0.5": "nay vốn tín dụng theo kế hoạch Nhà nước năm 1998, \" Ông hiển vốn tin",
+   "t@0.7": "nay vốn tín dụng theo kế hoạch Nhà nước năm 1998, \" Ông hiện vốn tin",
+   "t@0.9": "Nay vốn tín dụng theo kế hoạch Nhà nước năm 1998, \" Ông hiển vốn tín"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/117/25.jpg",
+   "gt": "dụng ở đây là vốn... gì? \", đại diện Viện Kiểm sát hỏi tiếp ông Ngọ. \" Là",
+   "a": "dụng ở đây là vốn... gì? \", đại diện Viện kiểm soát hỏi tiếp ông Ngo. \" Là",
+   "t@0.5": "dụng ở đây là vốn... gì? \", đại diện Viện kiểm soát hỏi tiếp ông Ngo. \" Là",
+   "t@0.7": "dụng ở đây là vốn... gì? \", đại diện Viện kiểm soát hỏi tiếp ông Ngo. \" Là",
+   "t@0.9": "dụng ở đây là vốn... gì? \", đại diện Viện kiểm soát hỏi tiếp ông Ngô. \" Là"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/117/26.jpg",
+   "gt": "vốn tín dụng ưu đãi theo kế hoạch của Chính phủ... \", ông bộ trưởng trả",
+   "a": "vốn tín dụng sưu đãi theo kế hoạch của Chính phú... \", ông bộ trưởng Trản",
+   "t@0.5": "vốn tín dụng sưu đãi theo kế hoạch của Chính phú... \", ông bộ trưởng Trản",
+   "t@0.7": "vốn tín dụng sưu đãi theo kế hoạch của Chính phú... \", ông bộ trưởng Trản",
+   "t@0.9": "vốn tín dụng sưu đãi theo kế hoạch của Chính phú... \", ông bộ trưởng Trản"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/117/27.jpg",
+   "gt": "lời. Vẫn Viện Kiểm sát : \" Bộ có chủ trương cho thứ trưởng ký xác nhận",
+   "a": "lời. Vẫn Viện Kiếm soát : \" Bộ có chú trương cho thét trưởng ký xác nhận",
+   "t@0.5": "lời. Vẫn Viện Kiếm soát : \" Bộ có chú trương cho thét trưởng ký xác nhận",
+   "t@0.7": "lời. Vẫn Viện Kiếm soát : \" Bộ có chú trương cho thét trưởng ký xác nhận",
+   "t@0.9": "lời. Vẫn Viện Kiếm soát : \" Bộ có chu trương chu theo trưởng ký xác nhận"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/117/28.jpg",
+   "gt": "vào công văn Công ty tiếp thị không? \" \" Bộ không có chủ trương này \",",
+   "a": "vào công văn Công ty tiếp thị không? \" \" Bộ không có chứ trướng này \",",
+   "t@0.5": "vào công văn Công ty tiếp thị không? \" \" Bộ không có chứ trường này \",",
+   "t@0.7": "vào công văn Công ty tiếp thị không? \" \" Bộ không có chu trong này \",",
+   "t@0.9": "vào công văn Công ty tiếp thị không? \" \" Bộ không có chứ trưởng này \","
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/117/29.jpg",
+   "gt": "bộ trưởng Bộ NN & PTNT khẳng định, mà chỉ là đề nghị của DN và",
+   "a": "bộ trưởng Bộ NN &PTNT khẳng định, mà ch là đồ nghị của DN và",
+   "t@0.5": "bộ trưởng Bộ NN &PTNT khẳng định, mà ch là đồ nghị của DN và",
+   "t@0.7": "bộ trưởng Bộ NN &PTNT khẳng định, mà ch là đồ nghị của DN và",
+   "t@0.9": "bộ trưởng Bộ NN &PTNT khẳng định, mà ch là đồ nghị của DN và"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/117/30.jpg",
+   "gt": "nếu xem xét \" thấy đúng thì giao người phụ trách lĩnh vực ký \".",
+   "a": "nếu xem xét \" thấy đúng thì giao người phụ trách lĩnh vực ký \".",
+   "t@0.5": "nếu xem xét \" thấy đúng thì giao người phụ trách lĩnh vực ký \".",
+   "t@0.7": "nếu xem xét \" thấy đúng thì giao người phù trách lĩnh vực ký \".",
+   "t@0.9": "nếu xem xét \" thấy đúng thì giao người phụ trách lĩnh vực ký \"."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/117/31.jpg",
+   "gt": "Như vậy, \" việc xác nhận của thứ trưởng Hà có cần thiết không? (ông Hà ký xác",
+   "a": "Như vậy, \" việc xác nhận của thứ trưởng Hà có cần thiết không? Công Hà ký xác",
+   "t@0.5": "Như vậy, \" việc xác nhận của thứ trưởng Hà có cần thiết không? Công Hà ký xác",
+   "t@0.7": "Như vậy, \" việc xác nhận của thứ trưởng Hà có cần thiết không? Công Hà ký xác",
+   "t@0.9": "Như vậy, \" việc xác nhận của thứ trưởng Hà có cần thiết không? Công Hà ký xác"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/117/32.jpg",
+   "gt": "nhận 6 văn bản dưới thời bộ trưởng Tạn PV) \", luật gia Trần Đình Triển",
+   "a": "nhận bvăn bản dưới thời bộ trưởng Tạn PV) \", luật gia Trần Đình Triển",
+   "t@0.5": "nhận bvăn bản dưới thời bộ trưởng Tạn PV) \", luật gia Trần Đình Triển",
+   "t@0.7": "nhận bvăn bản dưới thời bộ trưởng Tạn PV) \", luật gia Trần Đình Triển",
+   "t@0.9": "nhận bvăn bản dưới thời bộ trưởng Tạn PV) \", luật gia Trần Đình Triển"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/117/33.jpg",
+   "gt": "(bào chữa cho bị cáo Nguyễn Quang Hà) \" xoay \" nhân chứng Lê Huy Ngọ.",
+   "a": "(bào chữa cho bị cáo Nguyễn Quang Hà) \" xoay \" nhân chứng Lê Huy Ngọ.",
+   "t@0.5": "(bào chữa cho bị cáo Nguyễn Quang Hà) \" xoay \" nhân chứng Lê Huy Ngọ.",
+   "t@0.7": "(bảo chữa cho bị cáo Nguyễn Quang Hà) \" xoay \" nhân chứng Lê Huy Ngọ.",
+   "t@0.9": "(bào chữa cho bị cáo Nguyễn Quang Hà) \" xoay \" nhân chứng Lê Huy Ngọ."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/117/34.jpg",
+   "gt": "Ông Ngọ lúng túng : \" Cái này đề nghị HĐXX cho thẩm định ở một hội",
+   "a": "Ông Ngọ lúng túng : \" Cái này đề nghị HĐXX cho thẩm định ở một hội",
+   "t@0.5": "Ông Ngọ lúng túng : \" Cái này đề nghị HĐXX cho thẩm định ở một hội",
+   "t@0.7": "Ông Ngọ lúng túng : \" Cái này đề nghị HĐXX cho thẩm định ở một hội",
+   "t@0.9": "Ông Ngọ lúng túng : \" Cái này đề nghị HĐXX cho thẩm định ở một hội"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/117/35.jpg",
+   "gt": "đồng chuyên môn hoặc một cơ quan có trách nhiệm như ngân hàng... \".",
+   "a": "đồng chuyên món hoặc một cơ quan có trách nhiệm như ngân hàng... \".",
+   "t@0.5": "đồng chuyên món hoặc một cơ quan có trách nhiệm như ngân hàng... \".",
+   "t@0.7": "đồng chuyên môn hoặc một cơ quan có trách nhiệm như ngân hàng... \".",
+   "t@0.9": "đồng chuyên môn hoặc một cơ quan có trách nhiệm như ngân hang... \"."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/117/36.jpg",
+   "gt": "Ông giải thích thêm : Khi ba bộ Nông nghiệp, Lâm nghiệp, Thủy lợi sáp",
+   "a": "ông giải thích thêm : khi ba Bộ Nông nghiệp, Lâm nghiệp, Thủy lợi sáp",
+   "t@0.5": "ông giải thích thêm : khi ba Bộ Nông nghiệp, Lâm nghiệp, Thủy lợi sáp",
+   "t@0.7": "ông giải thích thêm : khi ba Bộ Nông nghiệp, Lâm nghiệp, Thủy lợi sáp",
+   "t@0.9": "ông giải thích thêm : khi ba Bộ Nông nghiệp, Lâm nghiệp, Thủy lợi sáp"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/117/37.jpg",
+   "gt": "nhập thành một, Bộ có tới 18 tổng công ty với gần 400 DN, việc thực hiện",
+   "a": "nhập thành một, Bộ có tới 18 tổng công ty với gần 4.00 DN, việc thực hiện",
+   "t@0.5": "nhập thành một, Bộ có tới 18 tổng công ty với gần 4.00 DN, việc thực hiện",
+   "t@0.7": "nhập thành một, Bộ có tới 18 tổng công ty với gần 4.00 DN, việc thực hiện",
+   "t@0.9": "nhập thành một, Bộ có tới 18 tổng công ty với gần 4.00 DN, việc thực hiện"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/117/38.jpg",
+   "gt": "chế độ báo cáo, kiểm tra, quyết toán... bị buông lỏng.",
+   "a": "chế độ báo cáo, kiểm tra, quyết toán... bị bông lơng.",
+   "t@0.5": "chế độ báo cáo, kiểm tra, quyết toán... bị bông lơng.",
+   "t@0.7": "chế độ báo cáo, kiểm tra, quyết toán... bị bông lơng.",
+   "t@0.9": "chế độ báo cáo, kiểm tra, quyết toán... bị bông lơng."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/117/39.jpg",
+   "gt": "\" Mong HĐXX xem xét hoàn cảnh của các đồng nghiệp của tôi lúc đó \", bộ trưởng",
+   "a": "\" Mong HĐXX xem xét hoàn cảnh của các đồng nghiệp của tôi lúc đó \", bộ trưởng",
+   "t@0.5": "\" Mong HĐXX xem xét hoàn cảnh của các đồng nghiệp của tôi lúc đó \", bộ trưởng",
+   "t@0.7": "\" Mong HĐXX xem xét hoàn cảnh của các đồng nghiệp của tôi lúc đó \", bộ trưởng",
+   "t@0.9": "\" Mong HĐXX xem xét hoàn cảnh của các đồng nghiệp của tôi lúc đó \", bộ trưởng"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/117/40.jpg",
+   "gt": "Ngọ nói với HĐXX nhưng dường như cũng có ý \" chia sẻ \" với hai cấp dưới của",
+   "a": "Ngọ nói với HĐXX nhưng dường như cũng có ý \" chia sẻ \" với hai cấp dưới của",
+   "t@0.5": "Ngọ nói với HĐXX nhưng dường như cũng có ý \" chia sẻ \" với hai cấp dưới của",
+   "t@0.7": "Ngọ nói với HĐXX nhưng dường như cũng có ý \" chia sẻ \" với hai cấp dưới của",
+   "t@0.9": "Ngọ nói với HĐXX nhưng dường như cũng có ý \" chia sẻ \" với hai cấp dưới của"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/117/41.jpg",
+   "gt": "mình trên hàng ghế bị cáo. Bị cáo Nguyễn Thiện Luân (nguyên thứ",
+   "a": "mình trên hàng ghế bị cáo. Bị cáo Nguyễn Thiện Luân (nguyên thứ",
+   "t@0.5": "mình trên hàng ghế bị cáo. Bị cáo Nguyễn Thiện Luân (nguyên thứ",
+   "t@0.7": "mình trên hang ghế bi cáo. Bị cáo Nguyễn Thiện Luân (nguyên thứ",
+   "t@0.9": "mình trên hang ghế bi cáo. Bị cao Nguyễn Thiện Luân (nguyên thứ"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/117/42.jpg",
+   "gt": "trưởng Bộ NN & PTNT) cho biết \" không cần thiết \" đối chất với \" cấp",
+   "a": "trưởng Bộ NN& PTNT) cho biết \" không cần thiết \" đối chất với cấp",
+   "t@0.5": "trưởng Bộ NN& PTNT) cho biết \" không cần thiết \" đối chất với cấp",
+   "t@0.7": "trưởng Bộ NN& PTNT) cho biết \" không cần thiết \" đối chất với cấp",
+   "t@0.9": "trưởng Bộ NN& PTNT) cho biết \" không cần thiết \" đối chất với cấp"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/117/43.jpg",
+   "gt": "trên \" của mình. Trước khi kết thúc, bộ trưởng Lê Huy Ngọ \" tranh thủ \"",
+   "a": "trên của mình. Trước khi kết thúc, bộ trưởng Lê Huy Ngọ \" tranh thủ \"",
+   "t@0.5": "trên của mình. Trước khi kết thúc, bộ trưởng Lê Huy Ngọ \" tranh thủ \"",
+   "t@0.7": "trên của mình. Trước khi kết thúc, bộ trưởng Lê Huy Ngọ \" tranh thủ \"",
+   "t@0.9": "trên của mình. Trước khi kết thúc, bộ trưởng Lê Huy Ngọ \" tranh thủ \""
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/117/44.jpg",
+   "gt": "xin HĐXX cho \" phát biểu vài lời \", cho hay ông về bộ tháng 10 - 1997,",
+   "a": "xin HĐXX cho \" phát biểu vài lời \", cho hay ông về bộ tháng 10 - 1997,",
+   "t@0.5": "xin HĐXX cho \" phát biểu vài lời \", cho hay ông về bộ tháng 10 - 1997,",
+   "t@0.7": "xin HĐXX cho \" phát biểu vài lời \", cho hay ông về bộ tháng 10 - 1997,",
+   "t@0.9": "xin HĐXX cho \" phát biểu vài lời \", cho hay ông về bộ tháng 10 - 1997,"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/117/45.jpg",
+   "gt": "khi dự án khu triển lãm nông nghiệp đã triển khai được 2 - 3 năm.",
+   "a": "khi dự án khu triển lãm nông nghiệp đã triển khai được 2 - 3 năm.",
+   "t@0.5": "khi dự án khu triển lãm nông nghiệp đã triển khai được 2 - 3 năm.",
+   "t@0.7": "khi dự án khu triển lãm nông nghiệp đã triển khai được 2 - 3 năm.",
+   "t@0.9": "khi dự án khí triển lãm nông nghiệp đã triển khai được 2 - 3 năm."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/117/46.jpg",
+   "gt": "\" Tôi không được bàn giao từ bộ trưởng cũ, những cái bộ trưởng cũ đã",
+   "a": "\" Tôi không được bàn giao từ bộ trưởng cũ, những cái bộ trưởng cũ đã",
+   "t@0.5": "\" Tôi không được bàn giao từ bộ trưởng cũ, những cái bộ trưởng cũ đã",
+   "t@0.7": "\" Tôi không được bàn giao từ bộ trưởng cũ, những cái bộ trưởng cũ đã",
+   "t@0.9": "\" Tôi không được bàn giao từ bộ trưởng cũ, những cái bộ trưởng cũ đã"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/117/47.jpg",
+   "gt": "quyết định thì anh em cứ tiếp tục làm, có gì phát sinh mới hỏi ý",
+   "a": "quyết định thì anh en cứ tiếp tục làm, có gì phát sinh mới hỏi ý",
+   "t@0.5": "quyết định thì anh en cứ tiếp tục làm, có gì phát sinh mới hỏi ý",
+   "t@0.7": "quyết định thì anh en cứ tiếp tục làm, có gì phát sinh mới hỏi ý",
+   "t@0.9": "quyết định thì anh en cứ tiếp tục làm, có gì phát sinh mới hỏi ý"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/117/48.jpg",
+   "gt": "kiến tôi... \".",
+   "a": "kiến tôi... \".",
+   "t@0.5": "kiến tôi... \".",
+   "t@0.7": "kiến tôi... \".",
+   "t@0.9": "kiến tôi... \"."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/128/1.jpg",
+   "gt": "Tây nguyên và Nam bộ : Có khả năng thiếu nước trên diện rộng.",
+   "a": "Tây 1guyên và Nam bộ : Có khả năng thiếu nước trên diện rộng.",
+   "t@0.5": "Tây 1guyên và Nam bộ : Có khả năng thiếu nước trên diện rộng.",
+   "t@0.7": "Tây 1guyên và Nam bộ : Có khả năng thiếu nước trên diện rộng.",
+   "t@0.9": "Tây 1guyên và Nam bộ : Có khả năng thiếu nước trên diện rộng."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/128/2.jpg",
+   "gt": "Cục Thủy lợi (Bộ Nông nghiệp & phát triển nông thôn) dự báo khu vực Tây",
+   "a": "Cục thủy lợi (Bộ Nông nghiệp & phát triển nông thôn) dị báo khu vực Tây",
+   "t@0.5": "Cục thủy lợi (Bộ Nông nghiệp & phát triển nông thôn) dị báo khu vực Tây",
+   "t@0.7": "Cục thủy lợi (Bộ Nông nghiệp & phát triển nông thôn) dị báo khu vực Tây",
+   "t@0.9": "Cục thủy lợi (Bộ Nông nghề & phát triển nông thôn) dị báo khu vực Tây"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/128/3.jpg",
+   "gt": "Nguyên và Nam bộ có khả năng sẽ thiếu nước ngọt và bị nước mặn xâm nhập",
+   "a": "Nguyên và Nm bộ có khả năng sẽ thiếu nước ngọt và bị nước mặn xâm nhập",
+   "t@0.5": "Nguyên và Nm bộ có khả năng sẽ thiếu nước ngọt và bị nước mặn xâm nhập",
+   "t@0.7": "Nguyên và Nm bộ có khả năng sẽ thiếu nước ngọt và bị nước mặn xâm nhập",
+   "t@0.9": "Nguyên và Nm bộ có khả năng sẽ thiếu nước ngọt và bị nước mặn xâm nhập"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/128/4.jpg",
+   "gt": "trên diện rộng vì từ nay đến tháng 5 - 2004 tổng lượng mưa tại các tỉnh trong",
+   "a": "trên diện rộng vì từ nay đến tháng 5 - 2004 tổng lượng mưa tại các tính trong",
+   "t@0.5": "trên diện rộng vì từ nay đến tháng 5 - 2004 tổng lượng mưa tại các tính trong",
+   "t@0.7": "trên diện rộng vì từ nay đến tháng 5 - 2004 tổng lượng mưa tại các tính trong",
+   "t@0.9": "trên diện rộng vì từ nay đến tháng 5 - 2004 tổng lượng mưa tại các tính trong"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/128/5.jpg",
+   "gt": "khu vực sẽ thiếu hụt so với trung bình nhiều năm cùng thời kỳ. Dự báo nếu",
+   "a": "khu vực sẽ thiếu hụt so với trung bình nhiều năm cùng thời kỳ. Cị báo nếu",
+   "t@0.5": "khu vực sẽ thiếu hụt so với trung bình nhiều năm cùng thời kỳ. Cị báo nếu",
+   "t@0.7": "khu vực sẽ thiếu hụt so với trung bình nhiều năm cùng thời kỳ. Cị báo nếu",
+   "t@0.9": "khu vực sẽ thiếu hụt số với trong bình nhiều năm cùng thời kỳ. Cị báo nếu"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/128/6.jpg",
+   "gt": "tiếp tục không mưa và nước mặn xâm nhập sâu sẽ khiến hơn 44.000 ha đất",
+   "a": "tiến tục không mưa và nước mặn xâm nhập sâu sẽ. khiến hơn 44000 ha đất",
+   "t@0.5": "tiến tục không mưa và nước mặn xâm nhập sâu sẽ. khiến hơn 44000 ha đất",
+   "t@0.7": "tiếp tục không mưa và nước mặn xâm nhập sâu sẽ. khiến hơn 44000 ha đất",
+   "t@0.9": "tiếp tục không mưa và nước mặn xâm nhập sâu sẽ. khiến hơn 44000 ha đất"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/128/7.jpg",
+   "gt": "nông nghiệp gặp khó khăn về nguồn nước tưới vào cuối vụ đông xuân.",
+   "a": "nóng nghiệp gặp khó khăn về nguồn nước tưới vào cuối vụ đông xuân",
+   "t@0.5": "nóng nghiệp gặp khó khăn về nguồn nước tưới vào cuối vụ đông xuân",
+   "t@0.7": "nóng nghiệp gặp khó khăn về nguồn nước tưới vào cuối vụ đông xuân",
+   "t@0.9": "nóng nghiệp gặp khó khăn về nguồn nước tưới vào cuối vụ đông xuân"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/128/8.jpg",
+   "gt": "Trong khi đó, tại lễ kỷ niệm Ngày nước thế giới (22 - 3), bà Kanni ignaraja, phó đại",
+   "a": "Trong khi đó, tại lễ kỷ niệm Ngày nước thế giới (22 - 3), bà Kanni ignaraja, phố đại",
+   "t@0.5": "Trong khi đó, tại lễ kỷ niệm Ngày nước thế giới (22 - 3), bà Kanni ignaraja, phố đại",
+   "t@0.7": "Trong khi đó, tại lễ kỷ niệm Ngày nước thế giới (22 - 3), bà Kanni ignaraja, phó đại",
+   "t@0.9": "Trong khi đó, tại lễ kỷ niệm Ngày nước thế giới (22 - 3), bà Kanni ignaraja, phố đại"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/128/9.jpg",
+   "gt": "diện thường trú của Chương trình Phát triển Liên Hiệp Quốc (UNDP) tại Hà Nội, khẳng",
+   "a": "diện thường trú của Chương trình phát triển Liên Hợp Quốc (UNDP) tại Hà Nội khẳng",
+   "t@0.5": "diện thường trú của Chương trình phát triển Liên Hợp Quốc (UNDP) tại Hà Nội khẳng",
+   "t@0.7": "diễn thường trú của Chương trình phát triển Liên Hợp Quốc (UNDP) tại Hà Nội khẳng",
+   "t@0.9": "diện thường trú của Chương trình phát triển Liên Hợp Quốc (UNDP) tại Hà Nội khẳng"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/128/10.jpg",
+   "gt": "định nếu VN muốn giải quyết được mục tiêu cung cấp nước sạch cho 85% dân",
+   "a": "định nếu VN muốn giải quyết được mục tiêu cung cấp nước sạch cho 55% dân",
+   "t@0.5": "định nếu VN muốn giải quyết được mục tiêu cung cấp nước sạch cho 55% dân",
+   "t@0.7": "định nếu VN muốn giải quyết được mục tiêu cung cấp nước sạch cho 55% dân",
+   "t@0.9": "định nếu VN muốn giải quyết được mục tiêu cung cấp nước sạch cho 55% dân"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/128/11.jpg",
+   "gt": "số vào năm 2010 và cho 100% dân số vào năm 2020 thì phải có ba yếu tố : tạo ra",
+   "a": "tố vào năm 2010 và cho 100% dân số vào năm 2020 thì phải có ba yếu tố : tạo ra",
+   "t@0.5": "tố vào năm 2010 và cho 100% dân số vào năm 2020 thì phải có ba yếu tố : tạo ra",
+   "t@0.7": "tố vào năm 2010 và cho 100% dân số vào năm 2020 thì phải có ba yếu tố : tạo ra",
+   "t@0.9": "tố vào năm 2010 và cho 100% dân số vào năm 2020 thì phải có ba yếu tố : tạo ra"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/128/12.jpg",
+   "gt": "nhiều hơn nữa các nguồn đầu tư trong và ngoài nước, xác định ưu tiên về xây",
+   "a": "nhiều hơn nữa các nguồn đầu tư trong và ngoài nước, xác định ưu tiên về xây",
+   "t@0.5": "nhiều hơn nữa các nguồn đầu tư trong và ngoài nước, xác định ưu tiên về xây",
+   "t@0.7": "nhiều hơn nữa các nguồn đầu tư trong và ngoài nước, xác định ưu tiên về xây",
+   "t@0.9": "nhiều hơn nữa các nguồn đầu tư trong và ngoài nước, xác định ưu tiên về xây"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/128/13.jpg",
+   "gt": "dựng năng lực ở những nơi có nhu cầu nước lớn nhất, huy động nhiều đối tượng",
+   "a": "dựng năng lực ở những nơi có nhu cầu nước lớn nhất, huy động nhiều đối tượng",
+   "t@0.5": "dựng năng lực ở những nơi có nhu cầu nước lớn nhất, huy động nhiều đối tượng",
+   "t@0.7": "dựng năng lực ở những nơi có nhu cầu nước lớn nhất, huy động nhiều đối tượng",
+   "t@0.9": "đứng năng lực ở những nơi có nhu cầu nước lớn nhất, huy động nhiều đối tượng"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/128/14.jpg",
+   "gt": "tham gia thực hiện phương thức quản lý tài nguyên nước.",
+   "a": "tham gia thực hiện phương thức quản lý tài nguyên nước.",
+   "t@0.5": "tham gia thực hiện phương thức quản lý tài nguyên nước.",
+   "t@0.7": "tham gia thực hiện phương thức quản lý tài nguyên nước.",
+   "t@0.9": "tham gia thực hiện phương thức quản lý tài nguyên nước."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/136/1.jpg",
+   "gt": "Chiếc xe cấp cứu của chúng tôi băng băng với tốc độ chóng mặt.",
+   "a": "Chiếc xe cấp cứu của chúng tôi bằng băng với tới độ chóng mặt.",
+   "t@0.5": "Chiếc xe cấp cứu của chúng tôi bằng băng với tới độ chóng mặt.",
+   "t@0.7": "Chiếc xe cấp cứu của chúng tôi bằng băng với tới độ chóng mặt.",
+   "t@0.9": "chiếc xe cấp cứu của chúng tôi bằng băng với tới độ chóng mặt."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/136/2.jpg",
+   "gt": "Đang giờ tan tầm, trên đường xe qua lại như đan mắt lưới.",
+   "a": "Đang giờ tan tầm, trên đường xe qua lại như đan mắt lưới.",
+   "t@0.5": "Đang giờ tan tầm, trên đường xe qua lại như đan mắt lưới.",
+   "t@0.7": "Đang giờ tan tầm, trên đường xe qua lại như đan mắt lưới.",
+   "t@0.9": "Đang giờ tan tầm, trên đường xế qua lại như đan mắt lưới."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/136/3.jpg",
+   "gt": "Tiếng còi hụ liên hồi. Anh Nghĩa lái xe bất ngờ thắng gấp vì từ",
+   "a": "tiếng còi hú liên hồi. Anh Nghĩa lái xe bất ngờ thắng gấp vì từ",
+   "t@0.5": "tiếng còi hú liên hồi. Anh Nghĩa lái xe bất ngờ thắng gấp vì từ",
+   "t@0.7": "tiếng còi hú liên hồi. Anh Nghĩa lái xe bất ngờ thắng gấp vì từ",
+   "t@0.9": "tiếng còi hú liên hồi. Anh Nghĩa lái xe bất ngờ thắng gấp vì từ"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/136/4.jpg",
+   "gt": "ngã ba một chiếc Spacy phóng ngang qua. Trên đường đi,",
+   "a": "ngả bá một chiếc Spay phóng ngang qua. Trên đường đi,",
+   "t@0.5": "ngả bá một chiếc Spay phóng ngang qua. Trên đường đi,",
+   "t@0.7": "ngả bá một chiếc Spay phóng ngang qua. Trên đường đi,",
+   "t@0.9": "ngả ba một chiếc bay phóng ngang qua. Trên đường đi,"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/136/5.jpg",
+   "gt": "thỉnh thoảng xe phải dừng lại vì những bác xích lô chở sắt",
+   "a": "thỉnh thoảng xe phải dừng lại vì những bác xích lô chở sắt",
+   "t@0.5": "thỉnh thoảng xe phải dừng lại vì những bác xích lố chở sắt",
+   "t@0.7": "thỉnh thoảng xe phải dừng lại vì những bác xích lô chở sắt",
+   "t@0.9": "thỉnh thoảng xe phải dừng lại vì những bác xích lô chở sắt"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/136/6.jpg",
+   "gt": "thép cứ nhơi nhơi cuống thép dài ngoằng chực quất vào kẻ",
+   "a": "thép cứ nhơi nhơi cuống thép dài ngoằng chực quất vào kẻ",
+   "t@0.5": "thép cứ nhơi nhơi cuống thép dài ngoằng chực quất vào kẻ",
+   "t@0.7": "thép cứ nhẹ nhơi cuống thép dài ngang chực quất vào kẻ",
+   "t@0.9": "thép cứ nhẹ nhơi cuống thép dài ngang chực quất vào kẻ"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/136/7.jpg",
+   "gt": "khác. Ngoài ra những chiếc xe ben ngược chiều phóng bạt",
+   "a": "khái. Ngoài ra những chiếc xe người chiều phóng bạt",
+   "t@0.5": "khái. Ngoài ra những chiếc xe người chiều phóng bạt",
+   "t@0.7": "khai. Ngoài ra những chiếc xe người chiều phóng bạt",
+   "t@0.9": "Khái. Ngoài ra những chiếc xe người chiều phóng bạt"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/136/8.jpg",
+   "gt": "mạng như muốn lao vào xe cấp cứu.",
+   "a": "mạng như muốn lao vào xe cấp cứu.",
+   "t@0.5": "mạng như muốn lao vào xe cấp cứu.",
+   "t@0.7": "mạng như muốn lao vào xe cấp cứ.",
+   "t@0.9": "mạng như muốn lao vào xe cấp cứu."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/136/9.jpg",
+   "gt": "Một thanh niên mặc đồ dân phòng chờ sẵn nơi đầu hẻm",
+   "a": "Một thanh niên mặc đồ dân phòng chờ sẵn nơi đầu hẻm",
+   "t@0.5": "Một thanh niên mặc đồ dân phòng chờ sẵn nơi đầu hẻm",
+   "t@0.7": "Một thanh niên mặc đồ dân phòng chờ sẵn nơi đầu hẻm",
+   "t@0.9": "Một than niên mặc đồ dân phòng chờ sẵn nơi đầu hẻm"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/136/10.jpg",
+   "gt": "đón chúng tôi. Xe dừng, các anh chị em CCV mỗi người một",
+   "a": "đón chúng tôi. Xe dừng, các anh chị em CCV mỗi người một",
+   "t@0.5": "đón chúng tôi. Xe dừng, các anh chị em CCV mỗi người một",
+   "t@0.7": "đón chúng tôi. Xe dừng, các anh chị em CCV mỗi người một",
+   "t@0.9": "đón chúng tôi. Xe dừng, các anh chị em CCV mỗi người một"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/136/11.jpg",
+   "gt": "việc. BS Hà chuẩn bị y cụ, ĐDV Kim Chi xách theo vali cấp",
+   "a": "việc. BS Hà chuẩn bị y cụ, ĐDV Kim Chi xách theo vanh cấp",
+   "t@0.5": "việc. BS Hà chuẩn bị y cụ, ĐDV Kim Chi xách theo vanh cấp",
+   "t@0.7": "việc. BS Hà chuẩn bị y cụ, ĐDV Kim chi xách theo vanh cấp",
+   "t@0.9": "việc. BS Hà chuẩn bị y cụ, ĐDV Kim chi xách theo vanh cấp"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/136/12.jpg",
+   "gt": "cứu, ĐDV Huệ đem chiếc băng ca đẩy vào nhà có nạn nhân.",
+   "a": "cứu, ĐDV Huệ đem chiếc băng ca đẩy vào nhà có nạn nhân.",
+   "t@0.5": "cứu, ĐDV Huệ đem chiếc băng ca đẩy vào nhà có nạn nhân.",
+   "t@0.7": "cứu, ĐDV Huệ đem chiếc băng ca đẩy vào nhà có nạn nạn.",
+   "t@0.9": "cứu, ĐDV Huệ đem chiếc băng ca đẩy vào nhà có nạn nhân."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/136/13.jpg",
+   "gt": "Người bệnh là một bà cụ lớn tuổi, bị bí tiểu bụng căng lên",
+   "a": "Người bệnh là một bà cụ lớn tuổi, bị bí tiểu bụng căng lên",
+   "t@0.5": "Người bệnh là một bà cụ lớn tuổi, bị bí tiểu bụng căng lên",
+   "t@0.7": "Người bệnh là một bà cụ lớn tuổi, bị bí tiểu bụng căng lên",
+   "t@0.9": "người bệnh là một bà cụ lớn tuổi, bị bị tiểu bụng căng lên"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/136/14.jpg",
+   "gt": "như cái trống hầu. BS Hà vừa chẩn đoán bệnh vừa an ủi",
+   "a": "như cái trống hầu. BS Hà vừa chân đoán bệnh vừa an ủa",
+   "t@0.5": "như cái trống hầu. BS Hà vừa chân đoán bệnh vừa an ủa",
+   "t@0.7": "như cái trống hầu. BS Hà vừa chân đánh bệnh vừa an ủa",
+   "t@0.9": "như cái trống hầu. BS Hà vừa chân đánh bệnh vừa an ủa"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/136/15.jpg",
+   "gt": "và động viên tinh thần. ĐDV Kim Chi tiêm một mũi thuốc",
+   "a": "và động viên tinh thần. ĐDV xim chi tiêm một mũi thuốc",
+   "t@0.5": "và động viên tinh thần. ĐDV xim chi tiêm một mũi thuốc",
+   "t@0.7": "và động viên tinh thần. ĐDV xem chí tiêm một mũi thuốc",
+   "t@0.9": "và động viên tinh thần. ĐDV xim chỉ tiêm một mũi thuốc"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/136/16.jpg",
+   "gt": "thông tiểu.",
+   "a": "thông tiểu.",
+   "t@0.5": "thông tiểu.",
+   "t@0.7": "thông tiểu.",
+   "t@0.9": "thông tin."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/136/17.jpg",
+   "gt": "Thấy ổn, cùng với người nhà, CCV chuyển bệnh nhân ra băng",
+   "a": "Thấy ổn. cùng với người nhà, CCV chuyên bệnh nhân ra băng",
+   "t@0.5": "Thấy ổn. cùng với người nhà, CCV chuyên bệnh nhân ra băng",
+   "t@0.7": "Thấy ổn. cùng với người nhà, CCV chuyên bệnh nhân ra băng",
+   "t@0.9": "Thấy ổn. cùng với người nhà, CCV chuyên bệnh nhân ra băng"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/136/18.jpg",
+   "gt": "ca, đưa lên xe. Còi cứu thương lại bắt đầu hú lên. Chiếc xe",
+   "a": "Ca, đưa lên xe. Còi cứu thơng lại bắt đầu hư lên. Chiếc xe",
+   "t@0.5": "Ca, đưa lên xe. Còi cứu thơng lại bắt đầu hư lên. Chiếc xe",
+   "t@0.7": "Cà, đưa lên xe. Còi cứu thơng lại bắt đầu hư lên. Chiếc xe",
+   "t@0.9": "Cà, đưa lên xế. Còi cứu thơng lại bắt đầu hư lên. Chiếc xe"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/136/19.jpg",
+   "gt": "lại phải len lỏi qua những ngả đường để chuẩn bị đưa về",
+   "a": "lại phải len lỏi qua những ngả đường để chuẩn bị đưa về",
+   "t@0.5": "lại phải len lỏi qua những ngả đường để chuẩn bị đưa về",
+   "t@0.7": "lại phải len lỏi qua những ngả đường để chuẩn bị đưa về",
+   "t@0.9": "lại phải len lỏi qua những ngả đường để chuẩn bị đưa về"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/136/20.jpg",
+   "gt": "Bệnh viện Chợ Rẫy, quận 5. Cụ già rên hừ hừ. ĐDV Huê",
+   "a": "Bệnh viện Chợ Rẫy, quận 5. Cụ già rên hừ hIt. ĐDV Hục",
+   "t@0.5": "Bệnh viện Chợ Rẫy, quận 5. Cụ già rên hừ hIt. ĐDV Hục",
+   "t@0.7": "Bệnh viện Chợ Rẫy, quận 5. Cụ già rên hừ hIt. ĐDV Hục",
+   "t@0.9": "Bệnh viện Chợ Rẫy, quận 5. Cụ giá rên hừ hIt. ĐDV Hục"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/136/21.jpg",
+   "gt": "an ủi và lấy y cụ bó thật chặt vòng bụng để bà cụ",
+   "a": "an ủi và lấy y cụ bó thật chặt vông bụng để bà cụ",
+   "t@0.5": "an ủi và lấy y cụ bó thật chặt vông bụng để bà cụ",
+   "t@0.7": "an ủi và lấy y cụ bó thật chặt vòng bụng để bà cụ",
+   "t@0.9": "an ủi và lấy y cụ bố thật chặt vòng bụng để bà cụ"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/136/22.jpg",
+   "gt": "không bị đau khi xe xóc. Được chừng mươi phút đường xe,",
+   "a": "không bị đau khi xe xóc. Được chừng mươi phút đờng xe,",
+   "t@0.5": "không bị đau khi xe xóc. Được chừng mươi phút đờng xe,",
+   "t@0.7": "không bị đau khi xe xóc. Được chừng mươi phút đờng xe,",
+   "t@0.9": "không bị đau khi xe xóc. Được chừng mười phút đờng xe,"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/136/23.jpg",
+   "gt": "bà cụ đòi ói mửa. Anh Huệ lấy bao nilông cho cụ nhưng",
+   "a": "bà cụ đời Ái mửa. Anh Huệ lấy bao nilông chọ cụ nhưng",
+   "t@0.5": "bà cụ đời Ái mửa. Anh Huệ lấy bao nilông chọ cụ nhưng",
+   "t@0.7": "bà cụ đời Ai mửa. Anh Huệ lấy bao nilông chọ cụ nhưng",
+   "t@0.9": "bà cụ đời Ai mửa. Anh Huệ lấy bao nilông chọ cụ nhưng"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/136/24.jpg",
+   "gt": "không kịp nữa, cụ đã ói tràn ra sàn xe.",
+   "a": "không kịp nữa. cụ đã vói tràn ra sân xe.",
+   "t@0.5": "không kịp nữa. cụ đã vói tràn ra sân xe.",
+   "t@0.7": "không kịp nữa. cụ đã với tràn ra sân xe.",
+   "t@0.9": "không kịp nữa. cụ đã với tràn ra sân xe."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/136/25.jpg",
+   "gt": "Mùi ói xông nồng nặc.",
+   "a": "Mùi ói xông nồng nặc.",
+   "t@0.5": "Mùi ói xông nồng nặc.",
+   "t@0.7": "Mùi ói xông nồng nặc.",
+   "t@0.9": "Mùi ói xông nồng nặc."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/143/1.jpg",
+   "gt": "800 triệu đồng ủng hộ bệnh nhân nghèo. 800 triệu đồng là số tiền quyên góp được ngay trong",
+   "a": "800 triệu đồng ủng hộ bệnh nhân nghèo. 800 triệu đồng là số tiền nguyên góp được ngay trong",
+   "t@0.5": "800 triệu đồng ủng hộ bệnh nhân nghèo. 800 triệu đồng là số tiền nguyên góp được ngay trong",
+   "t@0.7": "800 triệu đồng ủng hộ bệnh nhân nghèo. 800 triệu đồng là số tiền nguyên góp được ngày trong",
+   "t@0.9": "800 triệu đồng ủng hỗ bệnh nhân nghèo. 800 triệu đồng là số tiền nguyên góp được ngay trong"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/143/2.jpg",
+   "gt": "buổi ra mắt chi hội bảo trợ bệnh nhân nghèo Thiện Nhân vào sáng 21 - 3, tại khách sạn Majestic,",
+   "a": "buổi ra mắt chi hội bảo trợ bệnh nhân nghèo Thiện Nhân vào ngày 21 - 3, tại Khách vạn Majesktic,",
+   "t@0.5": "buổi ra mắt chi hội bảo trợ bệnh nhân nghèo Thiện Nhân vào ngày 21 - 3, tại Khách vạn Majestic,",
+   "t@0.7": "buổi ra mắt chi hội bảo trợ bệnh nhân nghèo Thiện Nhân vào ngày 21 - 3, tại Khách vạn Majesktic,",
+   "t@0.9": "buổi ra mắt chi hội bảo trợ bệnh nhân nghèo Thiện Nhân vào ngày 21 - 3, tại Khách vạn Majesktic,"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/143/3.jpg",
+   "gt": "TP.HCM. Đây là chi hội thứ 24 trực thuộc Hội Bảo trợ bệnh nhân nghèo TP.HCM, do gia đình",
+   "a": "TP.HCM. Đây là chi hội thứ 24 trực Phuộc Hội Bảo trợ bệnh nhân nghèo TP.HCM, do gia đình",
+   "t@0.5": "TP.HCM. Đây là chi hội thứ 24 trực Phuộc Hội Bảo trợ bệnh nhân nghèo TP.HCM, do gia đình",
+   "t@0.7": "TP.HCM. Đây là chi hội thứ 24 trực Phuộc Hội Bảo trợ bệnh nhân nghèo TP.HCM, do gia đình",
+   "t@0.9": "TP.HCM. Đây là chi hội thứ 24 trực Phuộc Hội Bảo trợ bệnh nhân nghèo TP.HCM, do gia đình"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/143/4.jpg",
+   "gt": "NSƯT Lý Huỳnh cùng một số nghệ sĩ (,,) cá nhân (,,) doanh nhân giàu lòng nhân ái tự",
+   "a": "NrƯT Lý Huỳnh cùng một số nghệ vĩ (,,) chá nhân (o,) doanh nhân giàu lòng nhân ái tự",
+   "t@0.5": "NrƯT Lý Huỳnh cùng một số nghệ vĩ (,,) chá nhân (o,) doanh nhân giàu lòng nhân ái tự",
+   "t@0.7": "NrƯT Lý Huỳnh cùng một số nghệ vĩ (,,) chá nhân (o,) doanh nhân giàu lòng nhân ái tự",
+   "t@0.9": "NrƯT Lý Huỳnh cùng một số nghệ vĩ (,,) chá nhân (o,) doanh nhân giàu lòng nhân ái tự"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/143/5.jpg",
+   "gt": "nguyện tham gia. Chi hội Thiện Nhân cũng đã ra mắt ban chấp hành với 19 thành viên,",
+   "a": "nguyện tham gia. Chi hội Thiện Nhân cũng đã ra mắt ban chấp hành với 1y thành viên,",
+   "t@0.5": "nguyện tham gia. Chi hội Thiện Nhân cũng đã ra mắt ban chấp hành với 1y thành viên,",
+   "t@0.7": "nguyện tham gia. Chi hội Thiện Nhân cũng đã ra mắt ban chấp hành với 1y thành viên,",
+   "t@0.9": "nguyện tham giao. Chi hội Thiện Nhân cũng đã ra mắt ban chấp bàn với 1y thành viên,"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/143/6.jpg",
+   "gt": "do bà Lê Thị Vân, nguyên phó chủ tịch UBND TP.HCM, là chủ tịch.",
+   "a": "đo bà Lê Độ vân, nguyên hó chủa tịch U ND TH. HCem, Đần nhủ tịnh",
+   "t@0.5": "đô bà Lê Độ vân, nguyên hó chủa tịch U ND TH. HCM, Đần nhủ tin",
+   "t@0.7": "đo bà Lê Độ vân, nguyên hó chủa tịch U ND TH. HCem, Đần nhủ tịnh",
+   "t@0.9": "đo bà Lê Độ vân, nguyên hó chữ tịch U ND TH. HCM, Đần nhủ tịnh"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/143/7.jpg",
+   "gt": "Trong năm nay, chi hội sẽ thực hiện một số kế hoạch làm từ thiện như : Vì nụ cười trẻ",
+   "a": "Trong năm nay, chi hội sẽ thực hiện một số kế hoạch làm từ hhiện như : Vì nụ cười trẻ",
+   "t@0.5": "Trong năm nay, chi hội sẽ thực hiện một số kế hoạch làm từ hhiện như : Vì nụ cười trẻ",
+   "t@0.7": "Trong năm nay, chi hội sẽ thực hiện một số kế hoạch làm từ hiện như : Vì nụ cười trẻ",
+   "t@0.9": "Trong năm nay, chi hội sẽ thực hiện một số kế hoạch làm từ hhiện như : Vì nụ cười trẻ"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/143/8.jpg",
+   "gt": "thơ, Đem lại ánh sáng cho người mù nghèo và trẻ em mù bẩm sinh, Xe lăn cho người",
+   "a": "thơ, Đen lự ánh sáng cho người mù nghèo và trẻ em mù bẩm sinh, Xxe lăn cho người",
+   "t@0.5": "thơ, Đen lự ánh sáng cho người mù nghèo và trẻ em mù bẩm sinh, Xxe lăn cho người",
+   "t@0.7": "thơ, Đen lự ánh sáng cho người mù nghèo và trẻ em mù bẩm sinh, Xxe lăn cho người",
+   "t@0.9": "thơ, đen lự ánh sáng cho người mù nghèo và trẻ em mù bẩm sinh, Xxe lăn cho người"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/143/9.jpg",
+   "gt": "tàn tật và trẻ bại liệt, Âm thanh và tiếng nói cho trẻ khiếm thính, Học bổng cho HSSV",
+   "a": "tàn tật và trẻ bại biệt, Âm thanh và tiếng nôi cho trở khiếm thính, Học bỗng cho HINV",
+   "t@0.5": "tàn tật và trẻ bại biệt, Âm thanh và tiếng nôi cho trở khiếm thính, Học bỗng cho HINV",
+   "t@0.7": "tàn tật và trẻ bại biệt, Âm thanh và tiếng nôi cho trở khiếm thính, Học bỗng cho HINV",
+   "t@0.9": "tàn tật và trẻ bại biệt, Âm than và tiếng nôi cho trở khiếm thính, Học bổng cho HINV"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/143/10.jpg",
+   "gt": "nghèo hiếu học, Bữa cơm miễn phí cho bệnh nhân nghèo, Cấp thẻ bảo hiểm y tế",
+   "a": "nghèo hiếu học, Bữa cóm miễn phí cho bệnh nhân nghèo, cấp thủ bảo hiểm y tế",
+   "t@0.5": "nghèo hiếu học, Bữa cóm miễn phí cho bệnh nhân nghèo, cấp thủ bảo hiểm y tế",
+   "t@0.7": "nghèo hiếu học, bữa cóm miễn phí cho bệnh nhân nghèo, cấp thủ bảo hiểm y tế",
+   "t@0.9": "nghèo hiếu học, Bữa cóm miễn phí cho bệnh nhân nghèo, cấp thủ bảo hiểm y tế"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/143/11.jpg",
+   "gt": "cho người nghèo...",
+   "a": "cho người nghèo..",
+   "t@0.5": "cho người nghèo..",
+   "t@0.7": "cho người nghèo..",
+   "t@0.9": "cho người nghèo.."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/165/1.jpg",
+   "gt": "Bán thuốc giá cao, Công ty Sanofi phải giải trình. Trao đổi với Tuổi Trẻ chiều tối 22 - 3, một",
+   "a": "Bán thuốc giá cao, Công ty Sanofi phải giải trình. Trao đổi với Tuổi Trẻ chiều tối 22 - 3, một",
+   "t@0.5": "Bán thuốc gia cao, Công ty Sanofi phải giải trình. Trao đổi với Tuổi Trẻ chiều tối 22 - 3, một",
+   "t@0.7": "Bán thuốc giá cao, Công ty Sanofi phải giải trình. Trao đổi với Tuổi Trẻ chiều tối 22 - 3, một",
+   "t@0.9": "Bán thuốc giá cao, Công ty Sanofi phải giải trình. Trao đổi với Tuổi Trẻ chiều tối 22 - 3, một"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/165/2.jpg",
+   "gt": "lãnh đạo thanh tra Bộ Y tế cho biết : \" Chúng tôi đang yêu cầu Công ty Sanofi Synthelabo giải",
+   "a": "lãnh đạo thanh tra Bộ Y tế cho biết : \" Chúng tôi đang yêu cầu Công ty Sanofi Synthelbo giải",
+   "t@0.5": "lãnh đạo thanh tra Bộ Y tế cho biết : \" Chúng tôi đang yêu cầu Công ty Sanofi Synthelbo giải",
+   "t@0.7": "lãnh đạo thanh tra Bộ Y tế cho biết : \" Chúng tôi đang yêu cầu Công ty Sanofi Synthelbo giải",
+   "t@0.9": "lãnh đạo thanh tra Bộ Y tế cho biết : \" Chúng tôi đang yêu cầu Công ty Sanofi Synthelbo giải"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/165/3.jpg",
+   "gt": "trình lý do giá một số mặt hàng của công ty này bán tại VN với giá cao hơn khi xuất khẩu",
+   "a": "trình lý do giá một số mặt hàng của công ty này lán tai VN với giá cao hơn khi xuất khẩu",
+   "t@0.5": "trình lý do giá một số mặt hàng của công ty này lân tai VN với giá cao hơn khi xuất khẩu",
+   "t@0.7": "trình lý do giá một số mặt hang của công ty này lan tai VN với giá cao hơn khi xuất khẩu",
+   "t@0.9": "trình lý do giá một số mặt hang của cong ty này lan tai VN với giá cao hơn khi xuất khẩu"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/165/4.jpg",
+   "gt": "đi một số nơi trong khu vực như Hong Kong và Campuchia \". Thanh tra Bộ Y tế cũng kiến",
+   "a": "đi một số nơi trong khu vực như Hong Kong và Campuchia \". Thanh tra Bộ Y tế cũng kiến",
+   "t@0.5": "đi một số nơi trong khu vực như Hong Kong và Campuchia \". Thanh tra Bộ Y tế cũng kiến",
+   "t@0.7": "đi một số nơi trong khu vực như Hong Kong và Campuchia \". Thanh tra Bộ Y tế công kiến",
+   "t@0.9": "đi một số nơi trong khu vực như Hong Kong và Campuchia \". Thanh tra Bộ Y tế công kiến"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/165/5.jpg",
+   "gt": "nghị Bộ Y tế sắp xếp lại hệ thống các nhà phân phối, nhất là khâu bán buôn nhằm hạn chế",
+   "a": "nghị Bộ Y tế sắp xếp lại hệ thống các nhà phân phối, nhất là khâu bán buôn nhằm hạn chế",
+   "t@0.5": "nghị Bộ Y tế sắp xếp lại hệ thống các nhà phân phối, nhất là khâu bán buôn nhằm hạn chế",
+   "t@0.7": "nghị Bộ Y tế sắp xếp lại hệ thống các nhà phân phối, nhất là khâu bán buôn nhằm hạn chế",
+   "t@0.9": "nghị Bộ Y tế sắp xếp lại hệ thống các nhà phân phối, nhất là khâu bán buôn nhằm hạn chế"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/165/6.jpg",
+   "gt": "kinh doanh lòng vòng làm nâng giá thuốc; lập ngân hàng dữ liệu giá thuốc (giá thuốc cùng",
+   "a": "kinh doanh lòng vòng làm nâng giá thuốc; lập ngân hàng dữ hệu giá thuốc (giá thuốc cùng",
+   "t@0.5": "kinh doanh lòng vòng làm nâng giá thuốc; lập ngân hàng dữ hệu giá thuốc (giá thuốc cùng",
+   "t@0.7": "kinh doanh lòng vòng làm nâng giá thuốc; lập ngân hàng dữ hệu giá thuốc (giá thuốc cùng",
+   "t@0.9": "kinh doanh lòng vòng làm nâng giá thuốc; lập ngân hàng dữ hệu giá thuốc (giá thuốc cùng"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/165/7.jpg",
+   "gt": "loại ở nước sản xuất, ở các nước trong khu vực) để có cơ sở quản lý giá; quản lý khâu",
+   "a": "loại ở nước sản xuất, ở các nước trong khu vực) để có cơ sở quản lý giá; quản lý khâu",
+   "t@0.5": "loại ở nước sản xuất, ở các nước trong khu vực) để có cơ sở quản lý giá; quản lý khâu",
+   "t@0.7": "loại ở nước sản xuất, ở các nước trong khu vực) để có cơ sở quản lý giá; quản lý khâu",
+   "t@0.9": "loại ở nước sản xuất, ở các nước trong khu vực) để có cơ sở quản lý giá; quản lý khâu"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/165/8.jpg",
+   "gt": "cung ứng, sử dụng thuốc tại cơ sở khám chữa bệnh, trách nhiệm của bác sĩ kê đơn",
+   "a": "cung ứng, sử dụng thuốc tại cơ sở khám chữa bệnh, trách nhiệm của bác sĩ kê đơn",
+   "t@0.5": "cung ứng, sử dụng thuốc tại cơ sở khám chữa bệnh, trách nhiệm của bác sĩ kê đơn",
+   "t@0.7": "công ứng, sử dụng thuốc tại cơ sở khám chữa bệnh, trách nhiệm của bác sĩ kê đơn",
+   "t@0.9": "công ứng, sử dụng thuốc tại cơ sở khám chữa bệnh, trách nhiệm của bác sĩ kê đơn"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/165/9.jpg",
+   "gt": "thuốc...",
+   "a": "thuốc...",
+   "t@0.5": "thuốc...",
+   "t@0.7": "thuốc...",
+   "t@0.9": "thuốc..."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/168/1.jpg",
+   "gt": "Dứt tiếng máy bay, bầu trời như được vút lên cao. Cả bốn phương",
+   "a": "Dứt tiếng máy bay, bầu trời như được vét lên cao. Cả bốn phương",
+   "t@0.5": "Dứt tiếng máy bay, bầu trời như được vét lên cao. Cả bốn phương",
+   "t@0.7": "Dứt tiếng máy bay, bầu trời như được vét lên cao. Cả bốn phương",
+   "t@0.9": "Dứt tiếng máy bay, bầu trời như được vét lên cao. Cả bốn phương"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/168/2.jpg",
+   "gt": "lồng lộng cái gió nam của tháng bảy, cái rực vàng của những",
+   "a": "lồng lộng cái gió nam của tháng bảy, các rực vàng của những",
+   "t@0.5": "lồng lộng cái gió nam của tháng bảy, các rực vàng của những",
+   "t@0.7": "lồng lộng cái gió nam của tháng bảy, cái rực vàng của những",
+   "t@0.9": "lồng lộng cái gió nam của tháng bảy, các rực vàng của những"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/168/3.jpg",
+   "gt": "tia nắng đầu những ngày mưa. Cây lá hình như xanh hơn, thắm",
+   "a": "tia nắng đầu những ngày mưa. Cây lá hình như xanh hơn, thắn",
+   "t@0.5": "tia nắng đầu những ngày mưa. Cây lá hình như xanh hơn, thắn",
+   "t@0.7": "tia nắng đầu những ngày mưa. Cây lá hình như xanh hơn, thẳm",
+   "t@0.9": "tia nắng đầu những ngày mưa. Cây lá hình như xanh hơn, thân"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/168/4.jpg",
+   "gt": "hơn nhờ được tắm sau trận mưa đêm qua hay muốn tranh thủ lớn thêm",
+   "a": "hơn nhờ được tắm sau trận mưa đêm qua hay muốn tranh thủ lớn thêm",
+   "t@0.5": "hơn nhờ được tắm sau trận mưa đêm qua hay muốn tranh thủ lớn thêm",
+   "t@0.7": "hơn nhờ được tắm sau trận mưa đêm qua hay muốn tranh thủ lớn thêm",
+   "t@0.9": "hơn nhờ được tắm sau trận mưa đêm qua hay muốn tranh thủ lớn thêm"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/168/5.jpg",
+   "gt": "một tí trong phút giây ngắn ngủi thanh bình này? Bầu trời ở đây có",
+   "a": "một ít trong phút giấy ngấn ngủ thanh binh này? Bầu trời ở đây có",
+   "t@0.5": "một ít trong phút giấy ngấn ngủ thanh binh này? Bầu trời ở đây có",
+   "t@0.7": "một ít trong phút giấy ngắn ngủ thanh bình này? Bầu trời ở đây có",
+   "t@0.9": "một ít trong phút giấy gắn ngủ thanh bình này? Bầu trời ở đây có"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/168/6.jpg",
+   "gt": "khác gì bầu trời quê ta, bầu trời miền Bắc thanh bình có chim có",
+   "a": "khác gì bầu trời quê ta, bầu trời miền Bắc thanh bình có chim có",
+   "t@0.5": "khác gì bầu trời quê ta, bầu trời miền Bắc thanh bình có chim có",
+   "t@0.7": "khác gì bầu trời quê ta, bầu trời miền Bắc thành bình có chim có",
+   "t@0.9": "khác gì bầu trời quê ta, bầu trời miền Bắc thành bình có chim có"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/168/7.jpg",
+   "gt": "bướm mà dưới khoảng xanh ấy có tuổi trẻ của ta, ước mơ của",
+   "a": "bướm mà dưới khoảng xanh ấy có tuổi trẻ của ta, ước mơ của",
+   "t@0.5": "bướm mà dưới khoảng xanh ấy có tuổi trẻ của ta, ước mơ của",
+   "t@0.7": "bướm mà dưới khoảng xanh ấy có tuổi trẻ của ta, ước mơ của",
+   "t@0.9": "bướm mà dưới khoảng xanh ấy có tuổi trẻ của ta, ước mơ của"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/168/8.jpg",
+   "gt": "ta...",
+   "a": "ta...",
+   "t@0.5": "ta...",
+   "t@0.7": "ta...",
+   "t@0.9": "tha..."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/168/9.jpg",
+   "gt": "Ta yêu hòa bình, ta yêu màu xanh, cho ta sống mãi với màu xanh",
+   "a": "ta yêu hòa bình, ta yêu màu xanh, cho ta sống mãi với màu xanh",
+   "t@0.5": "ta yêu hòa bình, ta yêu màu xanh, cho ta sống mãi với màu xanh",
+   "t@0.7": "ta yêu hòa bình, ta yêu màu xanh, cho ta sống mãi với màu xanh",
+   "t@0.9": "ta yêu hòa bình, ta yêu màu xanh, cho ta sống mãi với màu xanh"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/168/10.jpg",
+   "gt": "này, màu xanh tương lai, màu xanh mà ta phải tranh đấu. Trong",
+   "a": "- này, màu xanh tương lai, màu xanh mà ta phải tranh đấu. Trong",
+   "t@0.5": "- này, màu xanh tương lai, màu xanh mà ta phải tranh đấu. Trong",
+   "t@0.7": "- này, màu xanh tương lai, màu xanh mà ta phải tranh đấu. Trong",
+   "t@0.9": "- Này, màu xanh tương lai, màu xanh mà ta phải tranh đấu. Trong"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/168/11.jpg",
+   "gt": "bom đạn tưởng chừng như không bao giờ dứt, một phút như thế này",
+   "a": "bom đạn tưởng chừng như không bao giờ dứt, một phút như thế này",
+   "t@0.5": "bom đạn tưởng chừng như không bao giờ dứt, một phút như thế này",
+   "t@0.7": "bom đạn tưởng chừng như không bao giờ dứt, một phút như thế này",
+   "t@0.9": "bom đạn tưởng chừng như không bao giờ dứt, một phút như thế này"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/168/12.jpg",
+   "gt": "có ý nghĩa biết bao nhiêu. Ta càng yêu quí cuộc sống đến bao",
+   "a": "có ý nghĩa biết bao nhiêu. Ta càng yêu quý cuộc sống đến bao",
+   "t@0.5": "có ý nghĩa biết bao nhiêu. Ta càng yêu quý cuộc sống đến bao",
+   "t@0.7": "có ý nghĩa biết bao nhiêu. Ta càng yêu quý cuộc sống đến bao",
+   "t@0.9": "có ý nghĩa biết bao nhiêu. Ta càng yêu quý cuộc sống đến bao"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/168/13.jpg",
+   "gt": "nhiêu... Một đoạn nhật ký khác khiến người đọc bật cười rồi chợt nao",
+   "a": "nhiêu... Một đoạn nhật ký khác khiến người đọc bật cười rồi chợt nao",
+   "t@0.5": "nhiêu... Một đoạn nhật ký khác khiến người đọc bật cười rồi chợt nao",
+   "t@0.7": "nhiêu... Một đoạn nhật ký khác khiến người đọc bật cười rồi chợt nao",
+   "t@0.9": "nhiêu... Một đoạn nhật ký khác kiến người đọc bật cười rồi chợt nao"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/168/14.jpg",
+   "gt": "lòng vì sự hồn nhiên của những người lính trẻ : Bây giờ đã 7",
+   "a": "lòng vì sự hồn nhiên của những người lình trẻ : Bây giờ đã 7",
+   "t@0.5": "lòng vì sự hồn nhiên của những người lình trẻ : Bây giờ đã 7",
+   "t@0.7": "lòng vì sự hồn nhiên của những người lình trẻ : Bây giờ đã 7",
+   "t@0.9": "lòng vì sự hồn nhiên của những người lính trẻ : Bây giờ đã 7"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/168/15.jpg",
+   "gt": "giờ tối thế mà vẫn không dứt tiếng máy bay Mỹ, tiếng đại",
+   "a": "giờ tối thế mà vẫn không dứt tiếng máy bay Mỹ, tiếng đại",
+   "t@0.5": "giờ tối thế mà vẫn không dứt tiếng máy bay Mỹ, tiếng đại",
+   "t@0.7": "giờ tối thế mà vẫn không dứt tiếng máy bay Mỹ, tiếng đại",
+   "t@0.9": "giờ tối thế mà vẫn không dứt tiếng máy bay Mỹ, tiếng đại"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/168/16.jpg",
+   "gt": "bác đì đùng...",
+   "a": "bác đì tùng...",
+   "t@0.5": "bác đì tùng...",
+   "t@0.7": "bác đì tùng...",
+   "t@0.9": "bác dì tùng..."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/168/17.jpg",
+   "gt": "Đêm ngày giờ khắc vẫn được tính bằng khoảng cách thời gian",
+   "a": "Đêm ngày giờ khắc vẫn được tính bằng khoảng cách thời gian",
+   "t@0.5": "Đêm ngày giờ khắc vẫn được tính bằng khoảng cách thời gian",
+   "t@0.7": "Đêm ngày giờ khắc vẫn được tính bằng khoảng cách thời gian",
+   "t@0.9": "Đêm ngày giờ khắc vẫn được tính bằng khoảng cách thời gián"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/168/18.jpg",
+   "gt": "giữa những trận B.52, những trận pháo kích. Tiểu đội tôi bốn",
+   "a": "giữa những trận B.52, những trận pháo kích. Tiểu đội tôi bốn",
+   "t@0.5": "giữa những trận B.52, những trận pháo kích. Tiểu đội tôi bốn",
+   "t@0.7": "giữa những trận B.52, những trận pháo kích. tiểu đội tôi bốn",
+   "t@0.9": "giữa những trận B.52, những trận pháo kích. Tiểu đội tôi bốn"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/168/19.jpg",
+   "gt": "người đã đào được ba hầm vòm. Bây giờ chỉ còn mình tôi với",
+   "a": "người đã đào được ba hầm vòm. Bây giờ chỉ còn mình tôi với",
+   "t@0.5": "người đã đào được ba hầm vòm. Bây giờ chỉ còn mình tôi với",
+   "t@0.7": "người đã đào được ba hầm vòm. Bây giờ chỉ còn minh tôi với",
+   "t@0.9": "người đã đào được ba hầm vòm. Bây giờ chỉ còn mình tôi với"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/168/20.jpg",
+   "gt": "một ngọn đèn. Gió nhẹ đưa đẩy bản hợp xướng của hàng trăm",
+   "a": "một ngọn đèn. Gió nhẹ đưa đẩy bản hợp xướng của hàng trăm",
+   "t@0.5": "một ngọn đèn. Gió nhẹ đưa đẩy bản hợp xướng của hàng trăm",
+   "t@0.7": "một ngọn đèn. Gió nhẹ đưa đẩy bản hợp xướng của hàng trăm",
+   "t@0.9": "một ngọn đèn. Gió nhẹ đưa đẩy bản hợp xướng của hàng trăm"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/168/21.jpg",
+   "gt": "chú muỗi... Và việc của tôi lại bắt đầu... Những lúc như thế",
+   "a": "Chú muỗi... Và việc của tôi lại bắt đầu... Những lúc như thế",
+   "t@0.5": "Chú muỗi... Và việc của tôi lại bắt đầu... Những lúc như thế",
+   "t@0.7": "Chú muỗi... Và việc của tôi lại bắt đầu... Những lúc như thế",
+   "t@0.9": "Chú muỗi... Và Việc của tôi lại bắt đầu... Những lúc như thế"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/168/22.jpg",
+   "gt": "này thì việc lý thú nhất vẫn là việc bắt muỗi bằng ngọn đèn",
+   "a": "này thì việc lý thú nhất vẫn là việc bắt muỗi bằng ngọn đèn",
+   "t@0.5": "này thì việc lý thú nhất vẫn là việc bắt muỗi bằng ngọn đèn",
+   "t@0.7": "này thì việc lý thú nhất vẫn là việc bắt muỗi bằng ngọn đèn",
+   "t@0.9": "này thì việc lý thú nhất vẫn là việc bắt muỗi bằng ngọn đèn"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/168/23.jpg",
+   "gt": "làm bằng vỏ hộp Coca Cola Mỹ.",
+   "a": "làm bằng vỏ hộp coca Cola Mỹ",
+   "t@0.5": "làm bằng vỏ hộp coca Cola Mỹ",
+   "t@0.7": "làm bằng vỏ hộp coca Cola Mỹ",
+   "t@0.9": "làm bằng vỏ hộp coca Cola Mỹ"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/168/24.jpg",
+   "gt": "Những chú muỗi gầy có, béo có, nhỏ có, to có lần lượt lao vào ngọn",
+   "a": "Những chú muỗi gấy có, béo có, nhỏ có, to có lấn lượt lao vào ngạn",
+   "t@0.5": "Những chú muỗi gấy có, béo có, nhỏ có, to có lần lượt lao vào ngạn",
+   "t@0.7": "Những chú muỗi gấy có, béo có, nhỏ có, to có lần lượt lao vào ngạn",
+   "t@0.9": "Những chú muỗi gấy có, béo có, nhỏ có, to có lấn lượt lao vào ngạn"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/168/25.jpg",
+   "gt": "đèn đầy muội đen. A! OV.10 này. A! L.19 này, con này là",
+   "a": "đèn đầy nuội đen. A! 0V. 10 này. A! 2. 19 này, con này là",
+   "t@0.5": "đèn đầy nuội đen. A! 0V. 10 này. A! 2. 19 này, con này là",
+   "t@0.7": "đèn đầy nuội đen. A! 0V. 10 này. A! 2. 19 này, con này là",
+   "t@0.9": "đèn đầy nuội đen. A! 0V. 10 này. A! 2. 19 này, con này là"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/168/26.jpg",
+   "gt": "B.52, con này bay nhanh quá, phong cho nó là F.4 vậy, cứ",
+   "a": "B.52, con này bay nhanh quá, phong cho nó là 7.4 vậy, cức",
+   "t@0.5": "B.52, con này bay nhanh quá, phong cho nó là 7.4 vậy, cức",
+   "t@0.7": "B.52, con này bay nhanh quá, phong cho nó là 7.4 vậy, cực",
+   "t@0.9": "B.52, con này bay nhanh quá, phong cho nó là 7.4 vậy, cực"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/168/27.jpg",
+   "gt": "thế mỗi con là một cái tên tương xứng với không lực Hoa Kỳ lần",
+   "a": "thế mỗi con là một cái tên tương ứng với không lực Hoa Kỳ lần",
+   "t@0.5": "thế mỗi con là một cái tên tương ứng với không lực Hoa Kỳ lần",
+   "t@0.7": "thế mỗi con là một cái tên tương ứng với không lực Hoa Kỳ lần",
+   "t@0.9": "thế mỗi con là một cái tên tương ứng với không lực Hoa Kỳ lần"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/168/28.jpg",
+   "gt": "lượt lao qua ngọn đèn của tôi... Một trò chơi của một người lính",
+   "a": "lượt lao qua ngọn đèn của tôi... Một tò chơi của một người lình",
+   "t@0.5": "lượt lao qua ngọn đèn của tôi... Một tò chơi của một người lình",
+   "t@0.7": "lượt lao qua ngọn đèn của tôi... Một tò chơi của một người lình",
+   "t@0.9": "lượt lao qua ngọn đèn của tôi... Một tò chơi của một người lình"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/168/29.jpg",
+   "gt": "trẻ dưới công sự, bên trời bom đạn... Cứ nhìn những bức ảnh, xem",
+   "a": "trẻ dưới công sự, bên trời bom đạn... Cứ nhìn những bức ảnh, xem",
+   "t@0.5": "trẻ dưới công sự, bên trời bom đạn... Cứ nhìn những bức ảnh, xem",
+   "t@0.7": "trẻ dưới công sự, bên trời bom đạn... Cứ nhìn những bức ảnh, xem",
+   "t@0.9": "trẻ dưới công sự, bên trời bom đạn... Cứ nhìn những bức ảnh, xem"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/168/30.jpg",
+   "gt": "những thước phim tài liệu về sự khốc liệt của chiến trường Quảng",
+   "a": "những thước phâm tài liệu về sự khốc liệt của chiến trường Quảng",
+   "t@0.5": "những thước phâm tài liệu về sự khốc liệt của chiến trường Quảng",
+   "t@0.7": "những thước phạm tài liệu về sự khốc liệt của chiến trường Quảng",
+   "t@0.9": "những thước phâm tài liệu về sự khốc liệt của chiến trường Quảng"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/168/31.jpg",
+   "gt": "Trị những ngày tháng ấy mới thấy những dòng nhật ký của",
+   "a": "Tự những ngày tháng ấy mời thấy những dòng nhật ký của",
+   "t@0.5": "Tự những ngày tháng ấy mời thấy những dòng nhật ký của",
+   "t@0.7": "Tự những ngày tháng ấy mời thấy những dòng nhật ký của",
+   "t@0.9": "Tự những ngày tháng ấy mới thấy những dòng nhật ký của"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/168/32.jpg",
+   "gt": "Nguyễn Kỳ Sơn thật kỳ diệu.",
+   "a": "Nguyễn Kỳ Sơn thật kỳ điệu.",
+   "t@0.5": "Nguyễn Kỳ Sơn thật kỳ điệu.",
+   "t@0.7": "Nguyễn Kỳ Sơn thật kỳ điệu.",
+   "t@0.9": "Nguyễn Kỳ Sơn thật kỳ điệu."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/168/33.jpg",
+   "gt": "Trang cuối của cuốn nhật ký là những dòng bình tĩnh trước một",
+   "a": "trang cuối của cuốn nhật ký là những dòng bình tính trước một",
+   "t@0.5": "trang cuối của cuốn nhật ký là những dòng bình tính trước một",
+   "t@0.7": "trang cuối của cuốn nhật ký là những dòng bình tính trước một",
+   "t@0.9": "trang cuối của cuốn nhật ký là những dòng bình tin trước một"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/168/34.jpg",
+   "gt": "trận đánh sinh tử :... 19 - 8.",
+   "a": "trận đánh sinh tử :... 10 - 3.",
+   "t@0.5": "trận đánh sinh tử :... 10 - 3.",
+   "t@0.7": "trận đánh sinh tử :... 10 - 3.",
+   "t@0.9": "trận đánh sinh tử :... 10 - 3."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/169/1.jpg",
+   "gt": "Quán bắt đầu đông khách từ trưa cho đến tối khuya với mùi thú rừng ngan",
+   "a": "Quán bắt đầu đông khách từ trưa cho đến tốc khuya với mùi thú rừng \"ngan",
+   "t@0.5": "Quán bắt đầu đông khách từ trưa cho đến tốc khuya với mùi thú rừng \"ngan",
+   "t@0.7": "Quán bắt đầu đông khách từ trưa cho đến tốc khuya với mùi thú rừng \"ngan",
+   "t@0.9": "Quán bắt đầu đông khách từ trưa cho đến tốc khuya với mùi thú rừng \"ngan"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/169/2.jpg",
+   "gt": "ngát qua các món nướng, món lẩu. Người ta ước tính chỉ riêng ở Hương Rừng",
+   "a": "ngát qua các món nướng, món lẫu. Người ta ước tính chỉ riêng ở Hương Rừng",
+   "t@0.5": "ngát qua các món nướng, món lẫu. Người ta ước tính chỉ riêng ở Hương Rừng",
+   "t@0.7": "ngát qua các món nướng, món lẩu. người ta ước tính chỉ riêng ở Hương Rừng",
+   "t@0.9": "ngát qua các món nướng, món lẩu. người ta ước tính chỉ riêng ở Hương Rừng"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/169/3.jpg",
+   "gt": "này, mỗi ngày có hàng trăm con thú bị thọc huyết... Đêm 31 - 10, một nhân",
+   "a": "này, mỗi ngày có hàng trăm con thú bị thọc huyết... Đêm 31 - 10, một nhân",
+   "t@0.5": "này, mỗi ngày có hàng trăm con thú bị thọc huyết... Đêm 31 - 10, một nhân",
+   "t@0.7": "này, mỗi ngày có hàng trăm con thú bị thọc huyết... Đêm 31 - 10, một nhân",
+   "t@0.9": "này, mỗi ngày có hàng trăm con thú bị thọc huyết... Đêm 31 - 10, một nhân"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/169/4.jpg",
+   "gt": "viên khi đón chúng tôi vào bàn, câu đầu tiên anh ta hỏi : \" Các anh có dùng",
+   "a": "viên khi đón chúng tôi vào bàn, câu đầu tiên anh ta hỏi : \" Các anh có dùng",
+   "t@0.5": "viên khi đón chúng tôi vào bàn, câu đầu tiên anh ta hỏi : \" Các anh có dùng",
+   "t@0.7": "viên khi đón chúng tôi vào bàn, câu đầu tiên anh ta hỏi : \" Các anh có dùng",
+   "t@0.9": "viên khi đón chúng tôi vào bàn, câu đầu tiên anh ta hỏi : \" Các anh có dùng"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/169/5.jpg",
+   "gt": "thịt rừng không? \". Khách vào các quán \" cao cấp \" loại này thường phải có",
+   "a": "thịt rừng không? \". Khách vào các quán \" cao cấp \" loại này thường phải có",
+   "t@0.5": "thịt rừng không? \". Khách vào các quán \" cao cấp \" loại này thường phải có",
+   "t@0.7": "thịt rừng không? \". Khách vào các quán \" cao cấp \" loại này thường phải có",
+   "t@0.9": "thị rừng không? \". khách vào các quán \" cao cấp \" loại này thường phải có"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/169/6.jpg",
+   "gt": "túi tiền rủng rỉnh bởi hàng độc thì bao giờ giá cả cũng không nhẹ",
+   "a": "túi tiền rủng rỉnh bởi hàng độc thì bao giờgiá cả cũng không nhẹ",
+   "t@0.5": "túi tiền rủng rỉnh bởi hàng độc thì bao giờgiá cả cũng không nhẹ",
+   "t@0.7": "túi tiền rủng rỉnh bởi hàng độc thì bao giá cả cũng không nhẹ",
+   "t@0.9": "túi tiền rủng rỉnh bởi hàng độc thì bao giá cả cũng không nhẹ"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/169/7.jpg",
+   "gt": "nhàng...",
+   "a": "nhàng...",
+   "t@0.5": "nhàng...",
+   "t@0.7": "nhàng...",
+   "t@0.9": "hang..."
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/169/8.jpg",
+   "gt": "Tuy nhiên, đáng sợ nhất về sự tiêu thụ thú rừng phải kể đến hàng trăm làng",
+   "a": "Tuy nhiên, đáng rổ nhất về sự tiêu thụ thá rừng phải kể đến hàng trăm làng",
+   "t@0.5": "Tuy nhiên, đáng rổ nhất về sự tiêu thụ thá rừng phải kể đến hàng trăm làng",
+   "t@0.7": "Tuy nhiên, đáng rổ nhất về sự tiêu thụ thá rừng phải kể đến hàng trăm làng",
+   "t@0.9": "Tuy nhiên, đáng rổ nhất về sự tiêu thụ thá rừng phải kể đến hàng trăm làng"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/169/9.jpg",
+   "gt": "nướng với nhiều tên gọi khác nhau như Nam Bộ, Tây Nam Bộ, Miền Tây... Đây",
+   "a": "nướng với nhiều tên gọi khác nhau như Nam Bộ, Tây Nam Bộ, Miền Tây... Đây",
+   "t@0.5": "nướng với nhiều tên gọi khác nhau như Nam Bộ, Tây Nam Bộ, Miền Tây... Đây",
+   "t@0.7": "nướng với nhiều tên gọi khác nhau như Nam Bộ, Tây Nam Bộ, Miền Tây... Đây",
+   "t@0.9": "nướng với nhiều tên gọi khác nhau như Nam Bộ, Tây Nam Bộ, Miền Tây... Đây"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/169/10.jpg",
+   "gt": "là những nơi tập trung ăn nhậu rầm rộ nhất. Thú rừng ở các làng nướng",
+   "a": "là những nơi tập trung ăn nhậu rầm rộ nhất. Thú rừng ở các làng nướng",
+   "t@0.5": "là những nơi tập trung ăn nhậu rầm rộ nhất. Thú rừng ở các làng nướng",
+   "t@0.7": "là những nơi tập trung ăn nhậu rầm rộ nhất. Thú rừng ở các làng nướng",
+   "t@0.9": "là những nơi tập trung ăn nhậu rầm rộ nhất. Thú rừng ở các làng nướng"
+  },
+  {
+   "anh": "../data/UIT_HWDB_line/train_data/169/11.jpg",
+   "gt": "không bán nguyên con mà thường bán theo đĩa với giá bình quân 20.000 đồng / đĩa.",
+   "a": "không bán nguyên con mà thường bán theo đĩã với giá bình quân 20.000 đ / địa.",
+   "t@0.5": "không bán nguyên con mà thường bán theo đĩã với giá bình quân 20.000 đ / địa.",
+   "t@0.7": "không bán nguyên con mà thường bán theo đĩã với giá bình quân 20.000 đ / địa.",
+   "t@0.9": "không bán nguyên con mà thường bán theo đĩã với giá bình quân 20.000 đ / địa."
+  }
+ ]
+}

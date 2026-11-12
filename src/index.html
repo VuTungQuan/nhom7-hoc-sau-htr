@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nhận dạng chữ viết tay tiếng Việt</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:#f4f5f7; --card:#ffffff; --fg:#17181c; --muted:#62656e; --line:#e2e4e9; --soft:#f0f2f6;
+    --acc:#2457d6; --acc-fg:#fff; --acc-soft:#e8eefc; --low:#ffe8a3; --low-fg:#5c4400; --ok:#1b7f4b; --err:#b42318;
+    --shadow:0 1px 2px rgba(16,24,40,.05), 0 4px 16px rgba(16,24,40,.06); --r:14px;
+  }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+    --bg:#0f1115; --card:#171a20; --fg:#eceef2; --muted:#9aa0ab; --line:#2a2f38; --soft:#1e222a;
+    --acc:#6f9bff; --acc-fg:#0b1020; --acc-soft:#1c2740; --low:#5a4510; --low-fg:#ffe6a6; --ok:#5fd39a; --err:#ff8a80;
+    --shadow:0 1px 2px rgba(0,0,0,.3), 0 4px 16px rgba(0,0,0,.25);
+  } }
+  * { box-sizing:border-box; }
+  html, body { margin:0; }
+  body { font:15px/1.55 "Be Vietnam Pro", system-ui, "Segoe UI", Arial, sans-serif; background:var(--bg); color:var(--fg); }
+  button, input, select, textarea { font:inherit; color:inherit; }
+  .an { display:none !important; }
+
+  header { position:sticky; top:0; z-index:5; background:color-mix(in srgb, var(--bg) 85%, transparent); backdrop-filter:blur(8px); border-bottom:1px solid var(--line); }
+  .dau { max-width:1200px; margin:0 auto; padding:12px 16px; display:flex; align-items:center; gap:12px; }
+  .logo { width:36px; height:36px; border-radius:10px; background:var(--acc); color:var(--acc-fg); display:grid; place-items:center; flex:none; }
+  .ten h1 { margin:0; font-size:17px; font-weight:700; letter-spacing:-.01em; }
+  .ten p { margin:0; font-size:12.5px; color:var(--muted); }
+  @media (max-width:600px) { .ten p { display:none; } }
+  .dau form { margin-left:auto; }
+
+  main { max-width:1200px; margin:0 auto; padding:20px 16px 40px; display:grid; grid-template-columns:minmax(0,1.1fr) minmax(0,1fr); gap:20px; }
+  @media (max-width:900px) { main { grid-template-columns:1fr; } }
+  .the { background:var(--card); border:1px solid var(--line); border-radius:var(--r); box-shadow:var(--shadow); padding:18px; min-width:0; }
+  .the h2 { margin:0 0 12px; font-size:13px; font-weight:600; text-transform:uppercase; letter-spacing:.06em; color:var(--muted); display:flex; align-items:center; gap:8px; }
+  .the h2 .so { width:22px; height:22px; border-radius:50%; background:var(--acc-soft); color:var(--acc); display:grid; place-items:center; font-size:12px; letter-spacing:0; }
+
+  /* vùng thả tệp */
+  #vung_tha { position:relative; border:2px dashed var(--line); border-radius:12px; background:var(--soft); min-height:260px; display:grid; place-items:center; text-align:center; padding:24px; cursor:pointer; transition:border-color .15s, background .15s; outline:none; }
+  #vung_tha:hover, #vung_tha:focus-visible { border-color:var(--acc); }
+  #vung_tha.dang_keo { border-color:var(--acc); background:var(--acc-soft); }
+  #vung_tha .bieu_tuong { width:52px; height:52px; margin:0 auto 10px; border-radius:14px; background:var(--card); border:1px solid var(--line); display:grid; place-items:center; color:var(--acc); }
+  #vung_tha b { display:block; font-size:16px; margin-bottom:4px; }
+  #vung_tha span { color:var(--muted); font-size:13.5px; }
+  kbd { font:12px ui-monospace, Consolas, monospace; padding:1px 6px; border:1px solid var(--line); border-bottom-width:2px; border-radius:5px; background:var(--card); }
+  #xem { display:grid; gap:10px; }
+  #khung { border-radius:10px; overflow:auto; max-height:62vh; background:var(--soft); border:1px solid var(--line); }
+  canvas { display:block; max-width:100%; cursor:crosshair; touch-action:none; }
+  .tep { display:flex; align-items:center; gap:10px; font-size:13.5px; color:var(--muted); }
+  .tep .ten_tep { color:var(--fg); font-weight:500; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .tep button { margin-left:auto; }
+  /* nút camera: chỉ hiện trên thiết bị cảm ứng; !important để không bị .nut { display:inline-flex } ghi đè */
+  .chi_dt { display:none !important; margin-top:14px; }
+  @media (pointer: coarse) { .chi_dt { display:block !important; } .tep .chi_dt { display:inline-flex !important; margin:0 0 0 auto; } .tep .chi_dt + #doi_tep { margin-left:0; } }
+  .dieu_trang { display:flex; align-items:center; gap:8px; flex-wrap:wrap; font-size:13.5px; }
+  .dieu_trang .goi_y { margin:0 0 0 6px; }
+
+  /* thanh điều khiển */
+  .dieu_khien { display:flex; flex-wrap:wrap; align-items:center; gap:10px 14px; margin-top:14px; }
+  .chon { display:inline-flex; padding:3px; background:var(--soft); border:1px solid var(--line); border-radius:10px; }
+  .chon input { position:absolute; opacity:0; pointer-events:none; }
+  .chon label { padding:6px 12px; border-radius:7px; font-size:13.5px; cursor:pointer; color:var(--muted); white-space:nowrap; }
+  .chon input:checked + label { background:var(--card); color:var(--fg); font-weight:600; box-shadow:0 1px 2px rgba(0,0,0,.08); }
+  .chon input:focus-visible + label { outline:2px solid var(--acc); }
+  .hop { display:inline-flex; align-items:center; gap:7px; font-size:13.5px; cursor:pointer; }
+  .hop input { width:16px; height:16px; accent-color:var(--acc); }
+  .nut { display:inline-flex; align-items:center; justify-content:center; gap:8px; white-space:nowrap; padding:8px 16px; border-radius:9px; border:1px solid var(--line); background:var(--card); cursor:pointer; font-weight:500; font-size:14px; }
+  .nut:hover:not(:disabled) { border-color:var(--acc); color:var(--acc); }
+  .nut.chinh { background:var(--acc); border-color:var(--acc); color:var(--acc-fg); font-weight:600; }
+  .nut.chinh:hover:not(:disabled) { filter:brightness(1.08); color:var(--acc-fg); }
+  .nut.nho { padding:5px 10px; font-size:13px; }
+  .nut:disabled { opacity:.45; cursor:default; }
+  .nut:focus-visible { outline:2px solid var(--acc); outline-offset:2px; }
+  .day { margin-left:auto; display:flex; gap:8px; }
+  .quay { width:16px; height:16px; border:2px solid currentColor; border-right-color:transparent; border-radius:50%; animation:quay .7s linear infinite; }
+  @keyframes quay { to { transform:rotate(360deg); } }
+  .goi_y { margin:10px 0 0; font-size:12.5px; color:var(--muted); }
+
+  /* kết quả */
+  .trong { min-height:220px; display:grid; place-items:center; text-align:center; color:var(--muted); font-size:14px; border:1px dashed var(--line); border-radius:10px; padding:20px; }
+  #ket_qua { font-size:15.5px; line-height:1.9; max-height:34vh; overflow:auto; padding:2px; }
+  .trang + .trang { border-top:1px dashed var(--line); margin-top:10px; padding-top:10px; }
+  .trang .so_trang { display:inline-block; font-size:12px; font-weight:600; color:var(--acc); background:var(--acc-soft); border-radius:6px; padding:0 7px; margin-right:6px; }
+  .tu { border-radius:4px; padding:1px 1px; }
+  .tu.thap { background:var(--low); color:var(--low-fg); }
+  .chu_thich { display:flex; gap:14px; flex-wrap:wrap; font-size:12.5px; color:var(--muted); margin:8px 0 14px; }
+  .chu_thich i { display:inline-block; width:12px; height:12px; border-radius:3px; background:var(--low); vertical-align:-1px; margin-right:5px; }
+  label.nhan_o { display:block; font-size:13px; font-weight:600; margin-bottom:6px; }
+  textarea { width:100%; min-height:200px; padding:12px; border:1px solid var(--line); border-radius:10px; background:var(--soft); resize:vertical; line-height:1.6; }
+  textarea:focus { outline:2px solid var(--acc); outline-offset:-1px; }
+  .chan { display:flex; align-items:center; gap:8px; margin-top:10px; flex-wrap:wrap; }
+  #tt { font-size:13px; color:var(--muted); margin-left:auto; }
+  #tt.loi { color:var(--err); } #tt.xong { color:var(--ok); }
+  .chan_trang { max-width:1200px; margin:0 auto; padding:0 16px 28px; font-size:12px; color:var(--muted); }
+  .chan_trang p { margin:4px 0; }
+  #bao { position:fixed; left:50%; bottom:24px; transform:translateX(-50%) translateY(20px); opacity:0; background:var(--fg); color:var(--bg); padding:8px 14px; border-radius:9px; font-size:13.5px; transition:.2s; pointer-events:none; }
+  #bao.hien { opacity:1; transform:translateX(-50%); }
+</style>
+</head>
+<body>
+<header>
+  <div class="dau">
+    <div class="logo" aria-hidden="true">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+    </div>
+    <div class="ten">
+      <h1>Nhận dạng chữ viết tay tiếng Việt</h1>
+      <p>CRNN (CNN + BiLSTM + CTC) + mô hình sửa lỗi ProtonX chạy cục bộ · Nhóm 7 · Học sâu</p>
+    </div>
+    <form method="post" action="/dang-xuat"><button class="nut nho">Đăng xuất</button></form>
+  </div>
+</header>
+
+<main>
+  <section class="the">
+    <h2><span class="so">1</span>Ảnh đầu vào</h2>
+    <input type="file" id="tep" accept=".pdf,image/*" class="an">
+    <input type="file" id="camera" accept="image/*" capture="environment" class="an">
+
+    <div id="vung_tha" tabindex="0" role="button" aria-label="Chọn, kéo thả hoặc dán tệp ảnh/PDF">
+      <div>
+        <div class="bieu_tuong"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m17 8-5-5-5 5"/><path d="M12 3v12"/></svg></div>
+        <b>Kéo thả ảnh hoặc PDF vào đây</b>
+        <span>hoặc dán ảnh bằng <kbd>Ctrl</kbd>+<kbd>V</kbd>, hoặc bấm để chọn tệp<br>JPG, PNG, PDF · tối đa 20 MB, 20 trang</span>
+        <div class="chi_dt"><button class="nut chinh" data-camera>📷 Chụp ảnh bằng camera</button></div>
+      </div>
+    </div>
+
+    <div id="xem" class="an">
+      <div class="tep">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+        <span class="ten_tep" id="ten_tep"></span><span id="co_tep"></span>
+        <button class="nut nho chi_dt" data-camera>📷 Chụp lại</button>
+        <button class="nut nho" id="doi_tep">Đổi tệp</button>
+      </div>
+      <div id="dieu_trang" class="dieu_trang an">
+        <button class="nut nho" id="trang_truoc" aria-label="Trang trước">◀</button>
+        <span id="so_trang_pdf"></span>
+        <button class="nut nho" id="trang_sau" aria-label="Trang sau">▶</button>
+        <span class="goi_y">Kéo chuột để cắt vùng trên trang; không chọn vùng = nhận dạng cả tệp</span>
+      </div>
+      <div id="khung"><canvas id="cv"></canvas></div>
+    </div>
+
+    <div class="dieu_khien">
+      <div class="chon" role="radiogroup" aria-label="Chế độ">
+        <input type="radio" name="che_do" id="cd_c" value="t" checked><label for="cd_c">CRNN + sửa lỗi có kiểm soát</label>
+        <input type="radio" name="che_do" id="cd_a" value="a"><label for="cd_a">Chỉ CRNN</label>
+        <input type="radio" name="che_do" id="cd_b" value="b"><label for="cd_b">Sửa lỗi toàn bộ</label>
+      </div>
+      <label class="hop"><input type="checkbox" id="mot_dong"> Ảnh là một dòng</label>
+      <div class="day">
+        <button class="nut" id="bo_chon" disabled>Bỏ vùng chọn</button>
+        <button class="nut chinh" id="chay" disabled><span id="chay_chu">Nhận dạng</span></button>
+      </div>
+    </div>
+    <p class="goi_y" id="goi_y_anh">Mẹo: với ảnh, kéo chuột trên ảnh để chỉ nhận dạng một vùng. <kbd>Ctrl</kbd>+<kbd>Enter</kbd> để chạy.</p>
+  </section>
+
+  <section class="the">
+    <h2><span class="so">2</span>Kết quả</h2>
+    <div id="trong" class="trong">Chưa có kết quả.<br>Thêm ảnh hoặc PDF rồi bấm “Nhận dạng”.</div>
+    <div id="co_kq" class="an">
+      <div id="ket_qua"></div>
+      <div class="chu_thich"><span><i></i>Từ CRNN đọc kém tin cậy (rê chuột để xem độ tin cậy)</span></div>
+      <label class="nhan_o" for="van_ban">Văn bản cuối — sửa tay được</label>
+      <textarea id="van_ban" spellcheck="false"></textarea>
+    </div>
+    <div class="chan">
+      <button class="nut nho" id="chep" disabled>Sao chép</button>
+      <button class="nut nho" id="tai" disabled>Tải .txt</button>
+      <span id="tt" role="status"></span>
+    </div>
+  </section>
+</main>
+<footer class="chan_trang">
+  <p>Ảnh chỉ dùng để nhận dạng, xử lý trên máy chủ của nhóm, không lưu lại · Built with ProtonX Text Correction Model</p>
+</footer>
+<div id="bao" role="status"></div>
+
+<script>
+const $ = id => document.getElementById(id);
+const cv = $("cv"), ctx = cv.getContext("2d");
+let anh = null, vung = null, keo = null, tepGoc = null, laPdfHt = false, trangPdf = [], trangHt = 0;
+
+function bao(s) { $("bao").textContent = s; $("bao").classList.add("hien"); clearTimeout(bao.t); bao.t = setTimeout(() => $("bao").classList.remove("hien"), 1800); }
+function trangThai(s, loai = "") { $("tt").textContent = s; $("tt").className = loai; }
+const kichThuoc = b => b > 1048576 ? (b / 1048576).toFixed(1) + " MB" : Math.max(1, Math.round(b / 1024)) + " KB";
+
+function ve() {
+  if (!anh) return;
+  ctx.drawImage(anh, 0, 0);
+  if (vung) {
+    ctx.fillStyle = "rgba(15,17,21,.35)";
+    ctx.fillRect(0, 0, cv.width, vung.y); ctx.fillRect(0, vung.y + vung.h, cv.width, cv.height - vung.y - vung.h);
+    ctx.fillRect(0, vung.y, vung.x, vung.h); ctx.fillRect(vung.x + vung.w, vung.y, cv.width - vung.x - vung.w, vung.h);
+    ctx.strokeStyle = "#2457d6"; ctx.lineWidth = Math.max(2, anh.width / 500); ctx.setLineDash([12, 6]);
+    ctx.strokeRect(vung.x, vung.y, vung.w, vung.h); ctx.setLineDash([]);
+  }
+}
+
+// Ảnh chụp điện thoại: áp hướng xoay EXIF vào điểm ảnh và thu nhỏ (cạnh dài <= 2400 px) trước khi gửi,
+// vì máy chủ đọc ảnh không theo EXIF và ảnh 12 MP tải lên chậm. Ảnh nhỏ không phải JPEG giữ nguyên.
+async function chuanHoaAnh(f) {
+  if (!f || !f.type.startsWith("image/")) return f;
+  try {
+    const bm = await createImageBitmap(f, { imageOrientation: "from-image" });
+    const tl = Math.min(1, 2400 / Math.max(bm.width, bm.height));
+    if (tl === 1 && f.type !== "image/jpeg") return f;
+    const c = document.createElement("canvas");
+    c.width = Math.round(bm.width * tl); c.height = Math.round(bm.height * tl);
+    c.getContext("2d").drawImage(bm, 0, 0, c.width, c.height);
+    const b = await new Promise(r => c.toBlob(r, "image/jpeg", 0.92));
+    return new File([b], (f.name || "anh").replace(/\.[^.]+$/, "") + ".jpg", { type: "image/jpeg" });
+  } catch { return f; }  // trình duyệt không hỗ trợ: gửi nguyên tệp
+}
+
+async function nhanTep(f) {
+  if (!f) return;
+  f = await chuanHoaAnh(f);
+  const laPdf = f.type === "application/pdf" || /\.pdf$/i.test(f.name);
+  if (!laPdf && !f.type.startsWith("image/")) { bao("Chỉ nhận ảnh hoặc PDF"); return; }
+  if (f.size > 20 * 1048576) { bao("Tệp lớn hơn 20 MB"); return; }
+  tepGoc = f; anh = null; vung = null; laPdfHt = laPdf; trangPdf = [];
+  $("vung_tha").classList.add("an"); $("xem").classList.remove("an");
+  $("ten_tep").textContent = f.name || "ảnh dán"; $("co_tep").textContent = "· " + kichThuoc(f.size);
+  $("chay").disabled = false; $("bo_chon").disabled = true;
+  $("dieu_trang").classList.toggle("an", !laPdf);
+  capNhatMotDong();
+  ctx.clearRect(0, 0, cv.width, cv.height);
+  if (laPdf) {  // máy chủ chuyển từng trang thành ảnh (200 dpi) để xem và cắt vùng như ảnh thường
+    $("so_trang_pdf").textContent = "Đang mở PDF…";
+    const fd = new FormData(); fd.append("tep", f);
+    try {
+      const r = await fetch("/api/pdf-trang", { method: "POST", body: fd });
+      if (r.status === 401) { location.href = "/dang-nhap"; return; }
+      const d = await r.json();
+      if (!r.ok) throw new Error(d.detail || r.status);
+      if (tepGoc !== f) return;  // người dùng đã đổi tệp trong lúc chờ
+      trangPdf = d.trang; hienTrang(0);
+    } catch (e) { $("so_trang_pdf").textContent = ""; bao("Không mở được PDF: " + e.message); }
+    return;
+  }
+  hienAnh(URL.createObjectURL(f));
+}
+
+function hienAnh(src) {
+  const img = new Image();
+  img.onload = () => { anh = img; cv.width = img.width; cv.height = img.height; ve(); };
+  img.src = src;
+}
+function hienTrang(i) {
+  trangHt = i; vung = null; $("bo_chon").disabled = true; capNhatMotDong();
+  $("so_trang_pdf").textContent = `Trang ${i + 1}/${trangPdf.length}`;
+  $("trang_truoc").disabled = i === 0; $("trang_sau").disabled = i === trangPdf.length - 1;
+  hienAnh(trangPdf[i]);
+}
+// "Ảnh là một dòng" chỉ có nghĩa với ảnh hoặc vùng cắt; gửi cả tệp PDF thì luôn tách dòng
+function capNhatMotDong() { const tat = laPdfHt && !vung; $("mot_dong").disabled = tat; if (tat) $("mot_dong").checked = false; }
+$("trang_truoc").onclick = () => trangHt > 0 && hienTrang(trangHt - 1);
+$("trang_sau").onclick = () => trangHt < trangPdf.length - 1 && hienTrang(trangHt + 1);
+
+// chọn tệp / kéo thả / dán
+$("vung_tha").onclick = () => $("tep").click();
+$("vung_tha").onkeydown = e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); $("tep").click(); } };
+$("doi_tep").onclick = () => $("tep").click();
+$("tep").onchange = () => { nhanTep($("tep").files[0]); $("tep").value = ""; };
+document.querySelectorAll("[data-camera]").forEach(b => b.onclick = e => { e.stopPropagation(); $("camera").click(); });
+$("camera").onchange = () => { const f = $("camera").files[0]; if (f) nhanTep(new File([f], "anh-chup.jpg", { type: f.type || "image/jpeg" })); $("camera").value = ""; };
+let demKeo = 0;
+window.addEventListener("dragenter", e => { e.preventDefault(); demKeo++; $("vung_tha").classList.add("dang_keo"); if (tepGoc) document.body.style.outline = "3px dashed var(--acc)"; });
+window.addEventListener("dragleave", () => { if (--demKeo <= 0) { demKeo = 0; $("vung_tha").classList.remove("dang_keo"); document.body.style.outline = ""; } });
+window.addEventListener("dragover", e => e.preventDefault());
+window.addEventListener("drop", e => { e.preventDefault(); demKeo = 0; $("vung_tha").classList.remove("dang_keo"); document.body.style.outline = ""; nhanTep(e.dataTransfer.files[0]); });
+window.addEventListener("paste", e => {
+  if (e.target === $("van_ban")) return;  // dán chữ vào ô kết quả thì để nguyên
+  const f = [...(e.clipboardData?.files || [])][0] || [...(e.clipboardData?.items || [])].find(i => i.type.startsWith("image/"))?.getAsFile();
+  if (f) { e.preventDefault(); nhanTep(f.name ? f : new File([f], "anh-dan.png", { type: f.type })); bao("Đã dán ảnh"); }
+});
+
+// chọn vùng trên ảnh
+function toaDo(e) { const r = cv.getBoundingClientRect(); return { x: (e.clientX - r.left) * cv.width / r.width, y: (e.clientY - r.top) * cv.height / r.height }; }
+function capNhat(e) { const p = toaDo(e);
+  vung = { x: Math.max(0, Math.min(keo.x, p.x)), y: Math.max(0, Math.min(keo.y, p.y)), w: Math.abs(p.x - keo.x), h: Math.abs(p.y - keo.y) }; ve(); }
+cv.onpointerdown = e => { if (!anh) return; keo = toaDo(e); cv.setPointerCapture(e.pointerId); };
+cv.onpointermove = e => { if (keo) capNhat(e); };
+cv.onpointerup = e => { if (!keo) return; capNhat(e); keo = null;
+  if (vung.w < 10 || vung.h < 10) vung = null; $("bo_chon").disabled = !vung; capNhatMotDong(); ve(); };
+$("bo_chon").onclick = () => { vung = null; $("bo_chon").disabled = true; capNhatMotDong(); ve(); };
+
+async function tepGui() {
+  if (!anh || !vung) return tepGoc;
+  const c = document.createElement("canvas"); c.width = vung.w; c.height = vung.h;
+  c.getContext("2d").drawImage(anh, vung.x, vung.y, vung.w, vung.h, 0, 0, vung.w, vung.h);
+  return new File([await new Promise(r => c.toBlob(r, "image/png"))], "vung.png", { type: "image/png" });
+}
+
+async function chay() {
+  if (!tepGoc || $("chay").disabled) return;
+  $("chay").disabled = true; $("chay_chu").textContent = "Đang nhận dạng…"; $("chay").insertAdjacentHTML("afterbegin", '<span class="quay" id="quay"></span>');
+  trangThai("Đang xử lý trên máy chủ…");
+  const fd = new FormData();
+  fd.append("tep", await tepGui());
+  fd.append("che_do", document.querySelector("input[name=che_do]:checked").value);
+  fd.append("mot_dong", $("mot_dong").checked);
+  try {
+    const r = await fetch("/api/nhan-dang", { method: "POST", body: fd });
+    if (r.status === 401) { location.href = "/dang-nhap"; return; }
+    const d = await r.json();
+    if (!r.ok) throw new Error(d.detail || "Lỗi " + r.status);
+    $("ket_qua").replaceChildren();
+    d.trang.forEach((t, i) => {
+      const div = document.createElement("div"); div.className = "trang";
+      if (d.trang.length > 1) { const b = document.createElement("span"); b.className = "so_trang"; b.textContent = "Trang " + (i + 1); div.append(b); }
+      t.tu.forEach(w => { const s = document.createElement("span"); s.className = "tu" + (w.tin_cay < d.nguong ? " thap" : "");
+        s.title = "Độ tin cậy " + w.tin_cay.toFixed(2); s.textContent = w.tu; div.append(s, " "); });
+      if (!t.tu.length) div.append("(không tìm thấy chữ)");
+      $("ket_qua").append(div);
+    });
+    $("van_ban").value = d.trang.map(t => t.ket_qua).join("\n\n");
+    $("trong").classList.add("an"); $("co_kq").classList.remove("an");
+    $("tai").disabled = $("chep").disabled = false;
+    const thap = d.trang.reduce((n, t) => n + t.tu.filter(w => w.tin_cay < d.nguong).length, 0);
+    trangThai(`Xong trong ${d.giay} giây · ${thap} từ kém tin cậy`, "xong");
+  } catch (e) { trangThai("Lỗi: " + e.message, "loi"); }
+  $("quay")?.remove(); $("chay_chu").textContent = "Nhận dạng"; $("chay").disabled = false;
+}
+$("chay").onclick = chay;
+window.addEventListener("keydown", e => { if (e.key === "Enter" && (e.ctrlKey || e.metaKey)) chay(); });
+
+$("chep").onclick = async () => { try { await navigator.clipboard.writeText($("van_ban").value); bao("Đã sao chép văn bản"); } catch { $("van_ban").select(); bao("Nhấn Ctrl+C để sao chép"); } };
+$("tai").onclick = () => {
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([$("van_ban").value], { type: "text/plain;charset=utf-8" }));
+  a.download = (tepGoc?.name ? tepGoc.name.replace(/\.[^.]+$/, "") : "ket-qua") + ".txt"; a.click();
+};
+</script>
+</body>
+</html>
