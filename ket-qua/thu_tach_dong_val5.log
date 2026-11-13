@@ -1,0 +1,11 @@
+108 đoạn, 108 đoạn ánh xạ được sang ảnh dòng chuẩn
+mức trần (ảnh dòng chuẩn): 2.99 % trên các đoạn ánh xạ được
+cc        CER 11.87 % (đoạn ánh xạ được: 11.87 %) | số dòng: đúng 81, thiếu 15, thừa 12
+theo100|b CER 7.58 % (đoạn ánh xạ được: 7.58 %) | số dòng: đúng 87, thiếu 14, thừa 7
+theo100|b|c CER 7.53 % (đoạn ánh xạ được: 7.53 %) | số dòng: đúng 85, thiếu 13, thừa 10
+theo125|b CER 7.92 % (đoạn ánh xạ được: 7.92 %) | số dòng: đúng 87, thiếu 15, thừa 6
+theo100|b|g0.6 CER 7.67 % (đoạn ánh xạ được: 7.67 %) | số dòng: đúng 85, thiếu 16, thừa 7
+theo100|b so với cc: người viết tốt lên 22, xấu đi 2, như cũ 1
+theo100|b|c so với cc: người viết tốt lên 22, xấu đi 2, như cũ 1
+theo125|b so với cc: người viết tốt lên 24, xấu đi 1, như cũ 0
+theo100|b|g0.6 so với cc: người viết tốt lên 23, xấu đi 2, như cũ 0

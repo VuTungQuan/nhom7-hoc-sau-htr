@@ -7,7 +7,7 @@ Mã nguồn tiểu luận môn Học sâu (Nhóm 7, lớp 20261IT7332003): *Ứn
 - **Hậu kỳ:** [`protonx-models/protonx-legal-tc`](https://huggingface.co/protonx-models/protonx-legal-tc) qua Hugging Face transformers, chỉ nhận thay thế 1–1, khoảng cách sửa ≤ 50%, từ điển âm tiết. Qwen2.5-7B (Ollama) chỉ là đối chứng (`llm_sua_qwen.py`).
 - **Web:** FastAPI, đăng nhập scrypt + phiên HMAC, ảnh/PDF/cắt vùng/camera điện thoại.
 
-Kết quả chi tiết: [`ket-qua-thuc-nghiem.md`](ket-qua-thuc-nghiem.md). Trên 6 người viết test của UIT-HWDB, CER mức dòng 5,50% → 4,90%, mức đoạn 16,84% → 15,36%.
+Kết quả chi tiết: [`ket-qua-thuc-nghiem.md`](ket-qua-thuc-nghiem.md). Trên 6 người viết test của UIT-HWDB, CER mức dòng 5,50% → 4,90%; mức đoạn 16,84% → 10,20% (tách dòng bám tâm theo dải + sửa lỗi, xem §6c).
 
 ## Cấu trúc
 
@@ -17,6 +17,7 @@ Kết quả chi tiết: [`ket-qua-thuc-nghiem.md`](ket-qua-thuc-nghiem.md). Trê
 | `src/train.py` | Huấn luyện |
 | `src/llm_sua.py` | Sửa lỗi bằng ProtonX + lớp kiểm soát |
 | `src/danh_gia.py`, `src/thong_ke.py` | Đánh giá các cấu hình a/b/c/t, bootstrap theo người viết |
+| `src/thu_tach_dong.py`, `src/so_tach_dong.py`, `src/chan_doan_dinh.py` | Thử nghiệm, so sánh và chẩn đoán các cách tách dòng trên val |
 | `src/app.py`, `src/index.html`, `src/dang-nhap.html`, `src/tai_khoan.py` | Ứng dụng web |
 | `src/ve_hinh*.py` | Vẽ hình cho báo cáo |
 | `ket-qua/` | Log huấn luyện, đầu ra từng dòng/đoạn, thống kê |

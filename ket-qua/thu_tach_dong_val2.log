@@ -1,0 +1,13 @@
+108 đoạn, 108 đoạn ánh xạ được sang ảnh dòng chuẩn
+mức trần (ảnh dòng chuẩn): 2.99 % trên các đoạn ánh xạ được
+cc        CER 11.87 % (đoạn ánh xạ được: 11.87 %) | số dòng: đúng 81, thiếu 15, thừa 12
+cc|g0.6   CER 11.54 % (đoạn ánh xạ được: 11.54 %) | số dòng: đúng 84, thiếu 17, thừa 7
+cc|c      CER 12.07 % (đoạn ánh xạ được: 12.07 %) | số dòng: đúng 82, thiếu 14, thừa 12
+cc|b      CER 11.86 % (đoạn ánh xạ được: 11.86 %) | số dòng: đúng 79, thiếu 13, thừa 16
+cc|g0.6|c|b CER 11.76 % (đoạn ánh xạ được: 11.76 %) | số dòng: đúng 81, thiếu 14, thừa 13
+seam_gan|g0.6|c|b CER 11.52 % (đoạn ánh xạ được: 11.52 %) | số dòng: đúng 82, thiếu 14, thừa 12
+cc|g0.6 so với cc: người viết tốt lên 5, xấu đi 1, như cũ 19
+cc|c so với cc: người viết tốt lên 1, xấu đi 3, như cũ 21
+cc|b so với cc: người viết tốt lên 3, xấu đi 6, như cũ 16
+cc|g0.6|c|b so với cc: người viết tốt lên 6, xấu đi 6, như cũ 13
+seam_gan|g0.6|c|b so với cc: người viết tốt lên 17, xấu đi 8, như cũ 0

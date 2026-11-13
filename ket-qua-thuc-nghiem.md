@@ -134,7 +134,7 @@ Chênh giữa các beam ≤ 0,04 điểm CER ở cấu hình t → thực chất
 3. **Phần lớn cải thiện nằm ở WER** (sửa đúng cả từ: "phả→phải", "lình→lĩnh", "danh→doanh"), CER giảm ít hơn vì mỗi lần sửa thường chỉ đổi 1–2 ký tự; lỗi chỉ do dấu giảm (mức đoạn 3,19 → 1,86 %).
 4. **Dùng nguyên đề xuất (b)**: tốt ở mức đoạn (−1,60) nhưng ở mức dòng không có ý nghĩa thống kê (−0,18 [−0,57; +0,28]) và có trường hợp mô hình **viết lại/thêm từ** (ví dụ "dỷ lụng phền phác" → "nhiêu vất vả phiền toái", thêm "Trang") – trái với cam kết "sửa chứ không viết lại" khi đầu vào nhiễu nặng. Ràng buộc thay 1–1 + khoảng cách sửa + từ điển của t loại bỏ các trường hợp này (mức dòng: số dòng xấu đi 34 → 17).
 5. **Lọc theo độ tin cậy CTC không cần thiết** với mô hình này: ngưỡng thấp làm giảm lợi ích; ràng buộc cấu trúc (1–1, khác ít, từ điển) mới là phần "kiểm soát" có tác dụng.
-6. **Tách dòng vẫn là nút thắt**: CER đầu cuối mức đoạn (15,4 %) gấp ~3 lần mức dòng (4,9 %).
+6. **Tách dòng vẫn là nút thắt**: CER đầu cuối mức đoạn (15,4 %) gấp ~3 lần mức dòng (4,9 %). → Đã cải tiến ở §6c: mức đoạn t @1,01 còn 10,20 %.
 7. **Thời gian**: thêm ~0,09 s/dòng, ~0,19 s/đoạn (ngoại tuyến, chạy lô, beam 10) – chấp nhận được cho web.
 
 ## 5. Ví dụ định tính (test, mức dòng – t @1,01 trừ khi ghi khác)
@@ -175,6 +175,36 @@ So sánh trên toàn bộ val bằng quy trình suy luận cuối (cấu hình a
 | Mức đoạn (108 đoạn) | **11,87 %** | 12,16 % | +0,28 [−0,07; +0,79] | 10 / 12 / 3 |
 
 → Không có ý nghĩa thống kê, ngược chiều → mô hình gần bão hoà; **giữ mô hình chính**. Hiệu năng: nút thắt là tính toán GPU (batch 16: 87 ms/bước GPU, 21 ms nạp dữ liệu, 2,2 GB VRAM; batch 64: 235 / 58 ms, 8 GB) do ảnh dòng rất rộng (900–2.400 px), phần đệm trong lô và LSTM tuần tự.
+
+## 6c. Cải tiến tách dòng sau phân tích lỗi (13/11/2026)
+**Khai báo thứ tự:** ý định cải tiến tách dòng xuất phát từ phân tích lỗi **trên tập test** (CER mức dòng vs mức đoạn theo người viết: bỏ người viết 253, CER dòng 2,09 % nhưng CER đoạn 11,68 %). Mọi lựa chọn phương pháp và tham số dưới đây làm **chỉ trên val** (108 đoạn, cấu hình a); test chạy **một lần** sau khi chốt (lượt chạy test thứ 5 của đề tài). Script: `src/thu_tach_dong.py`, log `ket-qua/thu_tach_dong_val*.log`, so sánh `src/so_tach_dong.py`.
+
+**Chẩn đoán trên val:**
+- Mức trần (nhận dạng ảnh dòng cắt sẵn của UIT-HWDB rồi nối, = tách dòng hoàn hảo): CER **2,99 %**, so với 11,87 % của tách dòng cũ → ~9 điểm CER do tách dòng.
+- Tách cũ đúng số dòng ở 81/108 đoạn (thiếu 15, thừa 12); ngay cả đoạn đúng số dòng CER vẫn 8,8 % (trần 2,7 %) → lỗi chính là **dòng nghiêng/cong**: tâm dòng tính trên cả chiều ngang lệch ở hai đầu dòng, chữ cuối dòng bị gán sang dòng kề.
+- Ảnh dòng và ảnh đoạn của UIT-HWDB là hai bản sinh riêng (khớp mẫu thất bại) → không có vị trí dòng thật, không huấn luyện được bộ phát hiện dòng có giám sát từ dữ liệu này.
+
+| Cách tách (val, 108 đoạn, a) | CER | Đúng số dòng | Người viết tốt lên/xấu đi so với cũ |
+|---|---|---|---|
+| Cũ: đỉnh chiếu ngang + gán thành phần theo tâm | 11,87 % | 81 | – |
+| Cắt thành phần vắt qua hai dòng (thẳng / đường uốn) | 12,17 / 11,70 % | 81 | 9/15 · 13/11 |
+| Gộp đỉnh gần (< 0,6 khoảng dòng) | 11,54 % | 84 | 5/1 |
+| Bám tâm dòng theo dải dọc 250 / 150 / **100** / 75 px | 8,76 / 8,27 / **7,92** / 9,05 % | 87 / 87 / 87 / 83 | 21/4 · 22/3 · 22/3 · 19/5 |
+| Dải 100 px, cửa sổ ±0,25 / ±0,5 khoảng dòng (mặc định ±0,35) | 8,39 / 10,59 % | – | – |
+| **Dải 100 px + thêm đỉnh thấp ở biên (dòng ngắn đầu/cuối)** | **7,58 %** | 87 | **22/2** |
+| + chèn đỉnh vào khoảng trống > 1,6 khoảng dòng | 7,53 % | 85 | 22/2 (không giữ: lợi 0,05 điểm, thêm quy tắc) |
+
+**Chốt:** dải 100 px + đỉnh biên (đưa vào `htr.tach_dong`; bản cũ lưu ở máy chủ `src/htr_tach_cu.py.bak`). Kiểm lại bằng `danh_gia.py` trên val: a 7,58 %, **t @1,01 6,17 %** (cũ 10,36 %).
+
+**Test (31 đoạn, 6 người viết, chạy một lần; `danh_gia_doan_test_abct_tc_tachmoi.json`, `thong_ke_tc_tachmoi.txt`):**
+| Cấu hình | CER tách cũ | CER tách mới | Mới − cũ [KTC 95 % người viết] | Người viết tốt lên/xấu đi | WER mới |
+|---|---|---|---|---|---|
+| a | 16,84 % | **11,84 %** | **−5,00** [−8,70; −2,18] | 5/1 | 30,37 % |
+| t @1,01 | 15,36 % | **10,20 %** | **−5,16** [−8,47; −2,58] | 5/1 | 22,02 % |
+
+- Theo người viết (a): 250 6,3→3,9; 251 21,1→8,2; 252 9,9→6,3; **253 34,4→31,6** (lỗi nhận dạng, CER dòng 17,1 %); 254 9,5→10,0 (xấu đi nhẹ); 255 10,4→3,1.
+- Với tách mới, t @1,01 so với a: −1,64 [−2,49; −0,92], 6/6 người viết tốt lên (cũ: −1,48) → kết luận về bước hậu kỳ không đổi.
+- Khoảng cách với mức trần vẫn còn (val 7,58 % vs 2,99 %); người viết 253 cần cải thiện mô hình nhận dạng, không phải tách dòng.
 
 ## 7. Ghi chú cài đặt (đối chiếu mã)
 - `src/llm_sua.py`: `nap()` (nạp mô hình một lần), `de_xuat()` (cắt khúc 30 từ, lô 32, beam 10), `kiem_soat()` (căn chỉnh difflib, thay 1–1, khoảng cách ≤ 50 %, từ điển), có tự kiểm tra cơ chế kiểm soát không cần mô hình.

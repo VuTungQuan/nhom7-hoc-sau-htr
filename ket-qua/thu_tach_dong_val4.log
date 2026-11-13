@@ -1,0 +1,19 @@
+108 đoạn, 108 đoạn ánh xạ được sang ảnh dòng chuẩn
+mức trần (ảnh dòng chuẩn): 2.99 % trên các đoạn ánh xạ được
+cc        CER 11.87 % (đoạn ánh xạ được: 11.87 %) | số dòng: đúng 81, thiếu 15, thừa 12
+theo150   CER 8.27 % (đoạn ánh xạ được: 8.27 %) | số dòng: đúng 87, thiếu 16, thừa 5
+theo100   CER 7.92 % (đoạn ánh xạ được: 7.92 %) | số dòng: đúng 87, thiếu 16, thừa 5
+theo75    CER 9.05 % (đoạn ánh xạ được: 9.05 %) | số dòng: đúng 83, thiếu 19, thừa 6
+theo100|w0.25 CER 8.39 % (đoạn ánh xạ được: 8.39 %) | số dòng: đúng 84, thiếu 16, thừa 8
+theo100|w0.5 CER 10.59 % (đoạn ánh xạ được: 10.59 %) | số dòng: đúng 84, thiếu 20, thừa 4
+theo100|t0.15 CER 8.15 % (đoạn ánh xạ được: 8.15 %) | số dòng: đúng 88, thiếu 15, thừa 5
+theo100|b CER 7.58 % (đoạn ánh xạ được: 7.58 %) | số dòng: đúng 87, thiếu 14, thừa 7
+theo100|c CER 7.87 % (đoạn ánh xạ được: 7.87 %) | số dòng: đúng 85, thiếu 15, thừa 8
+theo150 so với cc: người viết tốt lên 22, xấu đi 3, như cũ 0
+theo100 so với cc: người viết tốt lên 22, xấu đi 3, như cũ 0
+theo75 so với cc: người viết tốt lên 19, xấu đi 5, như cũ 1
+theo100|w0.25 so với cc: người viết tốt lên 22, xấu đi 3, như cũ 0
+theo100|w0.5 so với cc: người viết tốt lên 14, xấu đi 11, như cũ 0
+theo100|t0.15 so với cc: người viết tốt lên 22, xấu đi 3, như cũ 0
+theo100|b so với cc: người viết tốt lên 22, xấu đi 2, như cũ 1
+theo100|c so với cc: người viết tốt lên 22, xấu đi 3, như cũ 0

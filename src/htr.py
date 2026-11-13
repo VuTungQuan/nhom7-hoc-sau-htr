@@ -162,8 +162,11 @@ def tach_dong(gray, _da_co_gian=False):
     0) Nếu khoảng cách dòng lệch xa dữ liệu huấn luyện (ảnh chụp nhỏ/quá lớn) -> co giãn ảnh về KHOANG_DONG_CHUAN
        rồi tách lại, để bước lọc nhiễu không xoá mất nét mảnh và ảnh dòng có tỉ lệ nét giống lúc huấn luyện.
     1) Chiếu ngang ảnh nhị phân, mỗi đỉnh nổi bật của biên dạng là tâm một dòng (Likforman-Sulem và cộng sự, 2007).
-    2) Mỗi thành phần liên thông (nét chữ, dấu) gán về dòng có tâm gần nó nhất -> ảnh dòng chỉ chứa nét của dòng đó,
-       không lẫn chân chữ/dấu của dòng kề. Tham số chọn trên tập val (CER mức đoạn 18,0 % -> 12,0 %).
+    2) Thêm đỉnh thấp ở trước đỉnh đầu / sau đỉnh cuối (dòng ngắn, thường là dòng cuối đoạn, bị lọc mất).
+    3) Bám tâm dòng theo dải dọc rộng 100 px: dòng nghiêng/cong có tâm y_k(x) thay đổi theo x.
+    4) Mỗi thành phần liên thông (nét chữ, dấu) gán về dòng có tâm (tại hoành độ của nó) gần nhất -> ảnh dòng chỉ chứa
+       nét của dòng đó, không lẫn chân chữ/dấu của dòng kề. Tham số chọn trên tập val (CER mức đoạn, chỉ CRNN:
+       18,0 % -> 12,0 % với bước 1+4; 11,87 % -> 7,58 % khi thêm 2+3, xem thu_tach_dong.py).
     ponytail: giả định trang 1 cột, dòng gần nằm ngang; trang nghiêng/nhiều cột cần mô hình phát hiện dòng
     (Doc-UFCN, Boillet và cộng sự, 2022)."""
     from scipy.signal import find_peaks
@@ -187,18 +190,49 @@ def tach_dong(gray, _da_co_gian=False):
     if ps.max() == 0:
         return []
     pk, _ = find_peaks(ps, distance=25, prominence=0.10 * ps.max())
-    if len(pk) <= 1:
+    if not len(pk):
         return [gray]
     if len(pk) > 2 and not _da_co_gian:
         k = float(np.median(np.diff(pk)))
         if not 55 <= k <= 110:
             f = min(4.0, max(0.25, KHOANG_DONG_CHUAN / k))
             return tach_dong(cv2.resize(gray, None, fx=f, fy=f, interpolation=cv2.INTER_CUBIC if f > 1 else cv2.INTER_AREA), True)
+    # 2) dòng ngắn ở biên: đỉnh thấp (độ nổi >= 3 %, cao >= 8 % max) cách đỉnh ngoài cùng >= 0,6 khoảng dòng
+    kd = float(np.median(np.diff(pk))) if len(pk) > 2 else float(KHOANG_DONG_CHUAN)
+    thap = [int(x) for x in find_peaks(ps, distance=15, prominence=0.03 * ps.max())[0] if ps[x] >= 0.08 * ps.max()]
+    pk = list(pk)
+    cuoi = [x for x in thap if x >= pk[-1] + 0.6 * kd]
+    while cuoi:
+        x = min(cuoi); pk.append(x); cuoi = [y for y in cuoi if y >= x + 0.6 * kd]
+    dau = [x for x in thap if x <= pk[0] - 0.6 * kd]
+    while dau:
+        x = max(dau); pk.insert(0, x); dau = [y for y in dau if y <= x - 0.6 * kd]
+    pk = np.array(pk)
+    if len(pk) <= 1:
+        return [gray]
+    kd = float(np.median(np.diff(pk)))
     _, nhan, st, tam = cv2.connectedComponentsWithStats(bw, connectivity=8)
-    kc = np.abs(tam[1:, 1:2] - pk[None, :])
+    # 3) bám tâm dòng theo dải dọc 100 px, đi từ dải giữa ra hai bên; dải ít mực quanh dòng -> giữ tâm của dải kề
+    S = max(4, W // 100)
+    bx = np.linspace(0, W, S + 1).astype(int)
+    Y = np.tile(pk.astype(float), (S, 1))
+    giua = S // 2
+    for s in list(range(giua, S)) + list(range(giua - 1, -1, -1)):
+        ref = pk.astype(float) if s == giua else (Y[s - 1] if s > giua else Y[s + 1])
+        p_s = np.convolve(bw[:, bx[s]:bx[s + 1]].sum(1).astype(float), np.ones(9) / 9, "same")
+        for k in range(len(pk)):
+            lo, hi = int(max(0, ref[k] - 0.35 * kd)), int(min(H, ref[k] + 0.35 * kd))
+            seg = p_s[lo:hi]
+            if seg.size and seg.max() >= 0.3 * max(p_s.max(), 1):
+                Y[s, k] = lo + int(seg.argmax())
+            else:
+                Y[s, k] = ref[k]
+    tx = (bx[:-1] + bx[1:]) / 2
+    yk = np.stack([np.interp(tam[1:, 0], tx, Y[:, k]) for k in range(len(pk))], 1)  # tâm dòng k tại hoành độ thành phần
+    kc = np.abs(tam[1:, 1:2] - yk)
     thuoc = kc.argmin(1)  # thành phần i+1 -> chỉ số dòng
     # xa mọi dòng hơn 1 khoảng cách dòng (chữ nhỏ đầu/cuối trang, vết bẩn): bỏ. Ngưỡng chọn trên val (0,6 làm mất dấu).
-    thuoc[kc.min(1) > 1.0 * np.median(np.diff(pk))] = -1
+    thuoc[kc.min(1) > 1.0 * kd] = -1
     muc = np.bincount(thuoc[thuoc >= 0], weights=st[1:, cv2.CC_STAT_AREA][thuoc >= 0], minlength=len(pk))  # mực mỗi dòng
     dong = []
     for k in range(len(pk)):
