@@ -1,6 +1,6 @@
 # Nhận dạng chữ viết tay tiếng Việt: CRNN + sửa lỗi có kiểm soát
 
-Mã nguồn tiểu luận môn Học sâu (Nhóm 7, lớp 20261IT7332003): *Ứng dụng CNN và mô hình ngôn ngữ lớn trong nhận diện văn bản viết tay tiếng Việt*.
+Mã nguồn tiểu luận môn Học sâu (Nhóm 7, lớp 20261IT7332003): *Ứng dụng CRNN và mô hình ngôn ngữ trong nhận diện văn bản viết tay tiếng Việt*.
 
 - **Nhận dạng:** CRNN (7 tầng tích chập kiểu VGG + BiLSTM 2×256 + CTC, 13,24 triệu tham số), ảnh dòng xám cao 64 px.
 - **Tách dòng:** đỉnh hồ sơ chiếu ngang + gán thành phần liên thông, kèm tiền xử lý ảnh chụp.
